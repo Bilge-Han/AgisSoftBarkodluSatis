@@ -1,0 +1,8 @@
+E:\BilgeSoftProje\BilgeSoft\Lisans\bin\Debug\Lisans.dll.config
+E:\BilgeSoftProje\BilgeSoft\Lisans\bin\Debug\Lisans.dll
+E:\BilgeSoftProje\BilgeSoft\Lisans\bin\Debug\Lisans.pdb
+E:\BilgeSoftProje\BilgeSoft\Lisans\obj\Debug\Lisans.Properties.Resources.resources
+E:\BilgeSoftProje\BilgeSoft\Lisans\obj\Debug\Lisans.csproj.GenerateResource.cache
+E:\BilgeSoftProje\BilgeSoft\Lisans\obj\Debug\Lisans.csproj.CoreCompileInputs.cache
+E:\BilgeSoftProje\BilgeSoft\Lisans\obj\Debug\Lisans.dll
+E:\BilgeSoftProje\BilgeSoft\Lisans\obj\Debug\Lisans.pdb
