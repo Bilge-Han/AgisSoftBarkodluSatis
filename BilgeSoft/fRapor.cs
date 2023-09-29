@@ -160,5 +160,9 @@ namespace BilgeSoft
         {
 
         }
+
+        private void guna2GradientPanel6_Paint(object sender, PaintEventArgs e)
+        {
+        }
     }
 }
