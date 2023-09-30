@@ -163,12 +163,14 @@ namespace BilgeSoft
             
             if (chUrunTipi.Checked)
             {
+                chUrunTipi.ShadowDecoration.Color=Color.Black;
                 cmbBirim.Text = "Kg";
                 chUrunTipi.Text = "Gramajlı Ürün İşlemi";
                 bBarkodOlustur.Enabled = false;
             }
             else
             {
+                chUrunTipi.ShadowDecoration.Color = Color.SaddleBrown;
                 cmbBirim.Text = "Adet";
                 chUrunTipi.Text = "Barkodlu Ürün İşlemi";
                 bBarkodOlustur.Enabled = true;
@@ -346,19 +348,5 @@ namespace BilgeSoft
             }
         }
 
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cmbUrunGrubu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chUrunTipi_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
