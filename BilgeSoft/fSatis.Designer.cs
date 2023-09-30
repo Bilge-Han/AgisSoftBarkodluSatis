@@ -237,7 +237,7 @@ namespace BilgeSoft
             this.label3.ForeColor = System.Drawing.Color.DarkCyan;
             this.label3.Location = new System.Drawing.Point(349, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 38;
             this.label3.Text = "Kullanıcı :";
             // 
@@ -247,7 +247,7 @@ namespace BilgeSoft
             this.chYazdirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.chYazdirma.Location = new System.Drawing.Point(134, 8);
             this.chYazdirma.Name = "chYazdirma";
-            this.chYazdirma.Size = new System.Drawing.Size(156, 24);
+            this.chYazdirma.Size = new System.Drawing.Size(190, 29);
             this.chYazdirma.TabIndex = 37;
             this.chYazdirma.Text = "Yazdırma Durumu";
             this.chYazdirma.UseVisualStyleBackColor = true;
@@ -285,6 +285,7 @@ namespace BilgeSoft
             this.gridBekle.Location = new System.Drawing.Point(368, 73);
             this.gridBekle.Name = "gridBekle";
             this.gridBekle.RowHeadersVisible = false;
+            this.gridBekle.RowHeadersWidth = 51;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(3);
             this.gridBekle.RowsDefaultCellStyle = dataGridViewCellStyle6;
@@ -300,22 +301,26 @@ namespace BilgeSoft
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Tarih";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Visible = false;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Ürün Adı";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Barkod";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "UrunGrup";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Visible = false;
             // 
@@ -324,11 +329,13 @@ namespace BilgeSoft
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTextBoxColumn5.HeaderText = "Birim";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "KdvTutari";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Visible = false;
             // 
@@ -339,6 +346,7 @@ namespace BilgeSoft
             dataGridViewCellStyle3.NullValue = null;
             this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn7.HeaderText = "Fiyat";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // dataGridViewTextBoxColumn8
@@ -346,6 +354,7 @@ namespace BilgeSoft
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewTextBoxColumn8.HeaderText = "Miktar";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dataGridViewTextBoxColumn9
@@ -355,11 +364,13 @@ namespace BilgeSoft
             dataGridViewCellStyle5.NullValue = null;
             this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn9.HeaderText = "Toplam";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.HeaderText = "AlisFiyat";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.Visible = false;
             // 
@@ -367,6 +378,7 @@ namespace BilgeSoft
             // 
             this.dataGridViewImageColumn2.HeaderText = "Sil";
             this.dataGridViewImageColumn2.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // lNakit
@@ -374,7 +386,7 @@ namespace BilgeSoft
             this.lNakit.AutoSize = true;
             this.lNakit.Location = new System.Drawing.Point(462, 44);
             this.lNakit.Name = "lNakit";
-            this.lNakit.Size = new System.Drawing.Size(32, 13);
+            this.lNakit.Size = new System.Drawing.Size(40, 17);
             this.lNakit.TabIndex = 7;
             this.lNakit.Text = "Nakit";
             this.lNakit.Visible = false;
@@ -384,7 +396,7 @@ namespace BilgeSoft
             this.lKart.AutoSize = true;
             this.lKart.Location = new System.Drawing.Point(459, 10);
             this.lKart.Name = "lKart";
-            this.lKart.Size = new System.Drawing.Size(26, 13);
+            this.lKart.Size = new System.Drawing.Size(34, 17);
             this.lKart.TabIndex = 6;
             this.lKart.Text = "Kart";
             this.lKart.Visible = false;
@@ -397,7 +409,7 @@ namespace BilgeSoft
             this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
             this.lKullanici.Location = new System.Drawing.Point(409, 13);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(34, 13);
+            this.lKullanici.Size = new System.Drawing.Size(41, 17);
             this.lKullanici.TabIndex = 5;
             this.lKullanici.Text = "kllnc";
             // 
@@ -413,7 +425,7 @@ namespace BilgeSoft
             this.chSatisIadeIslemi.ForeColor = System.Drawing.Color.White;
             this.chSatisIadeIslemi.Location = new System.Drawing.Point(3, 4);
             this.chSatisIadeIslemi.Name = "chSatisIadeIslemi";
-            this.chSatisIadeIslemi.Size = new System.Drawing.Size(125, 28);
+            this.chSatisIadeIslemi.Size = new System.Drawing.Size(150, 34);
             this.chSatisIadeIslemi.TabIndex = 4;
             this.chSatisIadeIslemi.Text = "Satış Yapılıyor";
             this.chSatisIadeIslemi.UseVisualStyleBackColor = false;
@@ -426,7 +438,7 @@ namespace BilgeSoft
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
             this.label6.Location = new System.Drawing.Point(108, 38);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 20);
+            this.label6.Size = new System.Drawing.Size(74, 25);
             this.label6.TabIndex = 3;
             this.label6.Text = "Barkod";
             // 
@@ -437,7 +449,7 @@ namespace BilgeSoft
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
             this.label5.Location = new System.Drawing.Point(9, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.Size = new System.Drawing.Size(65, 25);
             this.label5.TabIndex = 2;
             this.label5.Text = "Miktar";
             // 
@@ -446,7 +458,7 @@ namespace BilgeSoft
             this.tBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tBarkod.Location = new System.Drawing.Point(106, 61);
             this.tBarkod.Name = "tBarkod";
-            this.tBarkod.Size = new System.Drawing.Size(232, 26);
+            this.tBarkod.Size = new System.Drawing.Size(232, 30);
             this.tBarkod.TabIndex = 1;
             this.tBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBarkod_KeyDown);
             this.tBarkod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tBarkod_KeyPress);
@@ -456,7 +468,7 @@ namespace BilgeSoft
             this.tMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tMiktar.Location = new System.Drawing.Point(9, 61);
             this.tMiktar.Name = "tMiktar";
-            this.tMiktar.Size = new System.Drawing.Size(78, 26);
+            this.tMiktar.Size = new System.Drawing.Size(78, 30);
             this.tMiktar.TabIndex = 0;
             this.tMiktar.Text = "1";
             this.tMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -497,6 +509,7 @@ namespace BilgeSoft
             this.gridSatisListesi.Name = "gridSatisListesi";
             this.gridSatisListesi.ReadOnly = true;
             this.gridSatisListesi.RowHeadersVisible = false;
+            this.gridSatisListesi.RowHeadersWidth = 51;
             dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(3);
             this.gridSatisListesi.RowsDefaultCellStyle = dataGridViewCellStyle12;
@@ -512,6 +525,7 @@ namespace BilgeSoft
             // Tarih
             // 
             this.Tarih.HeaderText = "Tarih";
+            this.Tarih.MinimumWidth = 6;
             this.Tarih.Name = "Tarih";
             this.Tarih.ReadOnly = true;
             this.Tarih.Visible = false;
@@ -519,18 +533,21 @@ namespace BilgeSoft
             // UrunAdi
             // 
             this.UrunAdi.HeaderText = "Ürün Adı";
+            this.UrunAdi.MinimumWidth = 6;
             this.UrunAdi.Name = "UrunAdi";
             this.UrunAdi.ReadOnly = true;
             // 
             // Barkod
             // 
             this.Barkod.HeaderText = "Barkod";
+            this.Barkod.MinimumWidth = 6;
             this.Barkod.Name = "Barkod";
             this.Barkod.ReadOnly = true;
             // 
             // UrunGrup
             // 
             this.UrunGrup.HeaderText = "UrunGrup";
+            this.UrunGrup.MinimumWidth = 6;
             this.UrunGrup.Name = "UrunGrup";
             this.UrunGrup.ReadOnly = true;
             this.UrunGrup.Visible = false;
@@ -540,12 +557,14 @@ namespace BilgeSoft
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Birim.DefaultCellStyle = dataGridViewCellStyle8;
             this.Birim.HeaderText = "Birim";
+            this.Birim.MinimumWidth = 6;
             this.Birim.Name = "Birim";
             this.Birim.ReadOnly = true;
             // 
             // KdvTutari
             // 
             this.KdvTutari.HeaderText = "KdvTutari";
+            this.KdvTutari.MinimumWidth = 6;
             this.KdvTutari.Name = "KdvTutari";
             this.KdvTutari.ReadOnly = true;
             this.KdvTutari.Visible = false;
@@ -557,6 +576,7 @@ namespace BilgeSoft
             dataGridViewCellStyle9.NullValue = null;
             this.Fiyat.DefaultCellStyle = dataGridViewCellStyle9;
             this.Fiyat.HeaderText = "Fiyat";
+            this.Fiyat.MinimumWidth = 6;
             this.Fiyat.Name = "Fiyat";
             this.Fiyat.ReadOnly = true;
             // 
@@ -565,6 +585,7 @@ namespace BilgeSoft
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Miktar.DefaultCellStyle = dataGridViewCellStyle10;
             this.Miktar.HeaderText = "Miktar";
+            this.Miktar.MinimumWidth = 6;
             this.Miktar.Name = "Miktar";
             this.Miktar.ReadOnly = true;
             // 
@@ -575,12 +596,14 @@ namespace BilgeSoft
             dataGridViewCellStyle11.NullValue = null;
             this.Toplam.DefaultCellStyle = dataGridViewCellStyle11;
             this.Toplam.HeaderText = "Toplam";
+            this.Toplam.MinimumWidth = 6;
             this.Toplam.Name = "Toplam";
             this.Toplam.ReadOnly = true;
             // 
             // AlisFiyat
             // 
             this.AlisFiyat.HeaderText = "AlisFiyat";
+            this.AlisFiyat.MinimumWidth = 6;
             this.AlisFiyat.Name = "AlisFiyat";
             this.AlisFiyat.ReadOnly = true;
             this.AlisFiyat.Visible = false;
@@ -589,6 +612,7 @@ namespace BilgeSoft
             // 
             this.Sil.HeaderText = "Sil";
             this.Sil.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.Sil.MinimumWidth = 6;
             this.Sil.Name = "Sil";
             this.Sil.ReadOnly = true;
             // 
@@ -697,7 +721,7 @@ namespace BilgeSoft
             this.tGenelToplam.Margin = new System.Windows.Forms.Padding(1);
             this.tGenelToplam.Name = "tGenelToplam";
             this.tGenelToplam.ReadOnly = true;
-            this.tGenelToplam.Size = new System.Drawing.Size(182, 37);
+            this.tGenelToplam.Size = new System.Drawing.Size(182, 46);
             this.tGenelToplam.TabIndex = 0;
             this.tGenelToplam.Text = "0";
             this.tGenelToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -746,7 +770,7 @@ namespace BilgeSoft
             this.tOdenen.Location = new System.Drawing.Point(3, 40);
             this.tOdenen.Name = "tOdenen";
             this.tOdenen.ReadOnly = true;
-            this.tOdenen.Size = new System.Drawing.Size(86, 19);
+            this.tOdenen.Size = new System.Drawing.Size(86, 23);
             this.tOdenen.TabIndex = 0;
             this.tOdenen.Text = "0";
             this.tOdenen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -758,7 +782,7 @@ namespace BilgeSoft
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 20);
+            this.label1.Size = new System.Drawing.Size(83, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ödenen";
             // 
@@ -789,7 +813,7 @@ namespace BilgeSoft
             this.tParaUstu.Location = new System.Drawing.Point(3, 40);
             this.tParaUstu.Name = "tParaUstu";
             this.tParaUstu.ReadOnly = true;
-            this.tParaUstu.Size = new System.Drawing.Size(86, 19);
+            this.tParaUstu.Size = new System.Drawing.Size(86, 23);
             this.tParaUstu.TabIndex = 0;
             this.tParaUstu.Text = "0";
             this.tParaUstu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -801,7 +825,7 @@ namespace BilgeSoft
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.Size = new System.Drawing.Size(58, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "Para Üstü";
             // 
@@ -1485,7 +1509,7 @@ namespace BilgeSoft
             this.tNumarator.Location = new System.Drawing.Point(1, 1);
             this.tNumarator.Margin = new System.Windows.Forms.Padding(1);
             this.tNumarator.Name = "tNumarator";
-            this.tNumarator.Size = new System.Drawing.Size(213, 29);
+            this.tNumarator.Size = new System.Drawing.Size(213, 34);
             this.tNumarator.TabIndex = 2;
             this.tNumarator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1880,6 +1904,7 @@ namespace BilgeSoft
             // 
             this.dataGridViewImageColumn1.HeaderText = "Sil";
             this.dataGridViewImageColumn1.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 128;
             // 

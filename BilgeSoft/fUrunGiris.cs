@@ -345,5 +345,20 @@ namespace BilgeSoft
                 else chUrunTipi.Checked = true;
             }
         }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cmbUrunGrubu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chUrunTipi_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,6 +39,7 @@ namespace BilgeSoft
             // 
             // reportViewer1
             // 
+            this.reportViewer1.BackColor = System.Drawing.Color.SeaShell;
             this.reportViewer1.Location = new System.Drawing.Point(0, 46);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(4);
             this.reportViewer1.Name = "reportViewer1";
@@ -55,8 +56,8 @@ namespace BilgeSoft
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox2);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox1);
             this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Silver;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.OrangeRed;
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
@@ -75,8 +76,8 @@ namespace BilgeSoft
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox3.CustomIconSize = 35F;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox3.Location = new System.Drawing.Point(1212, 7);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
@@ -91,8 +92,8 @@ namespace BilgeSoft
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox2.CustomIconSize = 35F;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(1253, 7);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -106,8 +107,8 @@ namespace BilgeSoft
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox1.CustomIconSize = 35F;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(1295, 7);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -123,7 +124,7 @@ namespace BilgeSoft
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fRaporGoster";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Raporlama Sayfası";
