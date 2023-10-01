@@ -97,11 +97,13 @@ namespace BilgeSoft
                     guncelle.Miktar += Convert.ToDouble(tMiktar.Text);
                     if (!chUrunTipi.Checked)
                     {
+                        chUrunTipi.ShadowDecoration.Color = Color.Black;
                         cmbBirim.Text = "Adet";
                         guncelle.Birim = cmbBirim.Text;
                     }
                     else
                     {
+                        chUrunTipi.ShadowDecoration.Color = Color.Sienna;
                         cmbBirim.Text = "Kg";
                         guncelle.Birim = cmbBirim.Text;
                     }
@@ -357,6 +359,11 @@ namespace BilgeSoft
         }
 
         private void chUrunTipi_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
 
         }
