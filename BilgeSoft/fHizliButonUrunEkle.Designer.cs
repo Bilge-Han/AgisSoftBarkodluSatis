@@ -29,30 +29,30 @@ namespace BilgeSoft
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.gridUrunler = new System.Windows.Forms.DataGridView();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.tGunaLabel1 = new BilgeSoft.tGunaLabel();
+            this.tUrunAra = new BilgeSoft.tGuna();
             this.lButonId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chTumu = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tUrunAra = new BilgeSoft.tGuna();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.tGunaLabel1 = new BilgeSoft.tGunaLabel();
+            this.gridUrunler = new System.Windows.Forms.DataGridView();
             this.guna2GradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel3
@@ -126,6 +126,7 @@ namespace BilgeSoft
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BackColor = System.Drawing.Color.SeaShell;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 50);
@@ -146,43 +147,6 @@ namespace BilgeSoft
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 100;
             // 
-            // gridUrunler
-            // 
-            this.gridUrunler.AllowUserToAddRows = false;
-            this.gridUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridUrunler.BackgroundColor = System.Drawing.Color.SeaShell;
-            this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridUrunler.EnableHeadersVisualStyles = false;
-            this.gridUrunler.GridColor = System.Drawing.SystemColors.Control;
-            this.gridUrunler.Location = new System.Drawing.Point(0, 0);
-            this.gridUrunler.Margin = new System.Windows.Forms.Padding(4);
-            this.gridUrunler.Name = "gridUrunler";
-            this.gridUrunler.ReadOnly = true;
-            this.gridUrunler.RowHeadersVisible = false;
-            this.gridUrunler.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
-            this.gridUrunler.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
-            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
-            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.gridUrunler.RowTemplate.Height = 32;
-            this.gridUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridUrunler.Size = new System.Drawing.Size(1304, 478);
-            this.gridUrunler.TabIndex = 2;
-            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel2);
@@ -198,6 +162,56 @@ namespace BilgeSoft
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1304, 159);
             this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Controls.Add(this.tGunaLabel1);
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.SeaShell;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.OrangeRed;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(880, 23);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(424, 52);
+            this.guna2GradientPanel2.TabIndex = 15;
+            // 
+            // tGunaLabel1
+            // 
+            this.tGunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.tGunaLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tGunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.tGunaLabel1.Location = new System.Drawing.Point(182, 3);
+            this.tGunaLabel1.Name = "tGunaLabel1";
+            this.tGunaLabel1.Size = new System.Drawing.Size(226, 43);
+            this.tGunaLabel1.TabIndex = 13;
+            this.tGunaLabel1.Text = "Hızlı Buton Ekle";
+            // 
+            // tUrunAra
+            // 
+            this.tUrunAra.AutoRoundedCorners = true;
+            this.tUrunAra.BackColor = System.Drawing.Color.Transparent;
+            this.tUrunAra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tUrunAra.BorderRadius = 16;
+            this.tUrunAra.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tUrunAra.DefaultText = "";
+            this.tUrunAra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tUrunAra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tUrunAra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tUrunAra.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tUrunAra.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tUrunAra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tUrunAra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tUrunAra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tUrunAra.Location = new System.Drawing.Point(31, 99);
+            this.tUrunAra.Margin = new System.Windows.Forms.Padding(5);
+            this.tUrunAra.Name = "tUrunAra";
+            this.tUrunAra.PasswordChar = '\0';
+            this.tUrunAra.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tUrunAra.PlaceholderText = "...";
+            this.tUrunAra.SelectedText = "";
+            this.tUrunAra.ShadowDecoration.BorderRadius = 20;
+            this.tUrunAra.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tUrunAra.ShadowDecoration.Enabled = true;
+            this.tUrunAra.Size = new System.Drawing.Size(390, 34);
+            this.tUrunAra.TabIndex = 14;
             // 
             // lButonId
             // 
@@ -252,55 +266,42 @@ namespace BilgeSoft
             this.label6.TabIndex = 10;
             this.label6.Text = "Ürün Ara";
             // 
-            // tUrunAra
+            // gridUrunler
             // 
-            this.tUrunAra.AutoRoundedCorners = true;
-            this.tUrunAra.BackColor = System.Drawing.Color.Transparent;
-            this.tUrunAra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tUrunAra.BorderRadius = 16;
-            this.tUrunAra.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tUrunAra.DefaultText = "";
-            this.tUrunAra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tUrunAra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tUrunAra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tUrunAra.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tUrunAra.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tUrunAra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tUrunAra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tUrunAra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tUrunAra.Location = new System.Drawing.Point(31, 99);
-            this.tUrunAra.Margin = new System.Windows.Forms.Padding(5);
-            this.tUrunAra.Name = "tUrunAra";
-            this.tUrunAra.PasswordChar = '\0';
-            this.tUrunAra.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tUrunAra.PlaceholderText = "...";
-            this.tUrunAra.SelectedText = "";
-            this.tUrunAra.ShadowDecoration.BorderRadius = 20;
-            this.tUrunAra.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tUrunAra.ShadowDecoration.Enabled = true;
-            this.tUrunAra.Size = new System.Drawing.Size(390, 34);
-            this.tUrunAra.TabIndex = 14;
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.Controls.Add(this.tGunaLabel1);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.SeaShell;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.OrangeRed;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(880, 23);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(424, 52);
-            this.guna2GradientPanel2.TabIndex = 15;
-            // 
-            // tGunaLabel1
-            // 
-            this.tGunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.tGunaLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tGunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.tGunaLabel1.Location = new System.Drawing.Point(182, 3);
-            this.tGunaLabel1.Name = "tGunaLabel1";
-            this.tGunaLabel1.Size = new System.Drawing.Size(226, 43);
-            this.tGunaLabel1.TabIndex = 13;
-            this.tGunaLabel1.Text = "Hızlı Buton Ekle";
+            this.gridUrunler.AllowUserToAddRows = false;
+            this.gridUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridUrunler.BackgroundColor = System.Drawing.Color.SeaShell;
+            this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridUrunler.EnableHeadersVisualStyles = false;
+            this.gridUrunler.GridColor = System.Drawing.SystemColors.Control;
+            this.gridUrunler.Location = new System.Drawing.Point(0, 0);
+            this.gridUrunler.Margin = new System.Windows.Forms.Padding(4);
+            this.gridUrunler.Name = "gridUrunler";
+            this.gridUrunler.ReadOnly = true;
+            this.gridUrunler.RowHeadersVisible = false;
+            this.gridUrunler.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
+            this.gridUrunler.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
+            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
+            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridUrunler.RowTemplate.Height = 32;
+            this.gridUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridUrunler.Size = new System.Drawing.Size(1304, 478);
+            this.gridUrunler.TabIndex = 2;
             // 
             // fHizliButonUrunEkle
             // 
@@ -311,7 +312,7 @@ namespace BilgeSoft
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.guna2GradientPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fHizliButonUrunEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hızlı Buton Ürün Ekleme";
@@ -320,11 +321,11 @@ namespace BilgeSoft
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).EndInit();
             this.ResumeLayout(false);
 
         }

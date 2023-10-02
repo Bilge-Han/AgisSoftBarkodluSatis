@@ -31,5 +31,30 @@ namespace BilgeSoft
                 kontrol.Lisanla(tLisans.Text);
             }
         }
+
+        private void lStandart2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bTamam_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lKontrolNo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tLisans_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lStandart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
