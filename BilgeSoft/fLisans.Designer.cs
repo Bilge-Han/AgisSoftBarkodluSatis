@@ -209,6 +209,7 @@ namespace BilgeSoft
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(360, 285);
             this.Controls.Add(this.bTamam);
             this.Controls.Add(this.tLisans);
@@ -216,7 +217,7 @@ namespace BilgeSoft
             this.Controls.Add(this.lKontrolNo);
             this.Controls.Add(this.lStandart1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fLisans";
             this.Text = "LİSANS İŞLEMİ";
             this.Load += new System.EventHandler(this.fLisans_Load);
