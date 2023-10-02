@@ -34,9 +34,7 @@ namespace BilgeSoft
             this.lStandart3 = new BilgeSoft.lStandart();
             this.lStandart4 = new BilgeSoft.lStandart();
             this.lStandart5 = new BilgeSoft.lStandart();
-            this.dtTarih = new System.Windows.Forms.DateTimePicker();
             this.lStandart6 = new BilgeSoft.lStandart();
-            this.bEkle = new BilgeSoft.bStandart();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -45,6 +43,8 @@ namespace BilgeSoft
             this.tNakit = new BilgeSoft.tGunaNumeric();
             this.tKart = new BilgeSoft.tGunaNumeric();
             this.tAciklama = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bEkle = new Guna.UI2.WinForms.Guna2Button();
+            this.dtTarih = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,15 +108,6 @@ namespace BilgeSoft
             this.lStandart5.TabIndex = 8;
             this.lStandart5.Text = "Açıklama";
             // 
-            // dtTarih
-            // 
-            this.dtTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtTarih.Location = new System.Drawing.Point(20, 464);
-            this.dtTarih.Margin = new System.Windows.Forms.Padding(4);
-            this.dtTarih.Name = "dtTarih";
-            this.dtTarih.Size = new System.Drawing.Size(319, 30);
-            this.dtTarih.TabIndex = 4;
-            // 
             // lStandart6
             // 
             this.lStandart6.AutoSize = true;
@@ -128,25 +119,6 @@ namespace BilgeSoft
             this.lStandart6.Size = new System.Drawing.Size(55, 28);
             this.lStandart6.TabIndex = 10;
             this.lStandart6.Text = "Tarih";
-            // 
-            // bEkle
-            // 
-            this.bEkle.BackColor = System.Drawing.Color.OrangeRed;
-            this.bEkle.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bEkle.ForeColor = System.Drawing.Color.White;
-            this.bEkle.Image = global::BilgeSoft.Properties.Resources.plus__3_;
-            this.bEkle.Location = new System.Drawing.Point(171, 509);
-            this.bEkle.Margin = new System.Windows.Forms.Padding(1);
-            this.bEkle.Name = "bEkle";
-            this.bEkle.Size = new System.Drawing.Size(169, 90);
-            this.bEkle.TabIndex = 5;
-            this.bEkle.Text = "   Ekle";
-            this.bEkle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bEkle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bEkle.UseVisualStyleBackColor = false;
-            this.bEkle.Click += new System.EventHandler(this.bEkle_Click);
             // 
             // guna2GradientPanel3
             // 
@@ -167,7 +139,7 @@ namespace BilgeSoft
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(713, 50);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(354, 50);
             this.guna2GradientPanel3.TabIndex = 98;
             // 
             // guna2ControlBox3
@@ -180,7 +152,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Firebrick;
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(581, 7);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(222, 7);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(33, 31);
@@ -196,7 +168,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Firebrick;
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(622, 7);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(263, 7);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(33, 31);
@@ -211,7 +183,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Firebrick;
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(664, 7);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(305, 7);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
@@ -246,6 +218,7 @@ namespace BilgeSoft
             // 
             // tNakit
             // 
+            this.tNakit.Animated = true;
             this.tNakit.AutoRoundedCorners = true;
             this.tNakit.BackColor = System.Drawing.Color.Transparent;
             this.tNakit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
@@ -280,6 +253,7 @@ namespace BilgeSoft
             // 
             // tKart
             // 
+            this.tKart.Animated = true;
             this.tKart.AutoRoundedCorners = true;
             this.tKart.BackColor = System.Drawing.Color.Transparent;
             this.tKart.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
@@ -340,20 +314,71 @@ namespace BilgeSoft
             this.tAciklama.Size = new System.Drawing.Size(314, 152);
             this.tAciklama.TabIndex = 175;
             // 
+            // bEkle
+            // 
+            this.bEkle.Animated = true;
+            this.bEkle.BackColor = System.Drawing.Color.Transparent;
+            this.bEkle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bEkle.BorderRadius = 15;
+            this.bEkle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bEkle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bEkle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bEkle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bEkle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.bEkle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bEkle.ForeColor = System.Drawing.Color.White;
+            this.bEkle.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bEkle.Image = global::BilgeSoft.Properties.Resources.plus__3_;
+            this.bEkle.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.bEkle.ImageSize = new System.Drawing.Size(40, 40);
+            this.bEkle.Location = new System.Drawing.Point(182, 511);
+            this.bEkle.Name = "bEkle";
+            this.bEkle.ShadowDecoration.BorderRadius = 15;
+            this.bEkle.ShadowDecoration.Color = System.Drawing.Color.Sienna;
+            this.bEkle.ShadowDecoration.Depth = 20;
+            this.bEkle.ShadowDecoration.Enabled = true;
+            this.bEkle.Size = new System.Drawing.Size(154, 90);
+            this.bEkle.TabIndex = 176;
+            this.bEkle.Text = "Ekle";
+            this.bEkle.Click += new System.EventHandler(this.bEkle_Click);
+            // 
+            // dtTarih
+            // 
+            this.dtTarih.Animated = true;
+            this.dtTarih.BackColor = System.Drawing.Color.Transparent;
+            this.dtTarih.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.dtTarih.BorderRadius = 10;
+            this.dtTarih.Checked = true;
+            this.dtTarih.FillColor = System.Drawing.Color.White;
+            this.dtTarih.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtTarih.ForeColor = System.Drawing.Color.Black;
+            this.dtTarih.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtTarih.Location = new System.Drawing.Point(18, 464);
+            this.dtTarih.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtTarih.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtTarih.Name = "dtTarih";
+            this.dtTarih.ShadowDecoration.BorderRadius = 10;
+            this.dtTarih.ShadowDecoration.Depth = 20;
+            this.dtTarih.ShadowDecoration.Enabled = true;
+            this.dtTarih.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.dtTarih.Size = new System.Drawing.Size(314, 30);
+            this.dtTarih.TabIndex = 177;
+            this.dtTarih.Value = new System.DateTime(2023, 10, 2, 22, 4, 37, 809);
+            // 
             // fGelirGider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
-            this.ClientSize = new System.Drawing.Size(713, 622);
+            this.ClientSize = new System.Drawing.Size(354, 622);
+            this.Controls.Add(this.dtTarih);
+            this.Controls.Add(this.bEkle);
             this.Controls.Add(this.tAciklama);
             this.Controls.Add(this.tKart);
             this.Controls.Add(this.tNakit);
             this.Controls.Add(this.cmbOdemeTuru);
             this.Controls.Add(this.guna2GradientPanel3);
-            this.Controls.Add(this.bEkle);
             this.Controls.Add(this.lStandart6);
-            this.Controls.Add(this.dtTarih);
             this.Controls.Add(this.lStandart5);
             this.Controls.Add(this.lStandart4);
             this.Controls.Add(this.lStandart3);
@@ -378,9 +403,7 @@ namespace BilgeSoft
         private lStandart lStandart3;
         private lStandart lStandart4;
         private lStandart lStandart5;
-        private System.Windows.Forms.DateTimePicker dtTarih;
         private lStandart lStandart6;
-        private bStandart bEkle;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
@@ -389,5 +412,7 @@ namespace BilgeSoft
         private tGunaNumeric tNakit;
         private tGunaNumeric tKart;
         private Guna.UI2.WinForms.Guna2TextBox tAciklama;
+        private Guna.UI2.WinForms.Guna2Button bEkle;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtTarih;
     }
 }
