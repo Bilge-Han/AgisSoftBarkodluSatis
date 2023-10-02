@@ -73,5 +73,10 @@ namespace BilgeSoft
         {
             Temizle();
         }
+
+        private void lStandart5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
