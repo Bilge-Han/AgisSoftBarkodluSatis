@@ -33,7 +33,6 @@ namespace BilgeSoft
             this.lStandart2 = new BilgeSoft.lStandart();
             this.lStandart3 = new BilgeSoft.lStandart();
             this.lStandart4 = new BilgeSoft.lStandart();
-            this.tAciklama = new BilgeSoft.tStandart();
             this.lStandart5 = new BilgeSoft.lStandart();
             this.dtTarih = new System.Windows.Forms.DateTimePicker();
             this.lStandart6 = new BilgeSoft.lStandart();
@@ -45,6 +44,7 @@ namespace BilgeSoft
             this.cmbOdemeTuru = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tNakit = new BilgeSoft.tGunaNumeric();
             this.tKart = new BilgeSoft.tGunaNumeric();
+            this.tAciklama = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,16 +95,6 @@ namespace BilgeSoft
             this.lStandart4.Size = new System.Drawing.Size(49, 28);
             this.lStandart4.TabIndex = 7;
             this.lStandart4.Text = "Kart";
-            // 
-            // tAciklama
-            // 
-            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tAciklama.Location = new System.Drawing.Point(19, 268);
-            this.tAciklama.Margin = new System.Windows.Forms.Padding(4);
-            this.tAciklama.Multiline = true;
-            this.tAciklama.Name = "tAciklama";
-            this.tAciklama.Size = new System.Drawing.Size(320, 152);
-            this.tAciklama.TabIndex = 3;
             // 
             // lStandart5
             // 
@@ -177,7 +167,7 @@ namespace BilgeSoft
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(356, 50);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(713, 50);
             this.guna2GradientPanel3.TabIndex = 98;
             // 
             // guna2ControlBox3
@@ -190,7 +180,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Firebrick;
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(224, 7);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(581, 7);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(33, 31);
@@ -206,7 +196,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Firebrick;
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(265, 7);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(622, 7);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(33, 31);
@@ -221,7 +211,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Firebrick;
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(307, 7);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(664, 7);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
@@ -248,7 +238,9 @@ namespace BilgeSoft
             this.cmbOdemeTuru.Location = new System.Drawing.Point(12, 137);
             this.cmbOdemeTuru.Name = "cmbOdemeTuru";
             this.cmbOdemeTuru.ShadowDecoration.BorderRadius = 20;
+            this.cmbOdemeTuru.ShadowDecoration.Depth = 20;
             this.cmbOdemeTuru.ShadowDecoration.Enabled = true;
+            this.cmbOdemeTuru.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.cmbOdemeTuru.Size = new System.Drawing.Size(327, 31);
             this.cmbOdemeTuru.TabIndex = 172;
             // 
@@ -258,6 +250,7 @@ namespace BilgeSoft
             this.tNakit.BackColor = System.Drawing.Color.Transparent;
             this.tNakit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
             this.tNakit.BorderRadius = 14;
+            this.tNakit.BorderThickness = 0;
             this.tNakit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tNakit.DefaultText = "0";
             this.tNakit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -276,9 +269,11 @@ namespace BilgeSoft
             this.tNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
             this.tNakit.PlaceholderText = "";
             this.tNakit.SelectedText = "";
-            this.tNakit.ShadowDecoration.BorderRadius = 20;
+            this.tNakit.ShadowDecoration.BorderRadius = 14;
             this.tNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tNakit.ShadowDecoration.Depth = 20;
             this.tNakit.ShadowDecoration.Enabled = true;
+            this.tNakit.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.tNakit.Size = new System.Drawing.Size(150, 30);
             this.tNakit.TabIndex = 173;
             this.tNakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -289,6 +284,7 @@ namespace BilgeSoft
             this.tKart.BackColor = System.Drawing.Color.Transparent;
             this.tKart.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
             this.tKart.BorderRadius = 14;
+            this.tKart.BorderThickness = 0;
             this.tKart.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tKart.DefaultText = "0";
             this.tKart.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -307,19 +303,50 @@ namespace BilgeSoft
             this.tKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
             this.tKart.PlaceholderText = "";
             this.tKart.SelectedText = "";
-            this.tKart.ShadowDecoration.BorderRadius = 20;
+            this.tKart.ShadowDecoration.BorderRadius = 14;
             this.tKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tKart.ShadowDecoration.Depth = 20;
             this.tKart.ShadowDecoration.Enabled = true;
+            this.tKart.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.tKart.Size = new System.Drawing.Size(150, 30);
             this.tKart.TabIndex = 174;
             this.tKart.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tAciklama
+            // 
+            this.tAciklama.Animated = true;
+            this.tAciklama.BackColor = System.Drawing.Color.Transparent;
+            this.tAciklama.BorderRadius = 10;
+            this.tAciklama.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tAciklama.DefaultText = "";
+            this.tAciklama.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tAciklama.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tAciklama.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tAciklama.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tAciklama.FocusedState.BorderColor = System.Drawing.Color.Peru;
+            this.tAciklama.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tAciklama.HoverState.BorderColor = System.Drawing.Color.Peru;
+            this.tAciklama.Location = new System.Drawing.Point(18, 271);
+            this.tAciklama.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tAciklama.Multiline = true;
+            this.tAciklama.Name = "tAciklama";
+            this.tAciklama.PasswordChar = '\0';
+            this.tAciklama.PlaceholderText = "";
+            this.tAciklama.SelectedText = "";
+            this.tAciklama.ShadowDecoration.BorderRadius = 10;
+            this.tAciklama.ShadowDecoration.Depth = 20;
+            this.tAciklama.ShadowDecoration.Enabled = true;
+            this.tAciklama.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.tAciklama.Size = new System.Drawing.Size(314, 152);
+            this.tAciklama.TabIndex = 175;
             // 
             // fGelirGider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
-            this.ClientSize = new System.Drawing.Size(356, 622);
+            this.ClientSize = new System.Drawing.Size(713, 622);
+            this.Controls.Add(this.tAciklama);
             this.Controls.Add(this.tKart);
             this.Controls.Add(this.tNakit);
             this.Controls.Add(this.cmbOdemeTuru);
@@ -328,7 +355,6 @@ namespace BilgeSoft
             this.Controls.Add(this.lStandart6);
             this.Controls.Add(this.dtTarih);
             this.Controls.Add(this.lStandart5);
-            this.Controls.Add(this.tAciklama);
             this.Controls.Add(this.lStandart4);
             this.Controls.Add(this.lStandart3);
             this.Controls.Add(this.lStandart2);
@@ -351,7 +377,6 @@ namespace BilgeSoft
         private lStandart lStandart2;
         private lStandart lStandart3;
         private lStandart lStandart4;
-        private tStandart tAciklama;
         private lStandart lStandart5;
         private System.Windows.Forms.DateTimePicker dtTarih;
         private lStandart lStandart6;
@@ -363,5 +388,6 @@ namespace BilgeSoft
         private Guna.UI2.WinForms.Guna2ComboBox cmbOdemeTuru;
         private tGunaNumeric tNakit;
         private tGunaNumeric tKart;
+        private Guna.UI2.WinForms.Guna2TextBox tAciklama;
     }
 }
