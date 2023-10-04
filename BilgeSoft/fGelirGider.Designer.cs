@@ -51,20 +51,21 @@ namespace BilgeSoft
             // lGelirGider
             // 
             this.lGelirGider.AutoSize = true;
-            this.lGelirGider.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lGelirGider.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lGelirGider.Location = new System.Drawing.Point(13, 54);
+            this.lGelirGider.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lGelirGider.ForeColor = System.Drawing.Color.White;
+            this.lGelirGider.Location = new System.Drawing.Point(13, 6);
             this.lGelirGider.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lGelirGider.Name = "lGelirGider";
-            this.lGelirGider.Size = new System.Drawing.Size(135, 32);
+            this.lGelirGider.Size = new System.Drawing.Size(142, 32);
             this.lGelirGider.TabIndex = 0;
             this.lGelirGider.Text = "Gelir/Gider";
+            this.lGelirGider.Click += new System.EventHandler(this.lGelirGider_Click);
             // 
             // lStandart2
             // 
             this.lStandart2.AutoSize = true;
             this.lStandart2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lStandart2.ForeColor = System.Drawing.Color.Teal;
             this.lStandart2.Location = new System.Drawing.Point(13, 106);
             this.lStandart2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lStandart2.Name = "lStandart2";
@@ -76,7 +77,7 @@ namespace BilgeSoft
             // 
             this.lStandart3.AutoSize = true;
             this.lStandart3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart3.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lStandart3.ForeColor = System.Drawing.Color.Teal;
             this.lStandart3.Location = new System.Drawing.Point(13, 173);
             this.lStandart3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lStandart3.Name = "lStandart3";
@@ -88,7 +89,7 @@ namespace BilgeSoft
             // 
             this.lStandart4.AutoSize = true;
             this.lStandart4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lStandart4.ForeColor = System.Drawing.Color.Teal;
             this.lStandart4.Location = new System.Drawing.Point(181, 173);
             this.lStandart4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lStandart4.Name = "lStandart4";
@@ -100,7 +101,7 @@ namespace BilgeSoft
             // 
             this.lStandart5.AutoSize = true;
             this.lStandart5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart5.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lStandart5.ForeColor = System.Drawing.Color.Teal;
             this.lStandart5.Location = new System.Drawing.Point(13, 237);
             this.lStandart5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lStandart5.Name = "lStandart5";
@@ -112,7 +113,7 @@ namespace BilgeSoft
             // 
             this.lStandart6.AutoSize = true;
             this.lStandart6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart6.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lStandart6.ForeColor = System.Drawing.Color.Teal;
             this.lStandart6.Location = new System.Drawing.Point(15, 433);
             this.lStandart6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lStandart6.Name = "lStandart6";
@@ -128,9 +129,10 @@ namespace BilgeSoft
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox3);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox2);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox1);
+            this.guna2GradientPanel3.Controls.Add(this.lGelirGider);
             this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.OrangeRed;
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
@@ -149,7 +151,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox3.CustomIconSize = 35F;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox3.Location = new System.Drawing.Point(222, 7);
@@ -165,7 +167,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox2.CustomIconSize = 35F;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(263, 7);
@@ -180,7 +182,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox1.CustomIconSize = 35F;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(305, 7);
@@ -200,7 +202,7 @@ namespace BilgeSoft
             this.cmbOdemeTuru.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbOdemeTuru.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbOdemeTuru.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cmbOdemeTuru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbOdemeTuru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.cmbOdemeTuru.FormattingEnabled = true;
             this.cmbOdemeTuru.ItemHeight = 25;
             this.cmbOdemeTuru.Items.AddRange(new object[] {
@@ -210,6 +212,7 @@ namespace BilgeSoft
             this.cmbOdemeTuru.Location = new System.Drawing.Point(12, 137);
             this.cmbOdemeTuru.Name = "cmbOdemeTuru";
             this.cmbOdemeTuru.ShadowDecoration.BorderRadius = 20;
+            this.cmbOdemeTuru.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.cmbOdemeTuru.ShadowDecoration.Depth = 20;
             this.cmbOdemeTuru.ShadowDecoration.Enabled = true;
             this.cmbOdemeTuru.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
@@ -233,7 +236,7 @@ namespace BilgeSoft
             this.tNakit.Enabled = false;
             this.tNakit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tNakit.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
-            this.tNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tNakit.Location = new System.Drawing.Point(12, 206);
             this.tNakit.Margin = new System.Windows.Forms.Padding(5);
@@ -243,7 +246,7 @@ namespace BilgeSoft
             this.tNakit.PlaceholderText = "";
             this.tNakit.SelectedText = "";
             this.tNakit.ShadowDecoration.BorderRadius = 14;
-            this.tNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tNakit.ShadowDecoration.Depth = 20;
             this.tNakit.ShadowDecoration.Enabled = true;
             this.tNakit.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
@@ -268,7 +271,7 @@ namespace BilgeSoft
             this.tKart.Enabled = false;
             this.tKart.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tKart.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
-            this.tKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tKart.Location = new System.Drawing.Point(186, 206);
             this.tKart.Margin = new System.Windows.Forms.Padding(5);
@@ -278,7 +281,7 @@ namespace BilgeSoft
             this.tKart.PlaceholderText = "";
             this.tKart.SelectedText = "";
             this.tKart.ShadowDecoration.BorderRadius = 14;
-            this.tKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tKart.ShadowDecoration.Depth = 20;
             this.tKart.ShadowDecoration.Enabled = true;
             this.tKart.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
@@ -308,6 +311,7 @@ namespace BilgeSoft
             this.tAciklama.PlaceholderText = "";
             this.tAciklama.SelectedText = "";
             this.tAciklama.ShadowDecoration.BorderRadius = 10;
+            this.tAciklama.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tAciklama.ShadowDecoration.Depth = 20;
             this.tAciklama.ShadowDecoration.Enabled = true;
             this.tAciklama.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
@@ -324,17 +328,17 @@ namespace BilgeSoft
             this.bEkle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bEkle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bEkle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bEkle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.bEkle.FillColor = System.Drawing.Color.DarkTurquoise;
             this.bEkle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bEkle.ForeColor = System.Drawing.Color.White;
-            this.bEkle.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bEkle.HoverState.FillColor = System.Drawing.Color.Turquoise;
             this.bEkle.Image = global::BilgeSoft.Properties.Resources.plus__3_;
             this.bEkle.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bEkle.ImageSize = new System.Drawing.Size(40, 40);
             this.bEkle.Location = new System.Drawing.Point(182, 511);
             this.bEkle.Name = "bEkle";
             this.bEkle.ShadowDecoration.BorderRadius = 15;
-            this.bEkle.ShadowDecoration.Color = System.Drawing.Color.Sienna;
+            this.bEkle.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.bEkle.ShadowDecoration.Depth = 20;
             this.bEkle.ShadowDecoration.Enabled = true;
             this.bEkle.Size = new System.Drawing.Size(154, 90);
@@ -358,6 +362,7 @@ namespace BilgeSoft
             this.dtTarih.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtTarih.Name = "dtTarih";
             this.dtTarih.ShadowDecoration.BorderRadius = 10;
+            this.dtTarih.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.dtTarih.ShadowDecoration.Depth = 20;
             this.dtTarih.ShadowDecoration.Enabled = true;
             this.dtTarih.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
@@ -369,7 +374,7 @@ namespace BilgeSoft
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(354, 622);
             this.Controls.Add(this.dtTarih);
             this.Controls.Add(this.bEkle);
@@ -383,7 +388,6 @@ namespace BilgeSoft
             this.Controls.Add(this.lStandart4);
             this.Controls.Add(this.lStandart3);
             this.Controls.Add(this.lStandart2);
-            this.Controls.Add(this.lGelirGider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fGelirGider";
@@ -391,6 +395,7 @@ namespace BilgeSoft
             this.Text = "GELİR-GİDER İŞLEMLERİ";
             this.Load += new System.EventHandler(this.fGelirGider_Load);
             this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

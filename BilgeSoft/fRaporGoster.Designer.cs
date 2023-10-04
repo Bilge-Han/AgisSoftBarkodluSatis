@@ -34,12 +34,12 @@ namespace BilgeSoft
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
-            this.reportViewer1.BackColor = System.Drawing.Color.SeaShell;
             this.reportViewer1.Location = new System.Drawing.Point(0, 46);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(4);
             this.reportViewer1.Name = "reportViewer1";
@@ -52,12 +52,13 @@ namespace BilgeSoft
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2GradientPanel3.BorderThickness = 1;
+            this.guna2GradientPanel3.Controls.Add(this.label1);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox3);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox2);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox1);
             this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.OrangeRed;
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
@@ -76,7 +77,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox3.CustomIconSize = 35F;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox3.Location = new System.Drawing.Point(1212, 7);
@@ -92,7 +93,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox2.CustomIconSize = 35F;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(1253, 7);
@@ -107,7 +108,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ControlBox1.CustomIconSize = 35F;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Firebrick;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.DarkRed;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(1295, 7);
@@ -115,6 +116,17 @@ namespace BilgeSoft
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
             this.guna2ControlBox1.TabIndex = 97;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 28);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "Rapor Göster";
             // 
             // fRaporGoster
             // 
@@ -130,6 +142,7 @@ namespace BilgeSoft
             this.Text = "Raporlama Sayfası";
             this.Load += new System.EventHandler(this.fRaporGoster_Load);
             this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -141,5 +154,6 @@ namespace BilgeSoft
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
