@@ -118,5 +118,15 @@ namespace BilgeSoft
             Lic license = new Lic();
 
         }
+
+        private void tKullaniciAdi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tSifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
