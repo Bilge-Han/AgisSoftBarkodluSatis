@@ -32,12 +32,12 @@ namespace BilgeSoft
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.tGunaLabel1 = new BilgeSoft.tGunaLabel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.tGunaLabel1 = new BilgeSoft.tGunaLabel();
             this.tUrunAra = new BilgeSoft.tGuna();
             this.lButonId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,14 +67,25 @@ namespace BilgeSoft
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.ShadowDecoration.BorderRadius = 0;
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(1304, 50);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(978, 41);
             this.guna2GradientPanel3.TabIndex = 99;
+            // 
+            // tGunaLabel1
+            // 
+            this.tGunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.tGunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tGunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.tGunaLabel1.Location = new System.Drawing.Point(9, 4);
+            this.tGunaLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tGunaLabel1.Name = "tGunaLabel1";
+            this.tGunaLabel1.Size = new System.Drawing.Size(138, 27);
+            this.tGunaLabel1.TabIndex = 13;
+            this.tGunaLabel1.Text = "Hızlı Buton Ekle";
             // 
             // guna2ControlBox3
             // 
@@ -86,10 +97,9 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1172, 7);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(879, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox3.TabIndex = 99;
             // 
             // guna2ControlBox2
@@ -102,10 +112,9 @@ namespace BilgeSoft
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1213, 7);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(910, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox2.TabIndex = 98;
             // 
             // guna2ControlBox1
@@ -117,10 +126,9 @@ namespace BilgeSoft
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1255, 7);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(941, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox1.TabIndex = 97;
             // 
             // splitContainer1
@@ -128,8 +136,7 @@ namespace BilgeSoft
             this.splitContainer1.BackColor = System.Drawing.Color.SeaShell;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 50);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 41);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -141,9 +148,8 @@ namespace BilgeSoft
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridUrunler);
-            this.splitContainer1.Size = new System.Drawing.Size(1304, 642);
+            this.splitContainer1.Size = new System.Drawing.Size(978, 521);
             this.splitContainer1.SplitterDistance = 159;
-            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 100;
             // 
             // guna2GradientPanel1
@@ -157,27 +163,17 @@ namespace BilgeSoft
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.SeaShell;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1304, 159);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(978, 159);
             this.guna2GradientPanel1.TabIndex = 0;
-            // 
-            // tGunaLabel1
-            // 
-            this.tGunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.tGunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tGunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.tGunaLabel1.Location = new System.Drawing.Point(12, 5);
-            this.tGunaLabel1.Name = "tGunaLabel1";
-            this.tGunaLabel1.Size = new System.Drawing.Size(175, 33);
-            this.tGunaLabel1.TabIndex = 13;
-            this.tGunaLabel1.Text = "Hızlı Buton Ekle";
             // 
             // tUrunAra
             // 
             this.tUrunAra.AutoRoundedCorners = true;
             this.tUrunAra.BackColor = System.Drawing.Color.Transparent;
             this.tUrunAra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tUrunAra.BorderRadius = 16;
+            this.tUrunAra.BorderRadius = 13;
             this.tUrunAra.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tUrunAra.DefaultText = "";
             this.tUrunAra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -188,8 +184,8 @@ namespace BilgeSoft
             this.tUrunAra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tUrunAra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tUrunAra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tUrunAra.Location = new System.Drawing.Point(31, 99);
-            this.tUrunAra.Margin = new System.Windows.Forms.Padding(5);
+            this.tUrunAra.Location = new System.Drawing.Point(23, 80);
+            this.tUrunAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tUrunAra.Name = "tUrunAra";
             this.tUrunAra.PasswordChar = '\0';
             this.tUrunAra.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -198,8 +194,9 @@ namespace BilgeSoft
             this.tUrunAra.ShadowDecoration.BorderRadius = 20;
             this.tUrunAra.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunAra.ShadowDecoration.Enabled = true;
-            this.tUrunAra.Size = new System.Drawing.Size(390, 34);
+            this.tUrunAra.Size = new System.Drawing.Size(292, 28);
             this.tUrunAra.TabIndex = 14;
+            this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
             // 
             // lButonId
             // 
@@ -207,10 +204,9 @@ namespace BilgeSoft
             this.lButonId.BackColor = System.Drawing.Color.Transparent;
             this.lButonId.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lButonId.ForeColor = System.Drawing.Color.Teal;
-            this.lButonId.Location = new System.Drawing.Point(226, 23);
-            this.lButonId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lButonId.Location = new System.Drawing.Point(170, 19);
             this.lButonId.Name = "lButonId";
-            this.lButonId.Size = new System.Drawing.Size(120, 32);
+            this.lButonId.Size = new System.Drawing.Size(94, 25);
             this.lButonId.TabIndex = 13;
             this.lButonId.Text = "Buton No";
             // 
@@ -220,10 +216,9 @@ namespace BilgeSoft
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(26, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(20, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 32);
+            this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 12;
             this.label1.Text = "Buton Numarası :";
             // 
@@ -233,13 +228,13 @@ namespace BilgeSoft
             this.chTumu.BackColor = System.Drawing.Color.Transparent;
             this.chTumu.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.chTumu.ForeColor = System.Drawing.Color.Teal;
-            this.chTumu.Location = new System.Drawing.Point(439, 97);
-            this.chTumu.Margin = new System.Windows.Forms.Padding(4);
+            this.chTumu.Location = new System.Drawing.Point(329, 79);
             this.chTumu.Name = "chTumu";
-            this.chTumu.Size = new System.Drawing.Size(204, 36);
+            this.chTumu.Size = new System.Drawing.Size(162, 29);
             this.chTumu.TabIndex = 11;
             this.chTumu.Text = "Tümünü Göster";
             this.chTumu.UseVisualStyleBackColor = false;
+            this.chTumu.CheckedChanged += new System.EventHandler(this.chTumu_CheckedChanged);
             // 
             // label6
             // 
@@ -247,10 +242,9 @@ namespace BilgeSoft
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(26, 64);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(20, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 32);
+            this.label6.Size = new System.Drawing.Size(89, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Ürün Ara";
             // 
@@ -275,7 +269,6 @@ namespace BilgeSoft
             this.gridUrunler.EnableHeadersVisualStyles = false;
             this.gridUrunler.GridColor = System.Drawing.SystemColors.Control;
             this.gridUrunler.Location = new System.Drawing.Point(0, 0);
-            this.gridUrunler.Margin = new System.Windows.Forms.Padding(4);
             this.gridUrunler.Name = "gridUrunler";
             this.gridUrunler.ReadOnly = true;
             this.gridUrunler.RowHeadersVisible = false;
@@ -288,19 +281,19 @@ namespace BilgeSoft
             this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridUrunler.RowTemplate.Height = 32;
             this.gridUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridUrunler.Size = new System.Drawing.Size(1304, 478);
+            this.gridUrunler.Size = new System.Drawing.Size(978, 358);
             this.gridUrunler.TabIndex = 2;
+            this.gridUrunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentDoubleClick);
             // 
             // fHizliButonUrunEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1304, 692);
+            this.ClientSize = new System.Drawing.Size(978, 562);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.guna2GradientPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fHizliButonUrunEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hızlı Buton Ürün Ekleme";

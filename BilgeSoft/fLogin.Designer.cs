@@ -96,7 +96,7 @@ namespace BilgeSoft
             this.tSifre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tSifre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tSifre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tSifre.FocusedState.BorderColor = System.Drawing.Color.Goldenrod;
+            this.tSifre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSifre.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSifre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -121,7 +121,7 @@ namespace BilgeSoft
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.label4.Location = new System.Drawing.Point(166, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 59);
+            this.label4.Size = new System.Drawing.Size(101, 47);
             this.label4.TabIndex = 46;
             this.label4.Text = "AGIS";
             // 
@@ -150,6 +150,7 @@ namespace BilgeSoft
             this.guna2Button1.Size = new System.Drawing.Size(123, 70);
             this.guna2Button1.TabIndex = 50;
             this.guna2Button1.Text = "Giriş";
+            this.guna2Button1.Click += new System.EventHandler(this.bGiris_Click);
             // 
             // label3
             // 
@@ -159,7 +160,7 @@ namespace BilgeSoft
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.label3.Location = new System.Drawing.Point(107, 79);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 28);
+            this.label3.Size = new System.Drawing.Size(207, 22);
             this.label3.TabIndex = 45;
             this.label3.Text = "Barkodlu Satış Programı";
             // 
@@ -176,14 +177,14 @@ namespace BilgeSoft
             this.tKullaniciAdi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.tKullaniciAdi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tKullaniciAdi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tKullaniciAdi.FocusedState.BorderColor = System.Drawing.Color.Goldenrod;
+            this.tKullaniciAdi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tKullaniciAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKullaniciAdi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKullaniciAdi.Location = new System.Drawing.Point(76, 143);
             this.tKullaniciAdi.Margin = new System.Windows.Forms.Padding(5);
             this.tKullaniciAdi.Name = "tKullaniciAdi";
-            this.tKullaniciAdi.PasswordChar = '*';
+            this.tKullaniciAdi.PasswordChar = '\0';
             this.tKullaniciAdi.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKullaniciAdi.PlaceholderText = "Kullanıcı Adı";
             this.tKullaniciAdi.SelectedText = "";
@@ -219,7 +220,7 @@ namespace BilgeSoft
             // 
             // fLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(500, 306);

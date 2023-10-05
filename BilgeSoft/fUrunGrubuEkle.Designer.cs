@@ -47,11 +47,10 @@ namespace BilgeSoft
             this.listUrunGrup.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listUrunGrup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.listUrunGrup.FormattingEnabled = true;
-            this.listUrunGrup.ItemHeight = 31;
-            this.listUrunGrup.Location = new System.Drawing.Point(19, 145);
-            this.listUrunGrup.Margin = new System.Windows.Forms.Padding(4);
+            this.listUrunGrup.ItemHeight = 25;
+            this.listUrunGrup.Location = new System.Drawing.Point(14, 118);
             this.listUrunGrup.Name = "listUrunGrup";
-            this.listUrunGrup.Size = new System.Drawing.Size(341, 221);
+            this.listUrunGrup.Size = new System.Drawing.Size(257, 179);
             this.listUrunGrup.TabIndex = 2;
             // 
             // lStandart1
@@ -59,10 +58,9 @@ namespace BilgeSoft
             this.lStandart1.AutoSize = true;
             this.lStandart1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart1.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart1.Location = new System.Drawing.Point(13, 66);
-            this.lStandart1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart1.Location = new System.Drawing.Point(10, 54);
             this.lStandart1.Name = "lStandart1";
-            this.lStandart1.Size = new System.Drawing.Size(187, 32);
+            this.lStandart1.Size = new System.Drawing.Size(146, 25);
             this.lStandart1.TabIndex = 0;
             this.lStandart1.Text = "Ürün Grubu Adı";
             // 
@@ -80,13 +78,12 @@ namespace BilgeSoft
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.ShadowDecoration.BorderRadius = 0;
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(400, 50);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(300, 41);
             this.guna2GradientPanel3.TabIndex = 182;
             // 
             // guna2ControlBox3
@@ -99,10 +96,9 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(268, 7);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(201, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox3.TabIndex = 99;
             // 
             // lStandart3
@@ -110,9 +106,10 @@ namespace BilgeSoft
             this.lStandart3.AutoSize = true;
             this.lStandart3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart3.ForeColor = System.Drawing.Color.White;
-            this.lStandart3.Location = new System.Drawing.Point(12, 10);
+            this.lStandart3.Location = new System.Drawing.Point(9, 8);
+            this.lStandart3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lStandart3.Name = "lStandart3";
-            this.lStandart3.Size = new System.Drawing.Size(196, 28);
+            this.lStandart3.Size = new System.Drawing.Size(159, 21);
             this.lStandart3.TabIndex = 10;
             this.lStandart3.Text = "Ürün Grubu Ekleme";
             // 
@@ -126,10 +123,9 @@ namespace BilgeSoft
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(309, 7);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(232, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox2.TabIndex = 98;
             // 
             // guna2ControlBox1
@@ -141,10 +137,9 @@ namespace BilgeSoft
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(351, 7);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(263, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox1.TabIndex = 97;
             // 
             // tUrunGrupAd
@@ -152,7 +147,7 @@ namespace BilgeSoft
             this.tUrunGrupAd.AutoRoundedCorners = true;
             this.tUrunGrupAd.BackColor = System.Drawing.Color.Transparent;
             this.tUrunGrupAd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tUrunGrupAd.BorderRadius = 15;
+            this.tUrunGrupAd.BorderRadius = 12;
             this.tUrunGrupAd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tUrunGrupAd.DefaultText = "";
             this.tUrunGrupAd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -163,8 +158,8 @@ namespace BilgeSoft
             this.tUrunGrupAd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tUrunGrupAd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tUrunGrupAd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tUrunGrupAd.Location = new System.Drawing.Point(19, 103);
-            this.tUrunGrupAd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tUrunGrupAd.Location = new System.Drawing.Point(14, 84);
+            this.tUrunGrupAd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tUrunGrupAd.Name = "tUrunGrupAd";
             this.tUrunGrupAd.PasswordChar = '\0';
             this.tUrunGrupAd.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -173,7 +168,7 @@ namespace BilgeSoft
             this.tUrunGrupAd.ShadowDecoration.BorderRadius = 20;
             this.tUrunGrupAd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunGrupAd.ShadowDecoration.Enabled = true;
-            this.tUrunGrupAd.Size = new System.Drawing.Size(341, 33);
+            this.tUrunGrupAd.Size = new System.Drawing.Size(256, 27);
             this.tUrunGrupAd.TabIndex = 183;
             // 
             // bSil
@@ -192,15 +187,17 @@ namespace BilgeSoft
             this.bSil.HoverState.FillColor = System.Drawing.Color.OrangeRed;
             this.bSil.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bSil.ImageSize = new System.Drawing.Size(40, 40);
-            this.bSil.Location = new System.Drawing.Point(19, 373);
+            this.bSil.Location = new System.Drawing.Point(14, 303);
+            this.bSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bSil.Name = "bSil";
             this.bSil.ShadowDecoration.BorderRadius = 15;
             this.bSil.ShadowDecoration.Color = System.Drawing.Color.Brown;
             this.bSil.ShadowDecoration.Depth = 20;
             this.bSil.ShadowDecoration.Enabled = true;
-            this.bSil.Size = new System.Drawing.Size(161, 91);
+            this.bSil.Size = new System.Drawing.Size(121, 74);
             this.bSil.TabIndex = 184;
             this.bSil.Text = "Sil";
+            this.bSil.Click += new System.EventHandler(this.bSil_Click);
             // 
             // bEkle
             // 
@@ -219,22 +216,24 @@ namespace BilgeSoft
             this.bEkle.Image = global::BilgeSoft.Properties.Resources.plus__3_;
             this.bEkle.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bEkle.ImageSize = new System.Drawing.Size(40, 40);
-            this.bEkle.Location = new System.Drawing.Point(199, 373);
+            this.bEkle.Location = new System.Drawing.Point(149, 303);
+            this.bEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bEkle.Name = "bEkle";
             this.bEkle.ShadowDecoration.BorderRadius = 15;
             this.bEkle.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.bEkle.ShadowDecoration.Depth = 20;
             this.bEkle.ShadowDecoration.Enabled = true;
-            this.bEkle.Size = new System.Drawing.Size(161, 90);
+            this.bEkle.Size = new System.Drawing.Size(121, 73);
             this.bEkle.TabIndex = 186;
             this.bEkle.Text = "Ekle";
+            this.bEkle.Click += new System.EventHandler(this.bEkle_Click);
             // 
             // fUrunGrubuEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 488);
+            this.ClientSize = new System.Drawing.Size(300, 396);
             this.Controls.Add(this.bEkle);
             this.Controls.Add(this.bSil);
             this.Controls.Add(this.tUrunGrupAd);
@@ -242,9 +241,8 @@ namespace BilgeSoft
             this.Controls.Add(this.listUrunGrup);
             this.Controls.Add(this.lStandart1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(400, 488);
-            this.MinimumSize = new System.Drawing.Size(400, 488);
+            this.MaximumSize = new System.Drawing.Size(300, 396);
+            this.MinimumSize = new System.Drawing.Size(300, 396);
             this.Name = "fUrunGrubuEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün Grubu Ekleme";

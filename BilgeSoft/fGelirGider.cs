@@ -93,10 +93,5 @@ namespace BilgeSoft
                 MessageBox.Show("Lütfen Ödeme Türünü Belirleyiniz");
             }
         }
-
-        private void lGelirGider_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -79,10 +79,5 @@ namespace BilgeSoft
                 e.Handled = true;
             }
         }
-
-        private void fNakitKart_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

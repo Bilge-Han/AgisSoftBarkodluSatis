@@ -29,13 +29,13 @@ namespace BilgeSoft
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.tGunaButton1 = new BilgeSoft.tGunaButton();
+            this.tAra = new BilgeSoft.tGunaButton();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dateBitis = new System.Windows.Forms.DateTimePicker();
             this.lStandart5 = new BilgeSoft.lStandart();
@@ -54,7 +54,7 @@ namespace BilgeSoft
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tUrunAra = new BilgeSoft.tGuna();
-            this.tGunaButton2 = new BilgeSoft.tGunaButton();
+            this.tRaporAl = new BilgeSoft.tGunaButton();
             this.lStandart6 = new BilgeSoft.lStandart();
             this.gridListe = new BilgeSoft.gridOzel();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -89,16 +89,15 @@ namespace BilgeSoft
             this.panel1.Controls.Add(this.guna2GradientPanel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1344, 897);
+            this.panel1.Size = new System.Drawing.Size(1008, 729);
             this.panel1.TabIndex = 105;
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 50);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 41);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -110,9 +109,8 @@ namespace BilgeSoft
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1344, 847);
+            this.splitContainer1.Size = new System.Drawing.Size(1008, 688);
             this.splitContainer1.SplitterDistance = 349;
-            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 106;
             // 
             // guna2GradientPanel1
@@ -127,56 +125,56 @@ namespace BilgeSoft
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(349, 847);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(349, 688);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel7.BorderRadius = 20;
-            this.guna2GradientPanel7.Controls.Add(this.tGunaButton1);
+            this.guna2GradientPanel7.Controls.Add(this.tAra);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel7.Location = new System.Drawing.Point(12, 697);
-            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel7.Location = new System.Drawing.Point(9, 566);
+            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.ShadowDecoration.BorderRadius = 20;
             this.guna2GradientPanel7.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel7.ShadowDecoration.Depth = 15;
             this.guna2GradientPanel7.ShadowDecoration.Enabled = true;
-            this.guna2GradientPanel7.Size = new System.Drawing.Size(400, 100);
+            this.guna2GradientPanel7.Size = new System.Drawing.Size(300, 81);
             this.guna2GradientPanel7.TabIndex = 17;
             // 
-            // tGunaButton1
+            // tAra
             // 
-            this.tGunaButton1.Animated = true;
-            this.tGunaButton1.AutoRoundedCorners = true;
-            this.tGunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.tGunaButton1.BorderRadius = 34;
-            this.tGunaButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.tGunaButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.tGunaButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.tGunaButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.tGunaButton1.FillColor = System.Drawing.Color.Olive;
-            this.tGunaButton1.FocusedColor = System.Drawing.Color.Olive;
-            this.tGunaButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tGunaButton1.ForeColor = System.Drawing.Color.White;
-            this.tGunaButton1.HoverState.BorderColor = System.Drawing.Color.YellowGreen;
-            this.tGunaButton1.HoverState.CustomBorderColor = System.Drawing.Color.YellowGreen;
-            this.tGunaButton1.HoverState.FillColor = System.Drawing.Color.YellowGreen;
-            this.tGunaButton1.Location = new System.Drawing.Point(48, 14);
-            this.tGunaButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tGunaButton1.Name = "tGunaButton1";
-            this.tGunaButton1.ShadowDecoration.BorderRadius = 20;
-            this.tGunaButton1.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
-            this.tGunaButton1.ShadowDecoration.Depth = 20;
-            this.tGunaButton1.ShadowDecoration.Enabled = true;
-            this.tGunaButton1.Size = new System.Drawing.Size(253, 70);
-            this.tGunaButton1.TabIndex = 10;
-            this.tGunaButton1.Text = "Ara";
-            this.tGunaButton1.Click += new System.EventHandler(this.bAra_Click);
+            this.tAra.Animated = true;
+            this.tAra.AutoRoundedCorners = true;
+            this.tAra.BackColor = System.Drawing.Color.Transparent;
+            this.tAra.BorderRadius = 27;
+            this.tAra.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.tAra.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.tAra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.tAra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.tAra.FillColor = System.Drawing.Color.Olive;
+            this.tAra.FocusedColor = System.Drawing.Color.Olive;
+            this.tAra.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tAra.ForeColor = System.Drawing.Color.White;
+            this.tAra.HoverState.BorderColor = System.Drawing.Color.YellowGreen;
+            this.tAra.HoverState.CustomBorderColor = System.Drawing.Color.YellowGreen;
+            this.tAra.HoverState.FillColor = System.Drawing.Color.YellowGreen;
+            this.tAra.Location = new System.Drawing.Point(36, 11);
+            this.tAra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tAra.Name = "tAra";
+            this.tAra.ShadowDecoration.BorderRadius = 20;
+            this.tAra.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
+            this.tAra.ShadowDecoration.Depth = 20;
+            this.tAra.ShadowDecoration.Enabled = true;
+            this.tAra.Size = new System.Drawing.Size(190, 57);
+            this.tAra.TabIndex = 10;
+            this.tAra.Text = "Ara";
+            this.tAra.Click += new System.EventHandler(this.bAra_Click);
             // 
             // guna2GradientPanel6
             // 
@@ -188,23 +186,22 @@ namespace BilgeSoft
             this.guna2GradientPanel6.Controls.Add(this.lStandart4);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(12, 399);
-            this.guna2GradientPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(9, 324);
+            this.guna2GradientPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.ShadowDecoration.BorderRadius = 20;
             this.guna2GradientPanel6.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel6.ShadowDecoration.Depth = 15;
             this.guna2GradientPanel6.ShadowDecoration.Enabled = true;
-            this.guna2GradientPanel6.Size = new System.Drawing.Size(400, 151);
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(300, 123);
             this.guna2GradientPanel6.TabIndex = 16;
             // 
             // dateBitis
             // 
             this.dateBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateBitis.Location = new System.Drawing.Point(11, 106);
-            this.dateBitis.Margin = new System.Windows.Forms.Padding(4);
+            this.dateBitis.Location = new System.Drawing.Point(8, 86);
             this.dateBitis.Name = "dateBitis";
-            this.dateBitis.Size = new System.Drawing.Size(320, 30);
+            this.dateBitis.Size = new System.Drawing.Size(241, 26);
             this.dateBitis.TabIndex = 7;
             // 
             // lStandart5
@@ -213,20 +210,18 @@ namespace BilgeSoft
             this.lStandart5.BackColor = System.Drawing.Color.Transparent;
             this.lStandart5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart5.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart5.Location = new System.Drawing.Point(5, 78);
-            this.lStandart5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart5.Location = new System.Drawing.Point(4, 63);
             this.lStandart5.Name = "lStandart5";
-            this.lStandart5.Size = new System.Drawing.Size(104, 28);
+            this.lStandart5.Size = new System.Drawing.Size(83, 21);
             this.lStandart5.TabIndex = 6;
             this.lStandart5.Text = "Bitiş Tarihi";
             // 
             // dateBaslangic
             // 
             this.dateBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateBaslangic.Location = new System.Drawing.Point(11, 42);
-            this.dateBaslangic.Margin = new System.Windows.Forms.Padding(4);
+            this.dateBaslangic.Location = new System.Drawing.Point(8, 34);
             this.dateBaslangic.Name = "dateBaslangic";
-            this.dateBaslangic.Size = new System.Drawing.Size(320, 30);
+            this.dateBaslangic.Size = new System.Drawing.Size(241, 26);
             this.dateBaslangic.TabIndex = 5;
             // 
             // lStandart4
@@ -235,10 +230,9 @@ namespace BilgeSoft
             this.lStandart4.BackColor = System.Drawing.Color.Transparent;
             this.lStandart4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart4.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart4.Location = new System.Drawing.Point(5, 14);
-            this.lStandart4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart4.Location = new System.Drawing.Point(4, 11);
             this.lStandart4.Name = "lStandart4";
-            this.lStandart4.Size = new System.Drawing.Size(150, 28);
+            this.lStandart4.Size = new System.Drawing.Size(120, 21);
             this.lStandart4.TabIndex = 4;
             this.lStandart4.Text = "Başlangıç Tarihi";
             // 
@@ -250,14 +244,14 @@ namespace BilgeSoft
             this.guna2GradientPanel5.Controls.Add(this.lStandart3);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(13, 281);
-            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(10, 228);
+            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.BorderRadius = 20;
             this.guna2GradientPanel5.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel5.ShadowDecoration.Depth = 15;
             this.guna2GradientPanel5.ShadowDecoration.Enabled = true;
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(400, 85);
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(300, 69);
             this.guna2GradientPanel5.TabIndex = 15;
             // 
             // cmbUrunGrubu
@@ -265,10 +259,9 @@ namespace BilgeSoft
             this.cmbUrunGrubu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbUrunGrubu.FormattingEnabled = true;
-            this.cmbUrunGrubu.Location = new System.Drawing.Point(9, 38);
-            this.cmbUrunGrubu.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbUrunGrubu.Location = new System.Drawing.Point(7, 31);
             this.cmbUrunGrubu.Name = "cmbUrunGrubu";
-            this.cmbUrunGrubu.Size = new System.Drawing.Size(320, 33);
+            this.cmbUrunGrubu.Size = new System.Drawing.Size(241, 28);
             this.cmbUrunGrubu.TabIndex = 8;
             // 
             // lStandart3
@@ -277,10 +270,9 @@ namespace BilgeSoft
             this.lStandart3.BackColor = System.Drawing.Color.Transparent;
             this.lStandart3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart3.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart3.Location = new System.Drawing.Point(4, 10);
-            this.lStandart3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart3.Location = new System.Drawing.Point(3, 8);
             this.lStandart3.Name = "lStandart3";
-            this.lStandart3.Size = new System.Drawing.Size(120, 28);
+            this.lStandart3.Size = new System.Drawing.Size(94, 21);
             this.lStandart3.TabIndex = 7;
             this.lStandart3.Text = "Ürün Grubu";
             // 
@@ -293,14 +285,14 @@ namespace BilgeSoft
             this.guna2GradientPanel4.Controls.Add(this.rdTumu);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(12, 143);
-            this.guna2GradientPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(9, 116);
+            this.guna2GradientPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.ShadowDecoration.BorderRadius = 20;
             this.guna2GradientPanel4.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel4.ShadowDecoration.Depth = 15;
             this.guna2GradientPanel4.ShadowDecoration.Enabled = true;
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(400, 107);
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(300, 87);
             this.guna2GradientPanel4.TabIndex = 14;
             // 
             // rdUrunGrubu
@@ -309,10 +301,9 @@ namespace BilgeSoft
             this.rdUrunGrubu.BackColor = System.Drawing.Color.Transparent;
             this.rdUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdUrunGrubu.ForeColor = System.Drawing.Color.Black;
-            this.rdUrunGrubu.Location = new System.Drawing.Point(11, 68);
-            this.rdUrunGrubu.Margin = new System.Windows.Forms.Padding(4);
+            this.rdUrunGrubu.Location = new System.Drawing.Point(8, 55);
             this.rdUrunGrubu.Name = "rdUrunGrubu";
-            this.rdUrunGrubu.Size = new System.Drawing.Size(204, 29);
+            this.rdUrunGrubu.Size = new System.Drawing.Size(169, 24);
             this.rdUrunGrubu.TabIndex = 7;
             this.rdUrunGrubu.Text = "Ürün Grubuna Göre";
             this.rdUrunGrubu.UseVisualStyleBackColor = false;
@@ -323,10 +314,9 @@ namespace BilgeSoft
             this.lStandart2.BackColor = System.Drawing.Color.Transparent;
             this.lStandart2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart2.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart2.Location = new System.Drawing.Point(5, 11);
-            this.lStandart2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart2.Location = new System.Drawing.Point(4, 9);
             this.lStandart2.Name = "lStandart2";
-            this.lStandart2.Size = new System.Drawing.Size(148, 28);
+            this.lStandart2.Size = new System.Drawing.Size(119, 21);
             this.lStandart2.TabIndex = 5;
             this.lStandart2.Text = "Filtreleme Türü";
             // 
@@ -337,10 +327,9 @@ namespace BilgeSoft
             this.rdTumu.Checked = true;
             this.rdTumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdTumu.ForeColor = System.Drawing.Color.Black;
-            this.rdTumu.Location = new System.Drawing.Point(11, 39);
-            this.rdTumu.Margin = new System.Windows.Forms.Padding(4);
+            this.rdTumu.Location = new System.Drawing.Point(8, 32);
             this.rdTumu.Name = "rdTumu";
-            this.rdTumu.Size = new System.Drawing.Size(84, 29);
+            this.rdTumu.Size = new System.Drawing.Size(67, 24);
             this.rdTumu.TabIndex = 6;
             this.rdTumu.TabStop = true;
             this.rdTumu.Text = "Tümü";
@@ -354,14 +343,14 @@ namespace BilgeSoft
             this.guna2GradientPanel2.Controls.Add(this.cmbIslemTuru);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(12, 33);
-            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(9, 27);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.BorderRadius = 20;
             this.guna2GradientPanel2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel2.ShadowDecoration.Depth = 15;
             this.guna2GradientPanel2.ShadowDecoration.Enabled = true;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(400, 85);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(300, 69);
             this.guna2GradientPanel2.TabIndex = 13;
             // 
             // lStandart1
@@ -370,10 +359,9 @@ namespace BilgeSoft
             this.lStandart1.BackColor = System.Drawing.Color.Transparent;
             this.lStandart1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart1.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart1.Location = new System.Drawing.Point(4, 14);
-            this.lStandart1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart1.Location = new System.Drawing.Point(3, 11);
             this.lStandart1.Name = "lStandart1";
-            this.lStandart1.Size = new System.Drawing.Size(107, 28);
+            this.lStandart1.Size = new System.Drawing.Size(85, 21);
             this.lStandart1.TabIndex = 2;
             this.lStandart1.Text = "İşlem Türü";
             // 
@@ -385,10 +373,9 @@ namespace BilgeSoft
             this.cmbIslemTuru.Items.AddRange(new object[] {
             "Stok Durumu",
             "Stok Giriş İzleme"});
-            this.cmbIslemTuru.Location = new System.Drawing.Point(9, 42);
-            this.cmbIslemTuru.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbIslemTuru.Location = new System.Drawing.Point(7, 34);
             this.cmbIslemTuru.Name = "cmbIslemTuru";
-            this.cmbIslemTuru.Size = new System.Drawing.Size(320, 33);
+            this.cmbIslemTuru.Size = new System.Drawing.Size(241, 28);
             this.cmbIslemTuru.TabIndex = 3;
             // 
             // splitContainer2
@@ -408,23 +395,22 @@ namespace BilgeSoft
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.gridListe);
-            this.splitContainer2.Size = new System.Drawing.Size(990, 847);
+            this.splitContainer2.Size = new System.Drawing.Size(655, 688);
             this.splitContainer2.SplitterDistance = 88;
-            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.Controls.Add(this.tUrunAra);
-            this.guna2GradientPanel8.Controls.Add(this.tGunaButton2);
+            this.guna2GradientPanel8.Controls.Add(this.tRaporAl);
             this.guna2GradientPanel8.Controls.Add(this.lStandart6);
             this.guna2GradientPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientPanel8.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(990, 88);
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(655, 88);
             this.guna2GradientPanel8.TabIndex = 0;
             // 
             // tUrunAra
@@ -432,7 +418,7 @@ namespace BilgeSoft
             this.tUrunAra.AutoRoundedCorners = true;
             this.tUrunAra.BackColor = System.Drawing.Color.Transparent;
             this.tUrunAra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.tUrunAra.BorderRadius = 16;
+            this.tUrunAra.BorderRadius = 13;
             this.tUrunAra.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tUrunAra.DefaultText = "";
             this.tUrunAra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -443,8 +429,8 @@ namespace BilgeSoft
             this.tUrunAra.Font = new System.Drawing.Font("Segoe UI Historic", 12F);
             this.tUrunAra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tUrunAra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tUrunAra.Location = new System.Drawing.Point(4, 38);
-            this.tUrunAra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tUrunAra.Location = new System.Drawing.Point(3, 31);
+            this.tUrunAra.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tUrunAra.Name = "tUrunAra";
             this.tUrunAra.PasswordChar = '\0';
             this.tUrunAra.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -453,37 +439,37 @@ namespace BilgeSoft
             this.tUrunAra.ShadowDecoration.BorderRadius = 20;
             this.tUrunAra.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunAra.ShadowDecoration.Enabled = true;
-            this.tUrunAra.Size = new System.Drawing.Size(378, 34);
+            this.tUrunAra.Size = new System.Drawing.Size(284, 28);
             this.tUrunAra.TabIndex = 45;
+            this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
             // 
-            // tGunaButton2
+            // tRaporAl
             // 
-            this.tGunaButton2.Animated = true;
-            this.tGunaButton2.AutoRoundedCorners = true;
-            this.tGunaButton2.BackColor = System.Drawing.Color.Transparent;
-            this.tGunaButton2.BorderRadius = 28;
-            this.tGunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tGunaButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.tGunaButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.tGunaButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.tGunaButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.tGunaButton2.FillColor = System.Drawing.Color.Turquoise;
-            this.tGunaButton2.FocusedColor = System.Drawing.Color.Turquoise;
-            this.tGunaButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tGunaButton2.ForeColor = System.Drawing.Color.White;
-            this.tGunaButton2.HoverState.BorderColor = System.Drawing.Color.Lime;
-            this.tGunaButton2.HoverState.CustomBorderColor = System.Drawing.Color.Lime;
-            this.tGunaButton2.HoverState.FillColor = System.Drawing.Color.Lime;
-            this.tGunaButton2.Location = new System.Drawing.Point(431, 16);
-            this.tGunaButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.tGunaButton2.Name = "tGunaButton2";
-            this.tGunaButton2.ShadowDecoration.BorderRadius = 20;
-            this.tGunaButton2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tGunaButton2.ShadowDecoration.Enabled = true;
-            this.tGunaButton2.Size = new System.Drawing.Size(204, 59);
-            this.tGunaButton2.TabIndex = 44;
-            this.tGunaButton2.Text = "Rapor Al";
-            this.tGunaButton2.Click += new System.EventHandler(this.bRaporAl_Click);
+            this.tRaporAl.Animated = true;
+            this.tRaporAl.AutoRoundedCorners = true;
+            this.tRaporAl.BackColor = System.Drawing.Color.Transparent;
+            this.tRaporAl.BorderRadius = 23;
+            this.tRaporAl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tRaporAl.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.tRaporAl.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.tRaporAl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.tRaporAl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.tRaporAl.FillColor = System.Drawing.Color.Turquoise;
+            this.tRaporAl.FocusedColor = System.Drawing.Color.Turquoise;
+            this.tRaporAl.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tRaporAl.ForeColor = System.Drawing.Color.White;
+            this.tRaporAl.HoverState.BorderColor = System.Drawing.Color.Lime;
+            this.tRaporAl.HoverState.CustomBorderColor = System.Drawing.Color.Lime;
+            this.tRaporAl.HoverState.FillColor = System.Drawing.Color.Lime;
+            this.tRaporAl.Location = new System.Drawing.Point(323, 13);
+            this.tRaporAl.Name = "tRaporAl";
+            this.tRaporAl.ShadowDecoration.BorderRadius = 20;
+            this.tRaporAl.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tRaporAl.ShadowDecoration.Enabled = true;
+            this.tRaporAl.Size = new System.Drawing.Size(153, 48);
+            this.tRaporAl.TabIndex = 44;
+            this.tRaporAl.Text = "Rapor Al";
+            this.tRaporAl.Click += new System.EventHandler(this.bRaporAl_Click);
             // 
             // lStandart6
             // 
@@ -491,10 +477,9 @@ namespace BilgeSoft
             this.lStandart6.BackColor = System.Drawing.Color.Transparent;
             this.lStandart6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart6.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart6.Location = new System.Drawing.Point(4, 5);
-            this.lStandart6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lStandart6.Location = new System.Drawing.Point(3, 4);
             this.lStandart6.Name = "lStandart6";
-            this.lStandart6.Size = new System.Drawing.Size(93, 28);
+            this.lStandart6.Size = new System.Drawing.Size(74, 21);
             this.lStandart6.TabIndex = 39;
             this.lStandart6.Text = "Ürün Ara";
             // 
@@ -506,17 +491,17 @@ namespace BilgeSoft
             this.gridListe.BackgroundColor = System.Drawing.Color.White;
             this.gridListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridListe.DefaultCellStyle = dataGridViewCellStyle1;
+            this.gridListe.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListe.EnableHeadersVisualStyles = false;
             this.gridListe.Location = new System.Drawing.Point(0, 0);
@@ -525,21 +510,21 @@ namespace BilgeSoft
             this.gridListe.ReadOnly = true;
             this.gridListe.RowHeadersVisible = false;
             this.gridListe.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridListe.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridListe.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridListe.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridListe.RowTemplate.Height = 32;
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridListe.Size = new System.Drawing.Size(990, 754);
+            this.gridListe.Size = new System.Drawing.Size(655, 596);
             this.gridListe.TabIndex = 1;
             // 
             // guna2GradientPanel3
@@ -556,14 +541,13 @@ namespace BilgeSoft
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.ShadowDecoration.BorderRadius = 0;
             this.guna2GradientPanel3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(1344, 50);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(1008, 41);
             this.guna2GradientPanel3.TabIndex = 105;
             // 
             // guna2ControlBox3
@@ -576,11 +560,10 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1212, 7);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(909, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox3.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox3.TabIndex = 99;
             // 
             // guna2ControlBox2
@@ -593,11 +576,10 @@ namespace BilgeSoft
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1253, 7);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(940, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox2.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox2.TabIndex = 98;
             // 
             // guna2ControlBox1
@@ -609,11 +591,10 @@ namespace BilgeSoft
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1295, 7);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(971, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox1.TabIndex = 97;
             // 
             // label3
@@ -621,10 +602,9 @@ namespace BilgeSoft
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(11, 14);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(8, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 25);
+            this.label3.Size = new System.Drawing.Size(85, 20);
             this.label3.TabIndex = 84;
             this.label3.Text = "Kullanıcı :";
             // 
@@ -633,22 +613,20 @@ namespace BilgeSoft
             this.lKullanici.AutoSize = true;
             this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lKullanici.ForeColor = System.Drawing.Color.White;
-            this.lKullanici.Location = new System.Drawing.Point(120, 14);
-            this.lKullanici.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lKullanici.Location = new System.Drawing.Point(90, 11);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(94, 25);
+            this.lKullanici.Size = new System.Drawing.Size(75, 20);
             this.lKullanici.TabIndex = 82;
             this.lKullanici.Text = "Kullanıcı";
             // 
             // fStok
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(1344, 897);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fStok";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stok İzleme";
@@ -687,7 +665,7 @@ namespace BilgeSoft
         private System.Windows.Forms.SplitContainer splitContainer1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
-        private tGunaButton tGunaButton1;
+        private tGunaButton tAra;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel6;
         private System.Windows.Forms.DateTimePicker dateBitis;
         private lStandart lStandart5;
@@ -705,7 +683,7 @@ namespace BilgeSoft
         private System.Windows.Forms.ComboBox cmbIslemTuru;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
-        private tGunaButton tGunaButton2;
+        private tGunaButton tRaporAl;
         private lStandart lStandart6;
         private gridOzel gridListe;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
