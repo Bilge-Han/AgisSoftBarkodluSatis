@@ -29,264 +29,431 @@ namespace BilgeSoft
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.bCikis = new System.Windows.Forms.Button();
-            this.bKullaniciDegistir = new System.Windows.Forms.Button();
-            this.bYedekleme = new System.Windows.Forms.Button();
-            this.bFiyatGuncelle = new System.Windows.Forms.Button();
-            this.bAyarlar = new System.Windows.Forms.Button();
-            this.bUrunGiris = new System.Windows.Forms.Button();
-            this.bStok = new System.Windows.Forms.Button();
-            this.bGenelRapor = new System.Windows.Forms.Button();
-            this.bSatisIslemi = new System.Windows.Forms.Button();
-            this.lIsYeri = new BilgeSoft.lStandart();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.lKullanici = new BilgeSoft.lStandart();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.bCikis = new Guna.UI2.WinForms.Guna2Button();
+            this.bKullaniciDegistir = new Guna.UI2.WinForms.Guna2Button();
+            this.bYedekleme = new Guna.UI2.WinForms.Guna2Button();
+            this.bFiyatGuncelle = new Guna.UI2.WinForms.Guna2Button();
+            this.bAyarlar = new Guna.UI2.WinForms.Guna2Button();
+            this.bUrunGiris = new Guna.UI2.WinForms.Guna2Button();
+            this.bStok = new Guna.UI2.WinForms.Guna2Button();
+            this.bGenelRapor = new Guna.UI2.WinForms.Guna2Button();
+            this.bSatisIslemi = new Guna.UI2.WinForms.Guna2Button();
+            this.lIsYeri = new BilgeSoft.lStandart();
+            this.guna2GradientPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // guna2GradientPanel3
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.bCikis, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.bKullaniciDegistir, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.bYedekleme, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.bFiyatGuncelle, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bAyarlar, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bUrunGiris, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bStok, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.bGenelRapor, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.bSatisIslemi, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 54);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 356);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2GradientPanel3.Controls.Add(this.label1);
+            this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox3);
+            this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox2);
+            this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox1);
+            this.guna2GradientPanel3.Controls.Add(this.label3);
+            this.guna2GradientPanel3.Controls.Add(this.lKullanici);
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.BorderRadius = 0;
+            this.guna2GradientPanel3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
+            this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
+            this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(737, 50);
+            this.guna2GradientPanel3.TabIndex = 106;
             // 
-            // bCikis
+            // label1
             // 
-            this.bCikis.BackColor = System.Drawing.Color.Tomato;
-            this.bCikis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bCikis.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bCikis.ForeColor = System.Drawing.Color.White;
-            this.bCikis.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bCikis.Location = new System.Drawing.Point(413, 239);
-            this.bCikis.Name = "bCikis";
-            this.bCikis.Size = new System.Drawing.Size(200, 114);
-            this.bCikis.TabIndex = 8;
-            this.bCikis.Text = "Çıkış";
-            this.bCikis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bCikis.UseVisualStyleBackColor = false;
-            this.bCikis.Click += new System.EventHandler(this.bCikis_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(281, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 32);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Barkodlu Satış Programı";
             // 
-            // bKullaniciDegistir
+            // guna2ControlBox3
             // 
-            this.bKullaniciDegistir.BackColor = System.Drawing.Color.DimGray;
-            this.bKullaniciDegistir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bKullaniciDegistir.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.bKullaniciDegistir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKullaniciDegistir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bKullaniciDegistir.ForeColor = System.Drawing.Color.White;
-            this.bKullaniciDegistir.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bKullaniciDegistir.Location = new System.Drawing.Point(208, 239);
-            this.bKullaniciDegistir.Name = "bKullaniciDegistir";
-            this.bKullaniciDegistir.Size = new System.Drawing.Size(199, 114);
-            this.bKullaniciDegistir.TabIndex = 7;
-            this.bKullaniciDegistir.Text = "Kullanıcı Değiştir";
-            this.bKullaniciDegistir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bKullaniciDegistir.UseVisualStyleBackColor = false;
-            this.bKullaniciDegistir.Click += new System.EventHandler(this.bKullaniciDegistir_Click);
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.Animated = true;
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox3.CustomIconSize = 35F;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(605, 7);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2ControlBox3.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox3.TabIndex = 99;
             // 
-            // bYedekleme
+            // guna2ControlBox2
             // 
-            this.bYedekleme.BackColor = System.Drawing.Color.SlateGray;
-            this.bYedekleme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bYedekleme.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
-            this.bYedekleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bYedekleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bYedekleme.ForeColor = System.Drawing.Color.White;
-            this.bYedekleme.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bYedekleme.Location = new System.Drawing.Point(3, 239);
-            this.bYedekleme.Name = "bYedekleme";
-            this.bYedekleme.Size = new System.Drawing.Size(199, 114);
-            this.bYedekleme.TabIndex = 6;
-            this.bYedekleme.Text = "Yedekleme";
-            this.bYedekleme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bYedekleme.UseVisualStyleBackColor = false;
-            this.bYedekleme.Click += new System.EventHandler(this.bYedekleme_Click);
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox2.CustomIconSize = 35F;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(646, 7);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2ControlBox2.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox2.TabIndex = 98;
             // 
-            // bFiyatGuncelle
+            // guna2ControlBox1
             // 
-            this.bFiyatGuncelle.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.bFiyatGuncelle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bFiyatGuncelle.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.bFiyatGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bFiyatGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bFiyatGuncelle.ForeColor = System.Drawing.Color.White;
-            this.bFiyatGuncelle.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bFiyatGuncelle.Location = new System.Drawing.Point(413, 121);
-            this.bFiyatGuncelle.Name = "bFiyatGuncelle";
-            this.bFiyatGuncelle.Size = new System.Drawing.Size(200, 112);
-            this.bFiyatGuncelle.TabIndex = 5;
-            this.bFiyatGuncelle.Text = "Fiyat Güncelle";
-            this.bFiyatGuncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bFiyatGuncelle.UseVisualStyleBackColor = false;
-            this.bFiyatGuncelle.Click += new System.EventHandler(this.bFiyatGuncelle_Click);
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox1.CustomIconSize = 35F;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(688, 7);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
+            this.guna2ControlBox1.TabIndex = 97;
             // 
-            // bAyarlar
+            // label3
             // 
-            this.bAyarlar.BackColor = System.Drawing.Color.Sienna;
-            this.bAyarlar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bAyarlar.FlatAppearance.BorderColor = System.Drawing.Color.Sienna;
-            this.bAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bAyarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bAyarlar.ForeColor = System.Drawing.Color.White;
-            this.bAyarlar.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bAyarlar.Location = new System.Drawing.Point(208, 121);
-            this.bAyarlar.Name = "bAyarlar";
-            this.bAyarlar.Size = new System.Drawing.Size(199, 112);
-            this.bAyarlar.TabIndex = 4;
-            this.bAyarlar.Text = "Ayarlar";
-            this.bAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bAyarlar.UseVisualStyleBackColor = false;
-            this.bAyarlar.Click += new System.EventHandler(this.bAyarlar_Click);
-            // 
-            // bUrunGiris
-            // 
-            this.bUrunGiris.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.bUrunGiris.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bUrunGiris.FlatAppearance.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.bUrunGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bUrunGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bUrunGiris.ForeColor = System.Drawing.Color.White;
-            this.bUrunGiris.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bUrunGiris.Location = new System.Drawing.Point(3, 121);
-            this.bUrunGiris.Name = "bUrunGiris";
-            this.bUrunGiris.Size = new System.Drawing.Size(199, 112);
-            this.bUrunGiris.TabIndex = 3;
-            this.bUrunGiris.Text = "Ürün Giriş";
-            this.bUrunGiris.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bUrunGiris.UseVisualStyleBackColor = false;
-            this.bUrunGiris.Click += new System.EventHandler(this.bUrunGiris_Click);
-            // 
-            // bStok
-            // 
-            this.bStok.BackColor = System.Drawing.Color.DarkCyan;
-            this.bStok.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bStok.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
-            this.bStok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bStok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bStok.ForeColor = System.Drawing.Color.White;
-            this.bStok.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bStok.Location = new System.Drawing.Point(413, 3);
-            this.bStok.Name = "bStok";
-            this.bStok.Size = new System.Drawing.Size(200, 112);
-            this.bStok.TabIndex = 2;
-            this.bStok.Text = "Stok Takibi";
-            this.bStok.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bStok.UseVisualStyleBackColor = false;
-            this.bStok.Click += new System.EventHandler(this.bStok_Click);
-            // 
-            // bGenelRapor
-            // 
-            this.bGenelRapor.BackColor = System.Drawing.Color.ForestGreen;
-            this.bGenelRapor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bGenelRapor.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.bGenelRapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bGenelRapor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bGenelRapor.ForeColor = System.Drawing.Color.White;
-            this.bGenelRapor.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bGenelRapor.Location = new System.Drawing.Point(208, 3);
-            this.bGenelRapor.Name = "bGenelRapor";
-            this.bGenelRapor.Size = new System.Drawing.Size(199, 112);
-            this.bGenelRapor.TabIndex = 1;
-            this.bGenelRapor.Text = "Genel Rapor";
-            this.bGenelRapor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bGenelRapor.UseVisualStyleBackColor = false;
-            this.bGenelRapor.Click += new System.EventHandler(this.bGenelRapor_Click);
-            // 
-            // bSatisIslemi
-            // 
-            this.bSatisIslemi.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.bSatisIslemi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bSatisIslemi.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.bSatisIslemi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bSatisIslemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bSatisIslemi.ForeColor = System.Drawing.Color.White;
-            this.bSatisIslemi.Image = global::BilgeSoft.Properties.Resources.lira__2_;
-            this.bSatisIslemi.Location = new System.Drawing.Point(3, 3);
-            this.bSatisIslemi.Name = "bSatisIslemi";
-            this.bSatisIslemi.Size = new System.Drawing.Size(199, 112);
-            this.bSatisIslemi.TabIndex = 0;
-            this.bSatisIslemi.Text = "Satış İşlemi";
-            this.bSatisIslemi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bSatisIslemi.UseVisualStyleBackColor = false;
-            this.bSatisIslemi.Click += new System.EventHandler(this.bSatisIslemi_Click);
-            // 
-            // lIsYeri
-            // 
-            this.lIsYeri.AutoSize = true;
-            this.lIsYeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lIsYeri.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lIsYeri.Location = new System.Drawing.Point(12, 9);
-            this.lIsYeri.Name = "lIsYeri";
-            this.lIsYeri.Size = new System.Drawing.Size(91, 31);
-            this.lIsYeri.TabIndex = 2;
-            this.lIsYeri.Text = "İş Yeri";
-            this.lIsYeri.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(11, 14);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 25);
+            this.label3.TabIndex = 84;
+            this.label3.Text = "Kullanıcı :";
             // 
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
-            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lKullanici.Location = new System.Drawing.Point(11, 434);
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lKullanici.ForeColor = System.Drawing.Color.White;
+            this.lKullanici.Location = new System.Drawing.Point(120, 14);
+            this.lKullanici.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(66, 20);
-            this.lKullanici.TabIndex = 1;
+            this.lKullanici.Size = new System.Drawing.Size(94, 25);
+            this.lKullanici.TabIndex = 82;
             this.lKullanici.Text = "Kullanıcı";
-            this.lKullanici.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.lIsYeri);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 50);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(737, 522);
+            this.panel1.TabIndex = 107;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel2.Controls.Add(this.bCikis, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.bKullaniciDegistir, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.bYedekleme, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.bFiyatGuncelle, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.bAyarlar, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.bUrunGiris, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.bStok, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.bGenelRapor, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.bSatisIslemi, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(20, 51);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(662, 448);
+            this.tableLayoutPanel2.TabIndex = 7;
+            // 
+            // bCikis
+            // 
+            this.bCikis.Animated = true;
+            this.bCikis.BorderRadius = 10;
+            this.bCikis.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bCikis.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bCikis.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bCikis.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bCikis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bCikis.FillColor = System.Drawing.Color.Tomato;
+            this.bCikis.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bCikis.ForeColor = System.Drawing.Color.White;
+            this.bCikis.HoverState.FillColor = System.Drawing.Color.Firebrick;
+            this.bCikis.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bCikis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bCikis.ImageSize = new System.Drawing.Size(40, 40);
+            this.bCikis.Location = new System.Drawing.Point(443, 301);
+            this.bCikis.Name = "bCikis";
+            this.bCikis.Size = new System.Drawing.Size(216, 144);
+            this.bCikis.TabIndex = 8;
+            this.bCikis.Text = "Çıkış";
+            // 
+            // bKullaniciDegistir
+            // 
+            this.bKullaniciDegistir.Animated = true;
+            this.bKullaniciDegistir.BorderRadius = 10;
+            this.bKullaniciDegistir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bKullaniciDegistir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bKullaniciDegistir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bKullaniciDegistir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bKullaniciDegistir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKullaniciDegistir.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bKullaniciDegistir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKullaniciDegistir.ForeColor = System.Drawing.Color.White;
+            this.bKullaniciDegistir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bKullaniciDegistir.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKullaniciDegistir.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bKullaniciDegistir.ImageSize = new System.Drawing.Size(40, 40);
+            this.bKullaniciDegistir.Location = new System.Drawing.Point(223, 301);
+            this.bKullaniciDegistir.Name = "bKullaniciDegistir";
+            this.bKullaniciDegistir.Size = new System.Drawing.Size(214, 144);
+            this.bKullaniciDegistir.TabIndex = 7;
+            this.bKullaniciDegistir.Text = "Kullanıcı Değiştir";
+            // 
+            // bYedekleme
+            // 
+            this.bYedekleme.Animated = true;
+            this.bYedekleme.BorderRadius = 10;
+            this.bYedekleme.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bYedekleme.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bYedekleme.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bYedekleme.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bYedekleme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bYedekleme.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bYedekleme.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bYedekleme.ForeColor = System.Drawing.Color.White;
+            this.bYedekleme.HoverState.FillColor = System.Drawing.Color.Gray;
+            this.bYedekleme.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bYedekleme.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bYedekleme.ImageSize = new System.Drawing.Size(40, 40);
+            this.bYedekleme.Location = new System.Drawing.Point(3, 301);
+            this.bYedekleme.Name = "bYedekleme";
+            this.bYedekleme.Size = new System.Drawing.Size(214, 144);
+            this.bYedekleme.TabIndex = 6;
+            this.bYedekleme.Text = "Yedekleme";
+            // 
+            // bFiyatGuncelle
+            // 
+            this.bFiyatGuncelle.Animated = true;
+            this.bFiyatGuncelle.BorderRadius = 10;
+            this.bFiyatGuncelle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bFiyatGuncelle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bFiyatGuncelle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bFiyatGuncelle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bFiyatGuncelle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bFiyatGuncelle.FillColor = System.Drawing.Color.Teal;
+            this.bFiyatGuncelle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bFiyatGuncelle.ForeColor = System.Drawing.Color.White;
+            this.bFiyatGuncelle.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bFiyatGuncelle.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bFiyatGuncelle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bFiyatGuncelle.ImageSize = new System.Drawing.Size(40, 40);
+            this.bFiyatGuncelle.Location = new System.Drawing.Point(443, 152);
+            this.bFiyatGuncelle.Name = "bFiyatGuncelle";
+            this.bFiyatGuncelle.Size = new System.Drawing.Size(216, 143);
+            this.bFiyatGuncelle.TabIndex = 5;
+            this.bFiyatGuncelle.Text = "Fiyat Güncelle";
+            // 
+            // bAyarlar
+            // 
+            this.bAyarlar.Animated = true;
+            this.bAyarlar.BorderRadius = 10;
+            this.bAyarlar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bAyarlar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bAyarlar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bAyarlar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bAyarlar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bAyarlar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bAyarlar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bAyarlar.ForeColor = System.Drawing.Color.White;
+            this.bAyarlar.HoverState.FillColor = System.Drawing.Color.Purple;
+            this.bAyarlar.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bAyarlar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bAyarlar.ImageSize = new System.Drawing.Size(40, 40);
+            this.bAyarlar.Location = new System.Drawing.Point(223, 152);
+            this.bAyarlar.Name = "bAyarlar";
+            this.bAyarlar.Size = new System.Drawing.Size(214, 143);
+            this.bAyarlar.TabIndex = 4;
+            this.bAyarlar.Text = "Ayarlar";
+            // 
+            // bUrunGiris
+            // 
+            this.bUrunGiris.Animated = true;
+            this.bUrunGiris.BorderRadius = 10;
+            this.bUrunGiris.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bUrunGiris.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bUrunGiris.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bUrunGiris.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bUrunGiris.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bUrunGiris.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bUrunGiris.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bUrunGiris.ForeColor = System.Drawing.Color.White;
+            this.bUrunGiris.HoverState.FillColor = System.Drawing.Color.Olive;
+            this.bUrunGiris.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bUrunGiris.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bUrunGiris.ImageSize = new System.Drawing.Size(40, 40);
+            this.bUrunGiris.Location = new System.Drawing.Point(3, 152);
+            this.bUrunGiris.Name = "bUrunGiris";
+            this.bUrunGiris.Size = new System.Drawing.Size(214, 143);
+            this.bUrunGiris.TabIndex = 3;
+            this.bUrunGiris.Text = "Ürün Giriş";
+            // 
+            // bStok
+            // 
+            this.bStok.Animated = true;
+            this.bStok.BorderRadius = 10;
+            this.bStok.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bStok.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bStok.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bStok.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bStok.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bStok.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bStok.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bStok.ForeColor = System.Drawing.Color.White;
+            this.bStok.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bStok.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bStok.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bStok.ImageSize = new System.Drawing.Size(40, 40);
+            this.bStok.Location = new System.Drawing.Point(443, 3);
+            this.bStok.Name = "bStok";
+            this.bStok.Size = new System.Drawing.Size(216, 143);
+            this.bStok.TabIndex = 2;
+            this.bStok.Text = "Stok Takibi";
+            // 
+            // bGenelRapor
+            // 
+            this.bGenelRapor.Animated = true;
+            this.bGenelRapor.BorderRadius = 10;
+            this.bGenelRapor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bGenelRapor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bGenelRapor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bGenelRapor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bGenelRapor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bGenelRapor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.bGenelRapor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bGenelRapor.ForeColor = System.Drawing.Color.White;
+            this.bGenelRapor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bGenelRapor.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bGenelRapor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bGenelRapor.ImageSize = new System.Drawing.Size(40, 40);
+            this.bGenelRapor.Location = new System.Drawing.Point(223, 3);
+            this.bGenelRapor.Name = "bGenelRapor";
+            this.bGenelRapor.Size = new System.Drawing.Size(214, 143);
+            this.bGenelRapor.TabIndex = 1;
+            this.bGenelRapor.Text = "Genel Rapor";
+            // 
+            // bSatisIslemi
+            // 
+            this.bSatisIslemi.Animated = true;
+            this.bSatisIslemi.BorderRadius = 10;
+            this.bSatisIslemi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bSatisIslemi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bSatisIslemi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bSatisIslemi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bSatisIslemi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bSatisIslemi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bSatisIslemi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bSatisIslemi.ForeColor = System.Drawing.Color.White;
+            this.bSatisIslemi.HoverState.FillColor = System.Drawing.Color.Navy;
+            this.bSatisIslemi.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bSatisIslemi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bSatisIslemi.ImageSize = new System.Drawing.Size(40, 40);
+            this.bSatisIslemi.Location = new System.Drawing.Point(3, 3);
+            this.bSatisIslemi.Name = "bSatisIslemi";
+            this.bSatisIslemi.Size = new System.Drawing.Size(214, 143);
+            this.bSatisIslemi.TabIndex = 0;
+            this.bSatisIslemi.Text = "Satış İşlemi";
+            // 
+            // lIsYeri
+            // 
+            this.lIsYeri.AutoSize = true;
+            this.lIsYeri.BackColor = System.Drawing.Color.Transparent;
+            this.lIsYeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lIsYeri.ForeColor = System.Drawing.Color.Teal;
+            this.lIsYeri.Location = new System.Drawing.Point(13, 7);
+            this.lIsYeri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lIsYeri.Name = "lIsYeri";
+            this.lIsYeri.Size = new System.Drawing.Size(113, 39);
+            this.lIsYeri.TabIndex = 6;
+            this.lIsYeri.Text = "İş Yeri";
+            this.lIsYeri.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fBaslangic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(640, 480);
+            this.ClientSize = new System.Drawing.Size(737, 572);
             this.ControlBox = false;
-            this.Controls.Add(this.lIsYeri);
-            this.Controls.Add(this.lKullanici);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.guna2GradientPanel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fBaslangic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barkodlu Satış Programı";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        public System.Windows.Forms.Button bSatisIslemi;
-        public System.Windows.Forms.Button bCikis;
-        public System.Windows.Forms.Button bKullaniciDegistir;
-        public System.Windows.Forms.Button bYedekleme;
-        public System.Windows.Forms.Button bFiyatGuncelle;
-        public System.Windows.Forms.Button bAyarlar;
-        public System.Windows.Forms.Button bUrunGiris;
-        public System.Windows.Forms.Button bStok;
-        public System.Windows.Forms.Button bGenelRapor;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        public System.Windows.Forms.Label label3;
         internal lStandart lKullanici;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        public Guna.UI2.WinForms.Guna2Button bCikis;
+        public Guna.UI2.WinForms.Guna2Button bKullaniciDegistir;
+        public Guna.UI2.WinForms.Guna2Button bYedekleme;
+        public Guna.UI2.WinForms.Guna2Button bFiyatGuncelle;
+        public Guna.UI2.WinForms.Guna2Button bAyarlar;
+        public Guna.UI2.WinForms.Guna2Button bUrunGiris;
+        public Guna.UI2.WinForms.Guna2Button bStok;
+        public Guna.UI2.WinForms.Guna2Button bGenelRapor;
+        public Guna.UI2.WinForms.Guna2Button bSatisIslemi;
         internal lStandart lIsYeri;
     }
 }

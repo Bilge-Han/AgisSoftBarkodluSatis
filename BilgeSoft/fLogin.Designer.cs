@@ -31,6 +31,7 @@ namespace BilgeSoft
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.bLisans = new Guna.UI2.WinForms.Guna2Button();
             this.tSifre = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -38,7 +39,6 @@ namespace BilgeSoft
             this.tKullaniciAdi = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bLisans = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,28 @@ namespace BilgeSoft
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(500, 306);
             this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // bLisans
+            // 
+            this.bLisans.BackColor = System.Drawing.Color.Transparent;
+            this.bLisans.BorderRadius = 10;
+            this.bLisans.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bLisans.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bLisans.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bLisans.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bLisans.FillColor = System.Drawing.Color.DarkRed;
+            this.bLisans.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bLisans.ForeColor = System.Drawing.Color.White;
+            this.bLisans.HoverState.FillColor = System.Drawing.Color.Maroon;
+            this.bLisans.Location = new System.Drawing.Point(12, 266);
+            this.bLisans.Name = "bLisans";
+            this.bLisans.ShadowDecoration.BorderRadius = 10;
+            this.bLisans.ShadowDecoration.Color = System.Drawing.Color.Maroon;
+            this.bLisans.ShadowDecoration.Enabled = true;
+            this.bLisans.Size = new System.Drawing.Size(150, 28);
+            this.bLisans.TabIndex = 52;
+            this.bLisans.Text = "Lisans";
+            this.bLisans.Click += new System.EventHandler(this.bLisans_Click);
             // 
             // tSifre
             // 
@@ -97,11 +119,11 @@ namespace BilgeSoft
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.label4.Location = new System.Drawing.Point(123, 20);
+            this.label4.Location = new System.Drawing.Point(166, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(228, 59);
+            this.label4.Size = new System.Drawing.Size(127, 59);
             this.label4.TabIndex = 46;
-            this.label4.Text = "Bilge Soft";
+            this.label4.Text = "AGIS";
             // 
             // guna2Button1
             // 
@@ -194,28 +216,6 @@ namespace BilgeSoft
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
-            // 
-            // bLisans
-            // 
-            this.bLisans.BackColor = System.Drawing.Color.Transparent;
-            this.bLisans.BorderRadius = 10;
-            this.bLisans.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bLisans.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bLisans.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bLisans.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bLisans.FillColor = System.Drawing.Color.DarkRed;
-            this.bLisans.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bLisans.ForeColor = System.Drawing.Color.White;
-            this.bLisans.HoverState.FillColor = System.Drawing.Color.Maroon;
-            this.bLisans.Location = new System.Drawing.Point(12, 266);
-            this.bLisans.Name = "bLisans";
-            this.bLisans.ShadowDecoration.BorderRadius = 10;
-            this.bLisans.ShadowDecoration.Color = System.Drawing.Color.Maroon;
-            this.bLisans.ShadowDecoration.Enabled = true;
-            this.bLisans.Size = new System.Drawing.Size(150, 28);
-            this.bLisans.TabIndex = 52;
-            this.bLisans.Text = "Lisans";
-            this.bLisans.Click += new System.EventHandler(this.bLisans_Click);
             // 
             // fLogin
             // 
