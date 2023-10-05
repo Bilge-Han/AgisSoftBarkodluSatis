@@ -37,12 +37,16 @@ namespace BilgeSoft
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lKullanici = new BilgeSoft.lStandart();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.bIptal = new BilgeSoft.tGunaButtonIcon();
+            this.bKaydet = new BilgeSoft.tGunaButtonIcon();
             this.lKullaniciId = new BilgeSoft.lStandart();
             this.chYedekleme = new System.Windows.Forms.CheckBox();
             this.chFiyatGuncelle = new System.Windows.Forms.CheckBox();
@@ -52,8 +56,6 @@ namespace BilgeSoft
             this.chRapor = new System.Windows.Forms.CheckBox();
             this.lStandart8 = new BilgeSoft.lStandart();
             this.chSatisEkrani = new System.Windows.Forms.CheckBox();
-            this.bIptal = new BilgeSoft.bStandart();
-            this.bKaydet = new BilgeSoft.bStandart();
             this.tSifreTekrar = new BilgeSoft.tStandart();
             this.lStandart7 = new BilgeSoft.lStandart();
             this.tTelefon = new System.Windows.Forms.MaskedTextBox();
@@ -68,9 +70,20 @@ namespace BilgeSoft
             this.lStandart2 = new BilgeSoft.lStandart();
             this.lStandart1 = new BilgeSoft.lStandart();
             this.gridListeKullanici = new BilgeSoft.gridOzel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.lStandart9 = new BilgeSoft.lStandart();
-            this.bYedektenYukle = new BilgeSoft.bStandart();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.bIsYeriKaydet = new BilgeSoft.tGunaButtonIcon();
+            this.lStandart17 = new BilgeSoft.lStandart();
+            this.lStandart14 = new BilgeSoft.lStandart();
+            this.tIsYeriAdSoyad = new BilgeSoft.tStandart();
+            this.tIsYeriAdres = new BilgeSoft.tStandart();
+            this.lStandart13 = new BilgeSoft.lStandart();
+            this.lStandart16 = new BilgeSoft.lStandart();
+            this.lStandart12 = new BilgeSoft.lStandart();
+            this.tIsYeriUnvan = new BilgeSoft.tStandart();
+            this.tIsYeriEposta = new BilgeSoft.tStandart();
+            this.lStandart15 = new BilgeSoft.lStandart();
+            this.tIsYeriTelefon = new System.Windows.Forms.MaskedTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bTeraziOnEkSil = new BilgeSoft.bStandart();
@@ -85,22 +98,9 @@ namespace BilgeSoft
             this.panel1 = new System.Windows.Forms.Panel();
             this.chYazmaDurumu = new System.Windows.Forms.CheckBox();
             this.lStandart18 = new BilgeSoft.lStandart();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lKullanici = new BilgeSoft.lStandart();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lStandart17 = new BilgeSoft.lStandart();
-            this.lStandart14 = new BilgeSoft.lStandart();
-            this.bIsYeriKaydet = new BilgeSoft.bStandart();
-            this.tIsYeriAdSoyad = new BilgeSoft.tStandart();
-            this.tIsYeriAdres = new BilgeSoft.tStandart();
-            this.lStandart13 = new BilgeSoft.lStandart();
-            this.lStandart16 = new BilgeSoft.lStandart();
-            this.lStandart12 = new BilgeSoft.lStandart();
-            this.tIsYeriUnvan = new BilgeSoft.tStandart();
-            this.tIsYeriEposta = new BilgeSoft.tStandart();
-            this.lStandart15 = new BilgeSoft.lStandart();
-            this.tIsYeriTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.bYedektenYukle = new BilgeSoft.tGunaButtonIcon();
+            this.lStandart9 = new BilgeSoft.lStandart();
             this.contextMenuStrip1.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
@@ -110,13 +110,13 @@ namespace BilgeSoft
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridListeKullanici)).BeginInit();
-            this.tabPage3.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -163,6 +163,28 @@ namespace BilgeSoft
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.guna2GradientPanel3.Size = new System.Drawing.Size(1008, 37);
             this.guna2GradientPanel3.TabIndex = 99;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(10, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 20);
+            this.label3.TabIndex = 101;
+            this.label3.Text = "Kullanıcı :";
+            // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lKullanici.ForeColor = System.Drawing.Color.White;
+            this.lKullanici.Location = new System.Drawing.Point(92, 9);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(75, 20);
+            this.lKullanici.TabIndex = 100;
+            this.lKullanici.Text = "Kullanıcı";
             // 
             // guna2ControlBox3
             // 
@@ -243,6 +265,7 @@ namespace BilgeSoft
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tabPage4.Controls.Add(this.splitContainer1);
             this.tabPage4.Location = new System.Drawing.Point(184, 4);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
@@ -251,10 +274,10 @@ namespace BilgeSoft
             this.tabPage4.Size = new System.Drawing.Size(820, 684);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "KULLANICI";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(2, 2);
@@ -262,6 +285,9 @@ namespace BilgeSoft
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.MintCream;
+            this.splitContainer1.Panel1.Controls.Add(this.bIptal);
+            this.splitContainer1.Panel1.Controls.Add(this.bKaydet);
             this.splitContainer1.Panel1.Controls.Add(this.lKullaniciId);
             this.splitContainer1.Panel1.Controls.Add(this.chYedekleme);
             this.splitContainer1.Panel1.Controls.Add(this.chFiyatGuncelle);
@@ -271,8 +297,6 @@ namespace BilgeSoft
             this.splitContainer1.Panel1.Controls.Add(this.chRapor);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart8);
             this.splitContainer1.Panel1.Controls.Add(this.chSatisEkrani);
-            this.splitContainer1.Panel1.Controls.Add(this.bIptal);
-            this.splitContainer1.Panel1.Controls.Add(this.bKaydet);
             this.splitContainer1.Panel1.Controls.Add(this.tSifreTekrar);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart7);
             this.splitContainer1.Panel1.Controls.Add(this.tTelefon);
@@ -291,15 +315,81 @@ namespace BilgeSoft
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridListeKullanici);
             this.splitContainer1.Size = new System.Drawing.Size(816, 680);
-            this.splitContainer1.SplitterDistance = 443;
+            this.splitContainer1.SplitterDistance = 451;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // bIptal
+            // 
+            this.bIptal.Animated = true;
+            this.bIptal.AutoRoundedCorners = true;
+            this.bIptal.BackColor = System.Drawing.Color.Transparent;
+            this.bIptal.BorderRadius = 32;
+            this.bIptal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bIptal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bIptal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bIptal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bIptal.FillColor = System.Drawing.Color.Tomato;
+            this.bIptal.FocusedColor = System.Drawing.Color.Tomato;
+            this.bIptal.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bIptal.ForeColor = System.Drawing.Color.White;
+            this.bIptal.HoverState.BorderColor = System.Drawing.Color.OrangeRed;
+            this.bIptal.HoverState.CustomBorderColor = System.Drawing.Color.OrangeRed;
+            this.bIptal.HoverState.FillColor = System.Drawing.Color.OrangeRed;
+            this.bIptal.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.bIptal.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bIptal.ImageSize = new System.Drawing.Size(50, 50);
+            this.bIptal.Location = new System.Drawing.Point(25, 505);
+            this.bIptal.Margin = new System.Windows.Forms.Padding(2);
+            this.bIptal.Name = "bIptal";
+            this.bIptal.ShadowDecoration.BorderRadius = 40;
+            this.bIptal.ShadowDecoration.Color = System.Drawing.Color.Brown;
+            this.bIptal.ShadowDecoration.Enabled = true;
+            this.bIptal.Size = new System.Drawing.Size(120, 66);
+            this.bIptal.TabIndex = 169;
+            this.bIptal.Text = "İptal";
+            this.bIptal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bIptal.TextOffset = new System.Drawing.Point(10, 0);
+            this.bIptal.UseTransparentBackground = true;
+            // 
+            // bKaydet
+            // 
+            this.bKaydet.Animated = true;
+            this.bKaydet.AutoRoundedCorners = true;
+            this.bKaydet.BackColor = System.Drawing.Color.Transparent;
+            this.bKaydet.BorderRadius = 32;
+            this.bKaydet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bKaydet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bKaydet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bKaydet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bKaydet.FillColor = System.Drawing.Color.Olive;
+            this.bKaydet.FocusedColor = System.Drawing.Color.Olive;
+            this.bKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKaydet.ForeColor = System.Drawing.Color.White;
+            this.bKaydet.HoverState.BorderColor = System.Drawing.Color.YellowGreen;
+            this.bKaydet.HoverState.CustomBorderColor = System.Drawing.Color.YellowGreen;
+            this.bKaydet.HoverState.FillColor = System.Drawing.Color.YellowGreen;
+            this.bKaydet.Image = global::BilgeSoft.Properties.Resources.save_file;
+            this.bKaydet.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bKaydet.ImageSize = new System.Drawing.Size(40, 40);
+            this.bKaydet.Location = new System.Drawing.Point(185, 505);
+            this.bKaydet.Margin = new System.Windows.Forms.Padding(2);
+            this.bKaydet.Name = "bKaydet";
+            this.bKaydet.ShadowDecoration.BorderRadius = 40;
+            this.bKaydet.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
+            this.bKaydet.ShadowDecoration.Enabled = true;
+            this.bKaydet.Size = new System.Drawing.Size(120, 66);
+            this.bKaydet.TabIndex = 168;
+            this.bKaydet.Text = "Kaydet";
+            this.bKaydet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bKaydet.UseTransparentBackground = true;
+            this.bKaydet.Click += new System.EventHandler(this.bKaydet_Click);
             // 
             // lKullaniciId
             // 
             this.lKullaniciId.AutoSize = true;
             this.lKullaniciId.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lKullaniciId.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lKullaniciId.Location = new System.Drawing.Point(408, 22);
+            this.lKullaniciId.Location = new System.Drawing.Point(412, 22);
             this.lKullaniciId.Name = "lKullaniciId";
             this.lKullaniciId.Size = new System.Drawing.Size(28, 25);
             this.lKullaniciId.TabIndex = 15;
@@ -310,7 +400,7 @@ namespace BilgeSoft
             // 
             this.chYedekleme.AutoSize = true;
             this.chYedekleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chYedekleme.Location = new System.Drawing.Point(285, 331);
+            this.chYedekleme.Location = new System.Drawing.Point(292, 320);
             this.chYedekleme.Name = "chYedekleme";
             this.chYedekleme.Size = new System.Drawing.Size(108, 24);
             this.chYedekleme.TabIndex = 12;
@@ -321,7 +411,7 @@ namespace BilgeSoft
             // 
             this.chFiyatGuncelle.AutoSize = true;
             this.chFiyatGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chFiyatGuncelle.Location = new System.Drawing.Point(285, 301);
+            this.chFiyatGuncelle.Location = new System.Drawing.Point(292, 290);
             this.chFiyatGuncelle.Name = "chFiyatGuncelle";
             this.chFiyatGuncelle.Size = new System.Drawing.Size(129, 24);
             this.chFiyatGuncelle.TabIndex = 11;
@@ -332,7 +422,7 @@ namespace BilgeSoft
             // 
             this.chStok.AutoSize = true;
             this.chStok.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chStok.Location = new System.Drawing.Point(285, 222);
+            this.chStok.Location = new System.Drawing.Point(292, 211);
             this.chStok.Name = "chStok";
             this.chStok.Size = new System.Drawing.Size(110, 24);
             this.chStok.TabIndex = 8;
@@ -343,7 +433,7 @@ namespace BilgeSoft
             // 
             this.chAyarlar.AutoSize = true;
             this.chAyarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chAyarlar.Location = new System.Drawing.Point(285, 271);
+            this.chAyarlar.Location = new System.Drawing.Point(292, 260);
             this.chAyarlar.Name = "chAyarlar";
             this.chAyarlar.Size = new System.Drawing.Size(126, 24);
             this.chAyarlar.TabIndex = 10;
@@ -354,7 +444,7 @@ namespace BilgeSoft
             // 
             this.chUrunGiris.AutoSize = true;
             this.chUrunGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chUrunGiris.Location = new System.Drawing.Point(285, 248);
+            this.chUrunGiris.Location = new System.Drawing.Point(292, 237);
             this.chUrunGiris.Name = "chUrunGiris";
             this.chUrunGiris.Size = new System.Drawing.Size(148, 24);
             this.chUrunGiris.TabIndex = 9;
@@ -365,7 +455,7 @@ namespace BilgeSoft
             // 
             this.chRapor.AutoSize = true;
             this.chRapor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chRapor.Location = new System.Drawing.Point(285, 192);
+            this.chRapor.Location = new System.Drawing.Point(292, 181);
             this.chRapor.Name = "chRapor";
             this.chRapor.Size = new System.Drawing.Size(121, 24);
             this.chRapor.TabIndex = 7;
@@ -377,7 +467,7 @@ namespace BilgeSoft
             this.lStandart8.AutoSize = true;
             this.lStandart8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lStandart8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.lStandart8.Location = new System.Drawing.Point(280, 87);
+            this.lStandart8.Location = new System.Drawing.Point(287, 22);
             this.lStandart8.Name = "lStandart8";
             this.lStandart8.Size = new System.Drawing.Size(92, 25);
             this.lStandart8.TabIndex = 12;
@@ -387,44 +477,12 @@ namespace BilgeSoft
             // 
             this.chSatisEkrani.AutoSize = true;
             this.chSatisEkrani.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chSatisEkrani.Location = new System.Drawing.Point(285, 162);
+            this.chSatisEkrani.Location = new System.Drawing.Point(292, 151);
             this.chSatisEkrani.Name = "chSatisEkrani";
             this.chSatisEkrani.Size = new System.Drawing.Size(113, 24);
             this.chSatisEkrani.TabIndex = 6;
             this.chSatisEkrani.Text = "Satış Ekranı";
             this.chSatisEkrani.UseVisualStyleBackColor = true;
-            // 
-            // bIptal
-            // 
-            this.bIptal.BackColor = System.Drawing.Color.Gray;
-            this.bIptal.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.bIptal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bIptal.ForeColor = System.Drawing.Color.White;
-            this.bIptal.Location = new System.Drawing.Point(23, 493);
-            this.bIptal.Margin = new System.Windows.Forms.Padding(1);
-            this.bIptal.Name = "bIptal";
-            this.bIptal.Size = new System.Drawing.Size(106, 77);
-            this.bIptal.TabIndex = 14;
-            this.bIptal.Text = "İptal";
-            this.bIptal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bIptal.UseVisualStyleBackColor = false;
-            // 
-            // bKaydet
-            // 
-            this.bKaydet.BackColor = System.Drawing.Color.OrangeRed;
-            this.bKaydet.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bKaydet.ForeColor = System.Drawing.Color.White;
-            this.bKaydet.Location = new System.Drawing.Point(149, 493);
-            this.bKaydet.Margin = new System.Windows.Forms.Padding(1);
-            this.bKaydet.Name = "bKaydet";
-            this.bKaydet.Size = new System.Drawing.Size(106, 77);
-            this.bKaydet.TabIndex = 13;
-            this.bKaydet.Text = "Kaydet";
-            this.bKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bKaydet.UseVisualStyleBackColor = false;
             // 
             // tSifreTekrar
             // 
@@ -554,7 +612,7 @@ namespace BilgeSoft
             this.lStandart1.AutoSize = true;
             this.lStandart1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.lStandart1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.lStandart1.Location = new System.Drawing.Point(18, 87);
+            this.lStandart1.Location = new System.Drawing.Point(20, 22);
             this.lStandart1.Name = "lStandart1";
             this.lStandart1.Size = new System.Drawing.Size(202, 25);
             this.lStandart1.TabIndex = 0;
@@ -565,7 +623,7 @@ namespace BilgeSoft
             this.gridListeKullanici.AllowUserToAddRows = false;
             this.gridListeKullanici.AllowUserToDeleteRows = false;
             this.gridListeKullanici.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridListeKullanici.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gridListeKullanici.BackgroundColor = System.Drawing.Color.MintCream;
             this.gridListeKullanici.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListeKullanici.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -602,225 +660,8 @@ namespace BilgeSoft
             this.gridListeKullanici.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridListeKullanici.RowTemplate.Height = 32;
             this.gridListeKullanici.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridListeKullanici.Size = new System.Drawing.Size(369, 680);
+            this.gridListeKullanici.Size = new System.Drawing.Size(361, 680);
             this.gridListeKullanici.TabIndex = 3;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.lStandart9);
-            this.tabPage3.Controls.Add(this.bYedektenYukle);
-            this.tabPage3.Location = new System.Drawing.Point(184, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(820, 684);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "YEDEĞİ YÜKLE";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // lStandart9
-            // 
-            this.lStandart9.AutoSize = true;
-            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart9.Location = new System.Drawing.Point(187, 170);
-            this.lStandart9.Name = "lStandart9";
-            this.lStandart9.Size = new System.Drawing.Size(386, 60);
-            this.lStandart9.TabIndex = 51;
-            this.lStandart9.Text = "Önceden aldığınız yedeği belirleyiniz, butona tıklayıp \r\nyedeğinizi tekrardan yük" +
-    "leyiniz. Bu işlemi gerektiğinde \r\nyapınız\r\n";
-            // 
-            // bYedektenYukle
-            // 
-            this.bYedektenYukle.BackColor = System.Drawing.Color.OrangeRed;
-            this.bYedektenYukle.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bYedektenYukle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bYedektenYukle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bYedektenYukle.ForeColor = System.Drawing.Color.White;
-            this.bYedektenYukle.Location = new System.Drawing.Point(182, 261);
-            this.bYedektenYukle.Margin = new System.Windows.Forms.Padding(1);
-            this.bYedektenYukle.Name = "bYedektenYukle";
-            this.bYedektenYukle.Size = new System.Drawing.Size(418, 146);
-            this.bYedektenYukle.TabIndex = 50;
-            this.bYedektenYukle.Text = "Yedeği Geri Yükle";
-            this.bYedektenYukle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bYedektenYukle.UseVisualStyleBackColor = false;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.panel3);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(820, 684);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "YAZICI-TERAZİ-KART KOMİSYON";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.bTeraziOnEkSil);
-            this.panel3.Controls.Add(this.lStandart20);
-            this.panel3.Controls.Add(this.tTeraziOnEk);
-            this.panel3.Controls.Add(this.bTeraziOnEkKaydet);
-            this.panel3.Controls.Add(this.cmbTeraziOnEk);
-            this.panel3.Location = new System.Drawing.Point(245, 376);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(254, 177);
-            this.panel3.TabIndex = 34;
-            // 
-            // bTeraziOnEkSil
-            // 
-            this.bTeraziOnEkSil.BackColor = System.Drawing.Color.Brown;
-            this.bTeraziOnEkSil.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
-            this.bTeraziOnEkSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnEkSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTeraziOnEkSil.ForeColor = System.Drawing.Color.White;
-            this.bTeraziOnEkSil.Image = ((System.Drawing.Image)(resources.GetObject("bTeraziOnEkSil.Image")));
-            this.bTeraziOnEkSil.Location = new System.Drawing.Point(131, 61);
-            this.bTeraziOnEkSil.Margin = new System.Windows.Forms.Padding(1);
-            this.bTeraziOnEkSil.Name = "bTeraziOnEkSil";
-            this.bTeraziOnEkSil.Size = new System.Drawing.Size(66, 42);
-            this.bTeraziOnEkSil.TabIndex = 36;
-            this.bTeraziOnEkSil.Text = " ";
-            this.bTeraziOnEkSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bTeraziOnEkSil.UseVisualStyleBackColor = false;
-            // 
-            // lStandart20
-            // 
-            this.lStandart20.AutoSize = true;
-            this.lStandart20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lStandart20.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart20.Location = new System.Drawing.Point(5, 14);
-            this.lStandart20.Name = "lStandart20";
-            this.lStandart20.Size = new System.Drawing.Size(185, 20);
-            this.lStandart20.TabIndex = 38;
-            this.lStandart20.Text = "TERAZİ ÖN EK AYAR";
-            // 
-            // tTeraziOnEk
-            // 
-            this.tTeraziOnEk.BackColor = System.Drawing.Color.White;
-            this.tTeraziOnEk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tTeraziOnEk.Location = new System.Drawing.Point(9, 123);
-            this.tTeraziOnEk.Name = "tTeraziOnEk";
-            this.tTeraziOnEk.Size = new System.Drawing.Size(76, 26);
-            this.tTeraziOnEk.TabIndex = 35;
-            this.tTeraziOnEk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // bTeraziOnEkKaydet
-            // 
-            this.bTeraziOnEkKaydet.BackColor = System.Drawing.Color.YellowGreen;
-            this.bTeraziOnEkKaydet.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
-            this.bTeraziOnEkKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnEkKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTeraziOnEkKaydet.ForeColor = System.Drawing.Color.White;
-            this.bTeraziOnEkKaydet.Image = global::BilgeSoft.Properties.Resources.save_file;
-            this.bTeraziOnEkKaydet.Location = new System.Drawing.Point(131, 116);
-            this.bTeraziOnEkKaydet.Margin = new System.Windows.Forms.Padding(1);
-            this.bTeraziOnEkKaydet.Name = "bTeraziOnEkKaydet";
-            this.bTeraziOnEkKaydet.Size = new System.Drawing.Size(66, 42);
-            this.bTeraziOnEkKaydet.TabIndex = 34;
-            this.bTeraziOnEkKaydet.Text = " ";
-            this.bTeraziOnEkKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bTeraziOnEkKaydet.UseVisualStyleBackColor = false;
-            // 
-            // cmbTeraziOnEk
-            // 
-            this.cmbTeraziOnEk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTeraziOnEk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbTeraziOnEk.FormattingEnabled = true;
-            this.cmbTeraziOnEk.Location = new System.Drawing.Point(0, 68);
-            this.cmbTeraziOnEk.Name = "cmbTeraziOnEk";
-            this.cmbTeraziOnEk.Size = new System.Drawing.Size(123, 28);
-            this.cmbTeraziOnEk.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.bKartKomisyonAyarla);
-            this.panel2.Controls.Add(this.tKartKomisyon);
-            this.panel2.Controls.Add(this.lStandart19);
-            this.panel2.Location = new System.Drawing.Point(245, 223);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 111);
-            this.panel2.TabIndex = 2;
-            // 
-            // bKartKomisyonAyarla
-            // 
-            this.bKartKomisyonAyarla.BackColor = System.Drawing.Color.YellowGreen;
-            this.bKartKomisyonAyarla.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
-            this.bKartKomisyonAyarla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKartKomisyonAyarla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bKartKomisyonAyarla.ForeColor = System.Drawing.Color.White;
-            this.bKartKomisyonAyarla.Image = global::BilgeSoft.Properties.Resources.save_file;
-            this.bKartKomisyonAyarla.Location = new System.Drawing.Point(118, 50);
-            this.bKartKomisyonAyarla.Margin = new System.Windows.Forms.Padding(1);
-            this.bKartKomisyonAyarla.Name = "bKartKomisyonAyarla";
-            this.bKartKomisyonAyarla.Size = new System.Drawing.Size(66, 42);
-            this.bKartKomisyonAyarla.TabIndex = 33;
-            this.bKartKomisyonAyarla.Text = " ";
-            this.bKartKomisyonAyarla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bKartKomisyonAyarla.UseVisualStyleBackColor = false;
-            // 
-            // tKartKomisyon
-            // 
-            this.tKartKomisyon.BackColor = System.Drawing.Color.White;
-            this.tKartKomisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tKartKomisyon.Location = new System.Drawing.Point(13, 57);
-            this.tKartKomisyon.Name = "tKartKomisyon";
-            this.tKartKomisyon.Size = new System.Drawing.Size(76, 26);
-            this.tKartKomisyon.TabIndex = 0;
-            this.tKartKomisyon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lStandart19
-            // 
-            this.lStandart19.AutoSize = true;
-            this.lStandart19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lStandart19.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart19.Location = new System.Drawing.Point(8, 14);
-            this.lStandart19.Name = "lStandart19";
-            this.lStandart19.Size = new System.Drawing.Size(153, 20);
-            this.lStandart19.TabIndex = 37;
-            this.lStandart19.Text = "KART KOMİSYON";
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.chYazmaDurumu);
-            this.panel1.Controls.Add(this.lStandart18);
-            this.panel1.Location = new System.Drawing.Point(245, 88);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(254, 102);
-            this.panel1.TabIndex = 0;
-            // 
-            // chYazmaDurumu
-            // 
-            this.chYazmaDurumu.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chYazmaDurumu.AutoSize = true;
-            this.chYazmaDurumu.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.chYazmaDurumu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Firebrick;
-            this.chYazmaDurumu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chYazmaDurumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.chYazmaDurumu.ForeColor = System.Drawing.Color.White;
-            this.chYazmaDurumu.Location = new System.Drawing.Point(7, 46);
-            this.chYazmaDurumu.Name = "chYazmaDurumu";
-            this.chYazmaDurumu.Size = new System.Drawing.Size(150, 27);
-            this.chYazmaDurumu.TabIndex = 0;
-            this.chYazmaDurumu.Text = "Yazma Durumu Pasif";
-            this.chYazmaDurumu.UseVisualStyleBackColor = false;
-            // 
-            // lStandart18
-            // 
-            this.lStandart18.AutoSize = true;
-            this.lStandart18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lStandart18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart18.Location = new System.Drawing.Point(3, 5);
-            this.lStandart18.Name = "lStandart18";
-            this.lStandart18.Size = new System.Drawing.Size(181, 20);
-            this.lStandart18.TabIndex = 36;
-            this.lStandart18.Text = "YAZICI AKTİF-PASİF";
             // 
             // tabPage1
             // 
@@ -833,35 +674,13 @@ namespace BilgeSoft
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "İŞYERİ BİLGİ";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(10, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 20);
-            this.label3.TabIndex = 101;
-            this.label3.Text = "Kullanıcı :";
-            // 
-            // lKullanici
-            // 
-            this.lKullanici.AutoSize = true;
-            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lKullanici.ForeColor = System.Drawing.Color.White;
-            this.lKullanici.Location = new System.Drawing.Point(92, 9);
-            this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(75, 20);
-            this.lKullanici.TabIndex = 100;
-            this.lKullanici.Text = "Kullanıcı";
-            // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.panel4.BackColor = System.Drawing.Color.MintCream;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.bIsYeriKaydet);
             this.panel4.Controls.Add(this.lStandart17);
             this.panel4.Controls.Add(this.lStandart14);
-            this.panel4.Controls.Add(this.bIsYeriKaydet);
             this.panel4.Controls.Add(this.tIsYeriAdSoyad);
             this.panel4.Controls.Add(this.tIsYeriAdres);
             this.panel4.Controls.Add(this.lStandart13);
@@ -877,12 +696,47 @@ namespace BilgeSoft
             this.panel4.Size = new System.Drawing.Size(814, 678);
             this.panel4.TabIndex = 40;
             // 
+            // bIsYeriKaydet
+            // 
+            this.bIsYeriKaydet.Animated = true;
+            this.bIsYeriKaydet.AutoRoundedCorners = true;
+            this.bIsYeriKaydet.BackColor = System.Drawing.Color.Transparent;
+            this.bIsYeriKaydet.BorderRadius = 20;
+            this.bIsYeriKaydet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bIsYeriKaydet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bIsYeriKaydet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bIsYeriKaydet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bIsYeriKaydet.FillColor = System.Drawing.Color.Olive;
+            this.bIsYeriKaydet.FocusedColor = System.Drawing.Color.Olive;
+            this.bIsYeriKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bIsYeriKaydet.ForeColor = System.Drawing.Color.White;
+            this.bIsYeriKaydet.HoverState.BorderColor = System.Drawing.Color.YellowGreen;
+            this.bIsYeriKaydet.HoverState.CustomBorderColor = System.Drawing.Color.YellowGreen;
+            this.bIsYeriKaydet.HoverState.FillColor = System.Drawing.Color.YellowGreen;
+            this.bIsYeriKaydet.Image = global::BilgeSoft.Properties.Resources.save_file;
+            this.bIsYeriKaydet.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bIsYeriKaydet.ImageOffset = new System.Drawing.Point(20, 0);
+            this.bIsYeriKaydet.ImageSize = new System.Drawing.Size(40, 40);
+            this.bIsYeriKaydet.Location = new System.Drawing.Point(44, 386);
+            this.bIsYeriKaydet.Margin = new System.Windows.Forms.Padding(2);
+            this.bIsYeriKaydet.Name = "bIsYeriKaydet";
+            this.bIsYeriKaydet.ShadowDecoration.BorderRadius = 20;
+            this.bIsYeriKaydet.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
+            this.bIsYeriKaydet.ShadowDecoration.Enabled = true;
+            this.bIsYeriKaydet.Size = new System.Drawing.Size(228, 96);
+            this.bIsYeriKaydet.TabIndex = 169;
+            this.bIsYeriKaydet.Text = "Kaydet";
+            this.bIsYeriKaydet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bIsYeriKaydet.TextOffset = new System.Drawing.Point(20, 0);
+            this.bIsYeriKaydet.UseTransparentBackground = true;
+            this.bIsYeriKaydet.Click += new System.EventHandler(this.bIsYeriKaydet_Click);
+            // 
             // lStandart17
             // 
             this.lStandart17.AutoSize = true;
             this.lStandart17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lStandart17.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart17.Location = new System.Drawing.Point(25, 26);
+            this.lStandart17.Location = new System.Drawing.Point(26, 36);
             this.lStandart17.Name = "lStandart17";
             this.lStandart17.Size = new System.Drawing.Size(242, 20);
             this.lStandart17.TabIndex = 50;
@@ -892,33 +746,17 @@ namespace BilgeSoft
             // 
             this.lStandart14.AutoSize = true;
             this.lStandart14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart14.ForeColor = System.Drawing.Color.White;
-            this.lStandart14.Location = new System.Drawing.Point(39, 62);
+            this.lStandart14.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart14.Location = new System.Drawing.Point(40, 72);
             this.lStandart14.Name = "lStandart14";
             this.lStandart14.Size = new System.Drawing.Size(84, 20);
             this.lStandart14.TabIndex = 41;
             this.lStandart14.Text = "Ad Soyad*";
             // 
-            // bIsYeriKaydet
-            // 
-            this.bIsYeriKaydet.BackColor = System.Drawing.Color.OrangeRed;
-            this.bIsYeriKaydet.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bIsYeriKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bIsYeriKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bIsYeriKaydet.ForeColor = System.Drawing.Color.White;
-            this.bIsYeriKaydet.Location = new System.Drawing.Point(165, 382);
-            this.bIsYeriKaydet.Margin = new System.Windows.Forms.Padding(1);
-            this.bIsYeriKaydet.Name = "bIsYeriKaydet";
-            this.bIsYeriKaydet.Size = new System.Drawing.Size(106, 77);
-            this.bIsYeriKaydet.TabIndex = 49;
-            this.bIsYeriKaydet.Text = "Kaydet";
-            this.bIsYeriKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bIsYeriKaydet.UseVisualStyleBackColor = false;
-            // 
             // tIsYeriAdSoyad
             // 
             this.tIsYeriAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tIsYeriAdSoyad.Location = new System.Drawing.Point(39, 85);
+            this.tIsYeriAdSoyad.Location = new System.Drawing.Point(40, 95);
             this.tIsYeriAdSoyad.Name = "tIsYeriAdSoyad";
             this.tIsYeriAdSoyad.Size = new System.Drawing.Size(232, 26);
             this.tIsYeriAdSoyad.TabIndex = 39;
@@ -926,7 +764,7 @@ namespace BilgeSoft
             // tIsYeriAdres
             // 
             this.tIsYeriAdres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tIsYeriAdres.Location = new System.Drawing.Point(39, 189);
+            this.tIsYeriAdres.Location = new System.Drawing.Point(40, 199);
             this.tIsYeriAdres.Multiline = true;
             this.tIsYeriAdres.Name = "tIsYeriAdres";
             this.tIsYeriAdres.Size = new System.Drawing.Size(232, 60);
@@ -936,8 +774,8 @@ namespace BilgeSoft
             // 
             this.lStandart13.AutoSize = true;
             this.lStandart13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart13.ForeColor = System.Drawing.Color.White;
-            this.lStandart13.Location = new System.Drawing.Point(39, 252);
+            this.lStandart13.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart13.Location = new System.Drawing.Point(40, 262);
             this.lStandart13.Name = "lStandart13";
             this.lStandart13.Size = new System.Drawing.Size(68, 20);
             this.lStandart13.TabIndex = 43;
@@ -947,8 +785,8 @@ namespace BilgeSoft
             // 
             this.lStandart16.AutoSize = true;
             this.lStandart16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart16.ForeColor = System.Drawing.Color.White;
-            this.lStandart16.Location = new System.Drawing.Point(39, 166);
+            this.lStandart16.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart16.Location = new System.Drawing.Point(40, 176);
             this.lStandart16.Name = "lStandart16";
             this.lStandart16.Size = new System.Drawing.Size(57, 20);
             this.lStandart16.TabIndex = 48;
@@ -958,8 +796,8 @@ namespace BilgeSoft
             // 
             this.lStandart12.AutoSize = true;
             this.lStandart12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart12.ForeColor = System.Drawing.Color.White;
-            this.lStandart12.Location = new System.Drawing.Point(39, 304);
+            this.lStandart12.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart12.Location = new System.Drawing.Point(40, 314);
             this.lStandart12.Name = "lStandart12";
             this.lStandart12.Size = new System.Drawing.Size(66, 20);
             this.lStandart12.TabIndex = 44;
@@ -968,7 +806,7 @@ namespace BilgeSoft
             // tIsYeriUnvan
             // 
             this.tIsYeriUnvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tIsYeriUnvan.Location = new System.Drawing.Point(39, 137);
+            this.tIsYeriUnvan.Location = new System.Drawing.Point(40, 147);
             this.tIsYeriUnvan.Name = "tIsYeriUnvan";
             this.tIsYeriUnvan.Size = new System.Drawing.Size(232, 26);
             this.tIsYeriUnvan.TabIndex = 45;
@@ -976,7 +814,7 @@ namespace BilgeSoft
             // tIsYeriEposta
             // 
             this.tIsYeriEposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tIsYeriEposta.Location = new System.Drawing.Point(39, 327);
+            this.tIsYeriEposta.Location = new System.Drawing.Point(40, 337);
             this.tIsYeriEposta.Name = "tIsYeriEposta";
             this.tIsYeriEposta.Size = new System.Drawing.Size(232, 26);
             this.tIsYeriEposta.TabIndex = 42;
@@ -985,8 +823,8 @@ namespace BilgeSoft
             // 
             this.lStandart15.AutoSize = true;
             this.lStandart15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart15.ForeColor = System.Drawing.Color.White;
-            this.lStandart15.Location = new System.Drawing.Point(39, 114);
+            this.lStandart15.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart15.Location = new System.Drawing.Point(40, 124);
             this.lStandart15.Name = "lStandart15";
             this.lStandart15.Size = new System.Drawing.Size(61, 20);
             this.lStandart15.TabIndex = 46;
@@ -995,11 +833,250 @@ namespace BilgeSoft
             // tIsYeriTelefon
             // 
             this.tIsYeriTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tIsYeriTelefon.Location = new System.Drawing.Point(39, 275);
+            this.tIsYeriTelefon.Location = new System.Drawing.Point(40, 285);
             this.tIsYeriTelefon.Mask = "(999) 000-0000";
             this.tIsYeriTelefon.Name = "tIsYeriTelefon";
             this.tIsYeriTelefon.Size = new System.Drawing.Size(232, 26);
             this.tIsYeriTelefon.TabIndex = 40;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.MintCream;
+            this.tabPage2.Controls.Add(this.panel3);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Location = new System.Drawing.Point(184, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(820, 684);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "YAZICI-TERAZİ-KART KOMİSYON";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.bTeraziOnEkSil);
+            this.panel3.Controls.Add(this.lStandart20);
+            this.panel3.Controls.Add(this.tTeraziOnEk);
+            this.panel3.Controls.Add(this.bTeraziOnEkKaydet);
+            this.panel3.Controls.Add(this.cmbTeraziOnEk);
+            this.panel3.Location = new System.Drawing.Point(31, 44);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(357, 219);
+            this.panel3.TabIndex = 34;
+            // 
+            // bTeraziOnEkSil
+            // 
+            this.bTeraziOnEkSil.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bTeraziOnEkSil.BackColor = System.Drawing.Color.Brown;
+            this.bTeraziOnEkSil.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
+            this.bTeraziOnEkSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTeraziOnEkSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bTeraziOnEkSil.ForeColor = System.Drawing.Color.White;
+            this.bTeraziOnEkSil.Image = ((System.Drawing.Image)(resources.GetObject("bTeraziOnEkSil.Image")));
+            this.bTeraziOnEkSil.Location = new System.Drawing.Point(222, 68);
+            this.bTeraziOnEkSil.Margin = new System.Windows.Forms.Padding(1);
+            this.bTeraziOnEkSil.Name = "bTeraziOnEkSil";
+            this.bTeraziOnEkSil.Size = new System.Drawing.Size(66, 42);
+            this.bTeraziOnEkSil.TabIndex = 36;
+            this.bTeraziOnEkSil.Text = " ";
+            this.bTeraziOnEkSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bTeraziOnEkSil.UseVisualStyleBackColor = false;
+            // 
+            // lStandart20
+            // 
+            this.lStandart20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lStandart20.AutoSize = true;
+            this.lStandart20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.lStandart20.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart20.Location = new System.Drawing.Point(53, 20);
+            this.lStandart20.Name = "lStandart20";
+            this.lStandart20.Size = new System.Drawing.Size(225, 25);
+            this.lStandart20.TabIndex = 38;
+            this.lStandart20.Text = "TERAZİ ÖN EK AYAR";
+            // 
+            // tTeraziOnEk
+            // 
+            this.tTeraziOnEk.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tTeraziOnEk.BackColor = System.Drawing.Color.White;
+            this.tTeraziOnEk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tTeraziOnEk.Location = new System.Drawing.Point(43, 130);
+            this.tTeraziOnEk.Name = "tTeraziOnEk";
+            this.tTeraziOnEk.Size = new System.Drawing.Size(151, 26);
+            this.tTeraziOnEk.TabIndex = 35;
+            this.tTeraziOnEk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // bTeraziOnEkKaydet
+            // 
+            this.bTeraziOnEkKaydet.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bTeraziOnEkKaydet.BackColor = System.Drawing.Color.YellowGreen;
+            this.bTeraziOnEkKaydet.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
+            this.bTeraziOnEkKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTeraziOnEkKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bTeraziOnEkKaydet.ForeColor = System.Drawing.Color.White;
+            this.bTeraziOnEkKaydet.Image = global::BilgeSoft.Properties.Resources.save_file;
+            this.bTeraziOnEkKaydet.Location = new System.Drawing.Point(222, 123);
+            this.bTeraziOnEkKaydet.Margin = new System.Windows.Forms.Padding(1);
+            this.bTeraziOnEkKaydet.Name = "bTeraziOnEkKaydet";
+            this.bTeraziOnEkKaydet.Size = new System.Drawing.Size(66, 42);
+            this.bTeraziOnEkKaydet.TabIndex = 34;
+            this.bTeraziOnEkKaydet.Text = " ";
+            this.bTeraziOnEkKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bTeraziOnEkKaydet.UseVisualStyleBackColor = false;
+            // 
+            // cmbTeraziOnEk
+            // 
+            this.cmbTeraziOnEk.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbTeraziOnEk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTeraziOnEk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbTeraziOnEk.FormattingEnabled = true;
+            this.cmbTeraziOnEk.Location = new System.Drawing.Point(43, 75);
+            this.cmbTeraziOnEk.Name = "cmbTeraziOnEk";
+            this.cmbTeraziOnEk.Size = new System.Drawing.Size(151, 28);
+            this.cmbTeraziOnEk.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.bKartKomisyonAyarla);
+            this.panel2.Controls.Add(this.tKartKomisyon);
+            this.panel2.Controls.Add(this.lStandart19);
+            this.panel2.Location = new System.Drawing.Point(31, 283);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(357, 150);
+            this.panel2.TabIndex = 2;
+            // 
+            // bKartKomisyonAyarla
+            // 
+            this.bKartKomisyonAyarla.BackColor = System.Drawing.Color.YellowGreen;
+            this.bKartKomisyonAyarla.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
+            this.bKartKomisyonAyarla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKartKomisyonAyarla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKartKomisyonAyarla.ForeColor = System.Drawing.Color.White;
+            this.bKartKomisyonAyarla.Image = global::BilgeSoft.Properties.Resources.save_file;
+            this.bKartKomisyonAyarla.Location = new System.Drawing.Point(172, 58);
+            this.bKartKomisyonAyarla.Margin = new System.Windows.Forms.Padding(1);
+            this.bKartKomisyonAyarla.Name = "bKartKomisyonAyarla";
+            this.bKartKomisyonAyarla.Size = new System.Drawing.Size(66, 42);
+            this.bKartKomisyonAyarla.TabIndex = 33;
+            this.bKartKomisyonAyarla.Text = " ";
+            this.bKartKomisyonAyarla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bKartKomisyonAyarla.UseVisualStyleBackColor = false;
+            // 
+            // tKartKomisyon
+            // 
+            this.tKartKomisyon.BackColor = System.Drawing.Color.White;
+            this.tKartKomisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tKartKomisyon.Location = new System.Drawing.Point(67, 65);
+            this.tKartKomisyon.Name = "tKartKomisyon";
+            this.tKartKomisyon.Size = new System.Drawing.Size(76, 26);
+            this.tKartKomisyon.TabIndex = 0;
+            this.tKartKomisyon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lStandart19
+            // 
+            this.lStandart19.AutoSize = true;
+            this.lStandart19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.lStandart19.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart19.Location = new System.Drawing.Point(62, 22);
+            this.lStandart19.Name = "lStandart19";
+            this.lStandart19.Size = new System.Drawing.Size(193, 25);
+            this.lStandart19.TabIndex = 37;
+            this.lStandart19.Text = "KART KOMİSYON";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.chYazmaDurumu);
+            this.panel1.Controls.Add(this.lStandart18);
+            this.panel1.Location = new System.Drawing.Point(31, 453);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(357, 150);
+            this.panel1.TabIndex = 0;
+            // 
+            // chYazmaDurumu
+            // 
+            this.chYazmaDurumu.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chYazmaDurumu.AutoSize = true;
+            this.chYazmaDurumu.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.chYazmaDurumu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Firebrick;
+            this.chYazmaDurumu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chYazmaDurumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chYazmaDurumu.ForeColor = System.Drawing.Color.White;
+            this.chYazmaDurumu.Location = new System.Drawing.Point(96, 66);
+            this.chYazmaDurumu.Name = "chYazmaDurumu";
+            this.chYazmaDurumu.Size = new System.Drawing.Size(150, 27);
+            this.chYazmaDurumu.TabIndex = 0;
+            this.chYazmaDurumu.Text = "Yazma Durumu Pasif";
+            this.chYazmaDurumu.UseVisualStyleBackColor = false;
+            // 
+            // lStandart18
+            // 
+            this.lStandart18.AutoSize = true;
+            this.lStandart18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.lStandart18.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart18.Location = new System.Drawing.Point(62, 21);
+            this.lStandart18.Name = "lStandart18";
+            this.lStandart18.Size = new System.Drawing.Size(222, 25);
+            this.lStandart18.TabIndex = 36;
+            this.lStandart18.Text = "YAZICI AKTİF-PASİF";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.MintCream;
+            this.tabPage3.Controls.Add(this.bYedektenYukle);
+            this.tabPage3.Controls.Add(this.lStandart9);
+            this.tabPage3.Location = new System.Drawing.Point(184, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(820, 684);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "YEDEĞİ YÜKLE";
+            // 
+            // bYedektenYukle
+            // 
+            this.bYedektenYukle.Animated = true;
+            this.bYedektenYukle.BackColor = System.Drawing.Color.Transparent;
+            this.bYedektenYukle.BorderRadius = 10;
+            this.bYedektenYukle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bYedektenYukle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bYedektenYukle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bYedektenYukle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bYedektenYukle.FillColor = System.Drawing.Color.Tomato;
+            this.bYedektenYukle.FocusedColor = System.Drawing.Color.Tomato;
+            this.bYedektenYukle.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bYedektenYukle.ForeColor = System.Drawing.Color.White;
+            this.bYedektenYukle.HoverState.BorderColor = System.Drawing.Color.OrangeRed;
+            this.bYedektenYukle.HoverState.CustomBorderColor = System.Drawing.Color.OrangeRed;
+            this.bYedektenYukle.HoverState.FillColor = System.Drawing.Color.OrangeRed;
+            this.bYedektenYukle.Image = ((System.Drawing.Image)(resources.GetObject("bYedektenYukle.Image")));
+            this.bYedektenYukle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bYedektenYukle.ImageSize = new System.Drawing.Size(50, 50);
+            this.bYedektenYukle.Location = new System.Drawing.Point(182, 285);
+            this.bYedektenYukle.Margin = new System.Windows.Forms.Padding(2);
+            this.bYedektenYukle.Name = "bYedektenYukle";
+            this.bYedektenYukle.ShadowDecoration.BorderRadius = 10;
+            this.bYedektenYukle.ShadowDecoration.Color = System.Drawing.Color.Brown;
+            this.bYedektenYukle.ShadowDecoration.Enabled = true;
+            this.bYedektenYukle.Size = new System.Drawing.Size(481, 182);
+            this.bYedektenYukle.TabIndex = 170;
+            this.bYedektenYukle.Text = "YEDEKETEN GERİ YÜKLE";
+            this.bYedektenYukle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bYedektenYukle.TextOffset = new System.Drawing.Point(10, 0);
+            this.bYedektenYukle.UseTransparentBackground = true;
+            this.bYedektenYukle.Click += new System.EventHandler(this.bYedektenYukle_Click);
+            // 
+            // lStandart9
+            // 
+            this.lStandart9.AutoSize = true;
+            this.lStandart9.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart9.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart9.Location = new System.Drawing.Point(177, 158);
+            this.lStandart9.Name = "lStandart9";
+            this.lStandart9.Size = new System.Drawing.Size(486, 75);
+            this.lStandart9.TabIndex = 51;
+            this.lStandart9.Text = "Önceden aldığınız yedeği belirleyiniz, butona tıklayıp \r\nyedeğinizi tekrardan yük" +
+    "leyiniz. Bu işlemi gerektiğinde \r\nyapınız\r\n";
             // 
             // fAyarlar
             // 
@@ -1025,8 +1102,9 @@ namespace BilgeSoft
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridListeKullanici)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -1034,9 +1112,8 @@ namespace BilgeSoft
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1061,8 +1138,6 @@ namespace BilgeSoft
         private System.Windows.Forms.CheckBox chRapor;
         private lStandart lStandart8;
         private System.Windows.Forms.CheckBox chSatisEkrani;
-        private bStandart bIptal;
-        private bStandart bKaydet;
         private tStandart tSifreTekrar;
         private lStandart lStandart7;
         private System.Windows.Forms.MaskedTextBox tTelefon;
@@ -1079,7 +1154,6 @@ namespace BilgeSoft
         private gridOzel gridListeKullanici;
         private System.Windows.Forms.TabPage tabPage3;
         private lStandart lStandart9;
-        private bStandart bYedektenYukle;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel3;
         private bStandart bTeraziOnEkSil;
@@ -1100,7 +1174,6 @@ namespace BilgeSoft
         private System.Windows.Forms.Panel panel4;
         private lStandart lStandart17;
         private lStandart lStandart14;
-        private bStandart bIsYeriKaydet;
         private tStandart tIsYeriAdSoyad;
         private tStandart tIsYeriAdres;
         private lStandart lStandart13;
@@ -1110,5 +1183,9 @@ namespace BilgeSoft
         private tStandart tIsYeriEposta;
         private lStandart lStandart15;
         private System.Windows.Forms.MaskedTextBox tIsYeriTelefon;
+        private tGunaButtonIcon bIptal;
+        private tGunaButtonIcon bKaydet;
+        private tGunaButtonIcon bYedektenYukle;
+        private tGunaButtonIcon bIsYeriKaydet;
     }
 }

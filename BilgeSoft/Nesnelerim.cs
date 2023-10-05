@@ -200,9 +200,9 @@ namespace BilgeSoft
         public tGunaButton()
         {
             this.Animated = true;
-            this.AutoRoundedCorners = true;
+            //this.AutoRoundedCorners = true;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BorderRadius = 34;
+            //this.BorderRadius = 34;
             this.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -229,9 +229,9 @@ namespace BilgeSoft
         public tGunaButtonIcon()
         {
             this.Animated = true;
-            this.AutoRoundedCorners = true;
+            //this.AutoRoundedCorners = true;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BorderRadius = 34;
+            //this.BorderRadius = 34;
             this.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
