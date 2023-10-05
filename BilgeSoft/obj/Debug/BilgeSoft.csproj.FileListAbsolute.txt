@@ -331,7 +331,6 @@ C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\bin\Debug\pt\Mic
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.csproj.AssemblyReference.cache
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.fAyarlar.resources
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.fBaslangic.resources
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.fDetayGoster.resources
@@ -355,3 +354,4 @@ C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeS
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.csproj.CopyComplete
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.exe
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.pdb
+C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.csproj.AssemblyReference.cache

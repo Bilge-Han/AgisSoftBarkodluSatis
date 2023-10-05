@@ -74,9 +74,12 @@ namespace BilgeSoft
         BarkodDbEntities dbx = new BarkodDbEntities();
         private void fStok_Load(object sender, EventArgs e)
         {
+            cmbIslemTuru.SelectedIndex = 0;
+            rdTumu.Checked = true;
             cmbUrunGrubu.DisplayMember = "UrunGrupAd";
             cmbUrunGrubu.ValueMember = "Id";
             cmbUrunGrubu.DataSource = dbx.UrunGrup.ToList();
+            cmbUrunGrubu.Enabled = false;
         }
 
         private void tUrunAra_TextChanged(object sender, EventArgs e)
@@ -107,8 +110,8 @@ namespace BilgeSoft
             {
                 Raporlar.Baslik = cmbIslemTuru.Text + " RAPORU";
                 // Buraya raporun alındığı tarihi yazabilirim
-                Raporlar.TarihBaslangic = dateBaslangic.Value.ToShortDateString();
-                Raporlar.TarihBitis = dateBitis.Value.ToShortDateString();
+                //Raporlar.TarihBaslangic = dateBaslangic.Value.ToShortDateString();
+                //Raporlar.TarihBitis = dateBitis.Value.ToShortDateString();
                 Raporlar.StokRaporu(gridListe);
             }
             else if (cmbIslemTuru.SelectedIndex==1)
@@ -117,6 +120,36 @@ namespace BilgeSoft
                 Raporlar.TarihBaslangic = dateBaslangic.Value.ToShortDateString();
                 Raporlar.TarihBitis = dateBitis.Value.ToShortDateString();
                 Raporlar.StokIzlemeRaporu(gridListe);
+            }
+        }
+
+        private void rdTumu_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdTumu.Checked != false)
+            {
+                cmbUrunGrubu.Enabled = false;
+            }
+        }
+
+        private void rdUrunGrubu_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdUrunGrubu.Checked!=false)
+            {
+                cmbUrunGrubu.Enabled = true;
+            }
+        }
+
+        private void cmbIslemTuru_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbIslemTuru.SelectedIndex==0)
+            {
+                dateBaslangic.Enabled = false;
+                dateBitis.Enabled = false;
+            }
+            else if (cmbIslemTuru.SelectedIndex==1)
+            {
+                dateBaslangic.Enabled = true;
+                dateBitis.Enabled = true;
             }
         }
     }

@@ -30,8 +30,8 @@ namespace BilgeSoft
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAyarlar));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,17 +86,17 @@ namespace BilgeSoft
             this.tIsYeriTelefon = new System.Windows.Forms.MaskedTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bTeraziOnEkSil = new BilgeSoft.bStandart();
+            this.bTeraziOnEkSil = new BilgeSoft.tGunaButtonIcon();
+            this.bTeraziOnEkKaydet = new BilgeSoft.tGunaButtonIcon();
             this.lStandart20 = new BilgeSoft.lStandart();
             this.tTeraziOnEk = new BilgeSoft.tNumeric();
-            this.bTeraziOnEkKaydet = new BilgeSoft.bStandart();
             this.cmbTeraziOnEk = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bKartKomisyonAyarla = new BilgeSoft.bStandart();
+            this.bKartKomisyonAyarla = new BilgeSoft.tGunaButtonIcon();
             this.tKartKomisyon = new BilgeSoft.tNumeric();
             this.lStandart19 = new BilgeSoft.lStandart();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chYazmaDurumu = new System.Windows.Forms.CheckBox();
+            this.chYazmaDurumu = new Guna.UI2.WinForms.Guna2Button();
             this.lStandart18 = new BilgeSoft.lStandart();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bYedektenYukle = new BilgeSoft.tGunaButtonIcon();
@@ -626,18 +626,18 @@ namespace BilgeSoft
             this.gridListeKullanici.BackgroundColor = System.Drawing.Color.MintCream;
             this.gridListeKullanici.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListeKullanici.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListeKullanici.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListeKullanici.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridListeKullanici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridListeKullanici.ContextMenuStrip = this.contextMenuStrip1;
-            this.gridListeKullanici.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridListeKullanici.DefaultCellStyle = dataGridViewCellStyle1;
             this.gridListeKullanici.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListeKullanici.EnableHeadersVisualStyles = false;
             this.gridListeKullanici.Location = new System.Drawing.Point(0, 0);
@@ -646,15 +646,15 @@ namespace BilgeSoft
             this.gridListeKullanici.ReadOnly = true;
             this.gridListeKullanici.RowHeadersVisible = false;
             this.gridListeKullanici.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListeKullanici.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListeKullanici.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridListeKullanici.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridListeKullanici.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridListeKullanici.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -699,9 +699,7 @@ namespace BilgeSoft
             // bIsYeriKaydet
             // 
             this.bIsYeriKaydet.Animated = true;
-            this.bIsYeriKaydet.AutoRoundedCorners = true;
             this.bIsYeriKaydet.BackColor = System.Drawing.Color.Transparent;
-            this.bIsYeriKaydet.BorderRadius = 20;
             this.bIsYeriKaydet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bIsYeriKaydet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bIsYeriKaydet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -856,9 +854,9 @@ namespace BilgeSoft
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.bTeraziOnEkSil);
+            this.panel3.Controls.Add(this.bTeraziOnEkKaydet);
             this.panel3.Controls.Add(this.lStandart20);
             this.panel3.Controls.Add(this.tTeraziOnEk);
-            this.panel3.Controls.Add(this.bTeraziOnEkKaydet);
             this.panel3.Controls.Add(this.cmbTeraziOnEk);
             this.panel3.Location = new System.Drawing.Point(31, 44);
             this.panel3.Name = "panel3";
@@ -867,21 +865,65 @@ namespace BilgeSoft
             // 
             // bTeraziOnEkSil
             // 
-            this.bTeraziOnEkSil.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bTeraziOnEkSil.BackColor = System.Drawing.Color.Brown;
-            this.bTeraziOnEkSil.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
-            this.bTeraziOnEkSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnEkSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bTeraziOnEkSil.Animated = true;
+            this.bTeraziOnEkSil.BackColor = System.Drawing.Color.Transparent;
+            this.bTeraziOnEkSil.BorderRadius = 10;
+            this.bTeraziOnEkSil.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bTeraziOnEkSil.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bTeraziOnEkSil.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bTeraziOnEkSil.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bTeraziOnEkSil.FillColor = System.Drawing.Color.Tomato;
+            this.bTeraziOnEkSil.FocusedColor = System.Drawing.Color.Tomato;
+            this.bTeraziOnEkSil.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bTeraziOnEkSil.ForeColor = System.Drawing.Color.White;
-            this.bTeraziOnEkSil.Image = ((System.Drawing.Image)(resources.GetObject("bTeraziOnEkSil.Image")));
-            this.bTeraziOnEkSil.Location = new System.Drawing.Point(222, 68);
-            this.bTeraziOnEkSil.Margin = new System.Windows.Forms.Padding(1);
+            this.bTeraziOnEkSil.HoverState.BorderColor = System.Drawing.Color.OrangeRed;
+            this.bTeraziOnEkSil.HoverState.CustomBorderColor = System.Drawing.Color.OrangeRed;
+            this.bTeraziOnEkSil.HoverState.FillColor = System.Drawing.Color.OrangeRed;
+            this.bTeraziOnEkSil.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.bTeraziOnEkSil.ImageSize = new System.Drawing.Size(50, 50);
+            this.bTeraziOnEkSil.Location = new System.Drawing.Point(219, 65);
+            this.bTeraziOnEkSil.Margin = new System.Windows.Forms.Padding(2);
             this.bTeraziOnEkSil.Name = "bTeraziOnEkSil";
-            this.bTeraziOnEkSil.Size = new System.Drawing.Size(66, 42);
-            this.bTeraziOnEkSil.TabIndex = 36;
-            this.bTeraziOnEkSil.Text = " ";
-            this.bTeraziOnEkSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bTeraziOnEkSil.UseVisualStyleBackColor = false;
+            this.bTeraziOnEkSil.ShadowDecoration.BorderRadius = 10;
+            this.bTeraziOnEkSil.ShadowDecoration.Color = System.Drawing.Color.Brown;
+            this.bTeraziOnEkSil.ShadowDecoration.Enabled = true;
+            this.bTeraziOnEkSil.Size = new System.Drawing.Size(69, 49);
+            this.bTeraziOnEkSil.TabIndex = 171;
+            this.bTeraziOnEkSil.Text = "    ";
+            this.bTeraziOnEkSil.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bTeraziOnEkSil.TextOffset = new System.Drawing.Point(10, 0);
+            this.bTeraziOnEkSil.UseTransparentBackground = true;
+            // 
+            // bTeraziOnEkKaydet
+            // 
+            this.bTeraziOnEkKaydet.Animated = true;
+            this.bTeraziOnEkKaydet.BackColor = System.Drawing.Color.Transparent;
+            this.bTeraziOnEkKaydet.BorderRadius = 10;
+            this.bTeraziOnEkKaydet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bTeraziOnEkKaydet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bTeraziOnEkKaydet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bTeraziOnEkKaydet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bTeraziOnEkKaydet.FillColor = System.Drawing.Color.Olive;
+            this.bTeraziOnEkKaydet.FocusedColor = System.Drawing.Color.Olive;
+            this.bTeraziOnEkKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bTeraziOnEkKaydet.ForeColor = System.Drawing.Color.White;
+            this.bTeraziOnEkKaydet.HoverState.BorderColor = System.Drawing.Color.YellowGreen;
+            this.bTeraziOnEkKaydet.HoverState.CustomBorderColor = System.Drawing.Color.YellowGreen;
+            this.bTeraziOnEkKaydet.HoverState.FillColor = System.Drawing.Color.YellowGreen;
+            this.bTeraziOnEkKaydet.Image = global::BilgeSoft.Properties.Resources.save_file;
+            this.bTeraziOnEkKaydet.ImageSize = new System.Drawing.Size(40, 40);
+            this.bTeraziOnEkKaydet.Location = new System.Drawing.Point(219, 145);
+            this.bTeraziOnEkKaydet.Margin = new System.Windows.Forms.Padding(2);
+            this.bTeraziOnEkKaydet.Name = "bTeraziOnEkKaydet";
+            this.bTeraziOnEkKaydet.ShadowDecoration.BorderRadius = 10;
+            this.bTeraziOnEkKaydet.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
+            this.bTeraziOnEkKaydet.ShadowDecoration.Enabled = true;
+            this.bTeraziOnEkKaydet.Size = new System.Drawing.Size(69, 49);
+            this.bTeraziOnEkKaydet.TabIndex = 170;
+            this.bTeraziOnEkKaydet.Text = "   ";
+            this.bTeraziOnEkKaydet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bTeraziOnEkKaydet.UseTransparentBackground = true;
+            this.bTeraziOnEkKaydet.Click += new System.EventHandler(this.bTeraziOnEkKaydet_Click);
             // 
             // lStandart20
             // 
@@ -900,29 +942,11 @@ namespace BilgeSoft
             this.tTeraziOnEk.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tTeraziOnEk.BackColor = System.Drawing.Color.White;
             this.tTeraziOnEk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tTeraziOnEk.Location = new System.Drawing.Point(43, 130);
+            this.tTeraziOnEk.Location = new System.Drawing.Point(43, 156);
             this.tTeraziOnEk.Name = "tTeraziOnEk";
             this.tTeraziOnEk.Size = new System.Drawing.Size(151, 26);
             this.tTeraziOnEk.TabIndex = 35;
             this.tTeraziOnEk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // bTeraziOnEkKaydet
-            // 
-            this.bTeraziOnEkKaydet.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bTeraziOnEkKaydet.BackColor = System.Drawing.Color.YellowGreen;
-            this.bTeraziOnEkKaydet.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
-            this.bTeraziOnEkKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnEkKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTeraziOnEkKaydet.ForeColor = System.Drawing.Color.White;
-            this.bTeraziOnEkKaydet.Image = global::BilgeSoft.Properties.Resources.save_file;
-            this.bTeraziOnEkKaydet.Location = new System.Drawing.Point(222, 123);
-            this.bTeraziOnEkKaydet.Margin = new System.Windows.Forms.Padding(1);
-            this.bTeraziOnEkKaydet.Name = "bTeraziOnEkKaydet";
-            this.bTeraziOnEkKaydet.Size = new System.Drawing.Size(66, 42);
-            this.bTeraziOnEkKaydet.TabIndex = 34;
-            this.bTeraziOnEkKaydet.Text = " ";
-            this.bTeraziOnEkKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bTeraziOnEkKaydet.UseVisualStyleBackColor = false;
             // 
             // cmbTeraziOnEk
             // 
@@ -948,28 +972,42 @@ namespace BilgeSoft
             // 
             // bKartKomisyonAyarla
             // 
-            this.bKartKomisyonAyarla.BackColor = System.Drawing.Color.YellowGreen;
-            this.bKartKomisyonAyarla.FlatAppearance.BorderColor = System.Drawing.Color.YellowGreen;
-            this.bKartKomisyonAyarla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKartKomisyonAyarla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKartKomisyonAyarla.Animated = true;
+            this.bKartKomisyonAyarla.BackColor = System.Drawing.Color.Transparent;
+            this.bKartKomisyonAyarla.BorderRadius = 10;
+            this.bKartKomisyonAyarla.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bKartKomisyonAyarla.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bKartKomisyonAyarla.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bKartKomisyonAyarla.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bKartKomisyonAyarla.FillColor = System.Drawing.Color.Olive;
+            this.bKartKomisyonAyarla.FocusedColor = System.Drawing.Color.Olive;
+            this.bKartKomisyonAyarla.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bKartKomisyonAyarla.ForeColor = System.Drawing.Color.White;
+            this.bKartKomisyonAyarla.HoverState.BorderColor = System.Drawing.Color.YellowGreen;
+            this.bKartKomisyonAyarla.HoverState.CustomBorderColor = System.Drawing.Color.YellowGreen;
+            this.bKartKomisyonAyarla.HoverState.FillColor = System.Drawing.Color.YellowGreen;
             this.bKartKomisyonAyarla.Image = global::BilgeSoft.Properties.Resources.save_file;
-            this.bKartKomisyonAyarla.Location = new System.Drawing.Point(172, 58);
-            this.bKartKomisyonAyarla.Margin = new System.Windows.Forms.Padding(1);
+            this.bKartKomisyonAyarla.ImageSize = new System.Drawing.Size(40, 40);
+            this.bKartKomisyonAyarla.Location = new System.Drawing.Point(219, 62);
+            this.bKartKomisyonAyarla.Margin = new System.Windows.Forms.Padding(2);
             this.bKartKomisyonAyarla.Name = "bKartKomisyonAyarla";
-            this.bKartKomisyonAyarla.Size = new System.Drawing.Size(66, 42);
-            this.bKartKomisyonAyarla.TabIndex = 33;
-            this.bKartKomisyonAyarla.Text = " ";
-            this.bKartKomisyonAyarla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bKartKomisyonAyarla.UseVisualStyleBackColor = false;
+            this.bKartKomisyonAyarla.ShadowDecoration.BorderRadius = 10;
+            this.bKartKomisyonAyarla.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
+            this.bKartKomisyonAyarla.ShadowDecoration.Enabled = true;
+            this.bKartKomisyonAyarla.Size = new System.Drawing.Size(69, 49);
+            this.bKartKomisyonAyarla.TabIndex = 173;
+            this.bKartKomisyonAyarla.Text = "   ";
+            this.bKartKomisyonAyarla.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bKartKomisyonAyarla.UseTransparentBackground = true;
+            this.bKartKomisyonAyarla.Click += new System.EventHandler(this.bKartKomisyonAyarla_Click);
             // 
             // tKartKomisyon
             // 
             this.tKartKomisyon.BackColor = System.Drawing.Color.White;
             this.tKartKomisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tKartKomisyon.Location = new System.Drawing.Point(67, 65);
+            this.tKartKomisyon.Location = new System.Drawing.Point(43, 71);
             this.tKartKomisyon.Name = "tKartKomisyon";
-            this.tKartKomisyon.Size = new System.Drawing.Size(76, 26);
+            this.tKartKomisyon.Size = new System.Drawing.Size(102, 26);
             this.tKartKomisyon.TabIndex = 0;
             this.tKartKomisyon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -996,26 +1034,38 @@ namespace BilgeSoft
             // 
             // chYazmaDurumu
             // 
-            this.chYazmaDurumu.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chYazmaDurumu.AutoSize = true;
-            this.chYazmaDurumu.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.chYazmaDurumu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Firebrick;
-            this.chYazmaDurumu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chYazmaDurumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chYazmaDurumu.Animated = true;
+            this.chYazmaDurumu.BackColor = System.Drawing.Color.Transparent;
+            this.chYazmaDurumu.BorderRadius = 10;
+            this.chYazmaDurumu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+            this.chYazmaDurumu.CheckedState.FillColor = System.Drawing.Color.DarkOliveGreen;
+            this.chYazmaDurumu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.chYazmaDurumu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.chYazmaDurumu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.chYazmaDurumu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.chYazmaDurumu.FillColor = System.Drawing.Color.Firebrick;
+            this.chYazmaDurumu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.chYazmaDurumu.ForeColor = System.Drawing.Color.White;
-            this.chYazmaDurumu.Location = new System.Drawing.Point(96, 66);
+            this.chYazmaDurumu.HoverState.FillColor = System.Drawing.Color.Gold;
+            this.chYazmaDurumu.ImageSize = new System.Drawing.Size(30, 30);
+            this.chYazmaDurumu.Location = new System.Drawing.Point(43, 64);
+            this.chYazmaDurumu.Margin = new System.Windows.Forms.Padding(2);
             this.chYazmaDurumu.Name = "chYazmaDurumu";
-            this.chYazmaDurumu.Size = new System.Drawing.Size(150, 27);
-            this.chYazmaDurumu.TabIndex = 0;
+            this.chYazmaDurumu.ShadowDecoration.BorderRadius = 10;
+            this.chYazmaDurumu.ShadowDecoration.Color = System.Drawing.Color.Sienna;
+            this.chYazmaDurumu.ShadowDecoration.Depth = 10;
+            this.chYazmaDurumu.ShadowDecoration.Enabled = true;
+            this.chYazmaDurumu.Size = new System.Drawing.Size(250, 50);
+            this.chYazmaDurumu.TabIndex = 176;
             this.chYazmaDurumu.Text = "Yazma Durumu Pasif";
-            this.chYazmaDurumu.UseVisualStyleBackColor = false;
+            this.chYazmaDurumu.CheckedChanged += new System.EventHandler(this.chYazmaDurumu_CheckedChanged);
             // 
             // lStandart18
             // 
             this.lStandart18.AutoSize = true;
             this.lStandart18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lStandart18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart18.Location = new System.Drawing.Point(62, 21);
+            this.lStandart18.Location = new System.Drawing.Point(56, 20);
             this.lStandart18.Name = "lStandart18";
             this.lStandart18.Size = new System.Drawing.Size(222, 25);
             this.lStandart18.TabIndex = 36;
@@ -1156,17 +1206,13 @@ namespace BilgeSoft
         private lStandart lStandart9;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel3;
-        private bStandart bTeraziOnEkSil;
         private lStandart lStandart20;
         private tNumeric tTeraziOnEk;
-        private bStandart bTeraziOnEkKaydet;
         private System.Windows.Forms.ComboBox cmbTeraziOnEk;
         private System.Windows.Forms.Panel panel2;
-        private bStandart bKartKomisyonAyarla;
         private tNumeric tKartKomisyon;
         private lStandart lStandart19;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox chYazmaDurumu;
         private lStandart lStandart18;
         private System.Windows.Forms.TabPage tabPage1;
         public System.Windows.Forms.Label label3;
@@ -1187,5 +1233,9 @@ namespace BilgeSoft
         private tGunaButtonIcon bKaydet;
         private tGunaButtonIcon bYedektenYukle;
         private tGunaButtonIcon bIsYeriKaydet;
+        private tGunaButtonIcon bTeraziOnEkSil;
+        private tGunaButtonIcon bTeraziOnEkKaydet;
+        private tGunaButtonIcon bKartKomisyonAyarla;
+        private Guna.UI2.WinForms.Guna2Button chYazmaDurumu;
     }
 }

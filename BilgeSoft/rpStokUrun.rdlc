@@ -589,7 +589,7 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
             <DataSetName>dsStokUrun</DataSetName>
             <Top>0.10583cm</Top>
             <Height>1.2cm</Height>
-            <Width>16.63035cm</Width>
+            <Width>16.63033cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -651,7 +651,6 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
               </Paragraphs>
               <rd:DefaultName>Baslik</rd:DefaultName>
               <Top>0.76412cm</Top>
-              <Left>0cm</Left>
               <Height>0.83812cm</Height>
               <Width>18.95868cm</Width>
               <Style>
@@ -671,7 +670,7 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Parameters!TarihBaslangic.Value</Value>
+                      <Value>=DateValue(Now)</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -694,36 +693,6 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="TarihBitis">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Parameters!TarihBitis.Value</Value>
-                      <Style />
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>TarihBitis</rd:DefaultName>
-              <Top>2.40743cm</Top>
-              <Left>3.12305cm</Left>
-              <Height>0.6cm</Height>
-              <Width>4.36001cm</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
             <Textbox Name="Textbox20">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
@@ -731,7 +700,7 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Başlangıç Tarihi :</Value>
+                      <Value>Tarih :</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -743,37 +712,7 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
               <Left>0.04097cm</Left>
               <Height>0.6cm</Height>
               <Width>3.08208cm</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox21">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Bitiş Tarihi :</Value>
-                      <Style />
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox20</rd:DefaultName>
-              <Top>2.40743cm</Top>
-              <Left>0.04097cm</Left>
-              <Height>0.6cm</Height>
-              <Width>3.08208cm</Width>
-              <ZIndex>4</ZIndex>
+              <ZIndex>2</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -852,14 +791,6 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="TarihBaslangic">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="TarihBitis">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -870,16 +801,6 @@ FormatCurrency(Fields!SatisFiyat.Value,2))</Value>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Baslik</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>TarihBaslangic</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>TarihBitis</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

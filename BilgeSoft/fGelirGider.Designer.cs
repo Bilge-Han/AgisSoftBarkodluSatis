@@ -29,90 +29,24 @@ namespace BilgeSoft
         /// </summary>
         private void InitializeComponent()
         {
-            this.lGelirGider = new BilgeSoft.lStandart();
-            this.lStandart2 = new BilgeSoft.lStandart();
-            this.lStandart3 = new BilgeSoft.lStandart();
-            this.lStandart4 = new BilgeSoft.lStandart();
-            this.lStandart5 = new BilgeSoft.lStandart();
-            this.lStandart6 = new BilgeSoft.lStandart();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.cmbOdemeTuru = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.tNakit = new BilgeSoft.tGunaNumeric();
-            this.tKart = new BilgeSoft.tGunaNumeric();
             this.tAciklama = new Guna.UI2.WinForms.Guna2TextBox();
             this.bEkle = new Guna.UI2.WinForms.Guna2Button();
             this.dtTarih = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.tKart = new BilgeSoft.tGunaNumeric();
+            this.tNakit = new BilgeSoft.tGunaNumeric();
+            this.lGelirGider = new BilgeSoft.lStandart();
+            this.lStandart6 = new BilgeSoft.lStandart();
+            this.lStandart5 = new BilgeSoft.lStandart();
+            this.lStandart4 = new BilgeSoft.lStandart();
+            this.lStandart3 = new BilgeSoft.lStandart();
+            this.lStandart2 = new BilgeSoft.lStandart();
             this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lGelirGider
-            // 
-            this.lGelirGider.AutoSize = true;
-            this.lGelirGider.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lGelirGider.ForeColor = System.Drawing.Color.White;
-            this.lGelirGider.Location = new System.Drawing.Point(10, 5);
-            this.lGelirGider.Name = "lGelirGider";
-            this.lGelirGider.Size = new System.Drawing.Size(111, 25);
-            this.lGelirGider.TabIndex = 0;
-            this.lGelirGider.Text = "Gelir/Gider";
-            // 
-            // lStandart2
-            // 
-            this.lStandart2.AutoSize = true;
-            this.lStandart2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart2.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart2.Location = new System.Drawing.Point(10, 86);
-            this.lStandart2.Name = "lStandart2";
-            this.lStandart2.Size = new System.Drawing.Size(100, 21);
-            this.lStandart2.TabIndex = 3;
-            this.lStandart2.Text = "Ödeme Türü";
-            // 
-            // lStandart3
-            // 
-            this.lStandart3.AutoSize = true;
-            this.lStandart3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart3.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart3.Location = new System.Drawing.Point(10, 141);
-            this.lStandart3.Name = "lStandart3";
-            this.lStandart3.Size = new System.Drawing.Size(48, 21);
-            this.lStandart3.TabIndex = 6;
-            this.lStandart3.Text = "Nakit";
-            // 
-            // lStandart4
-            // 
-            this.lStandart4.AutoSize = true;
-            this.lStandart4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart4.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart4.Location = new System.Drawing.Point(136, 141);
-            this.lStandart4.Name = "lStandart4";
-            this.lStandart4.Size = new System.Drawing.Size(40, 21);
-            this.lStandart4.TabIndex = 7;
-            this.lStandart4.Text = "Kart";
-            // 
-            // lStandart5
-            // 
-            this.lStandart5.AutoSize = true;
-            this.lStandart5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart5.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart5.Location = new System.Drawing.Point(10, 193);
-            this.lStandart5.Name = "lStandart5";
-            this.lStandart5.Size = new System.Drawing.Size(75, 21);
-            this.lStandart5.TabIndex = 8;
-            this.lStandart5.Text = "Açıklama";
-            // 
-            // lStandart6
-            // 
-            this.lStandart6.AutoSize = true;
-            this.lStandart6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lStandart6.ForeColor = System.Drawing.Color.Teal;
-            this.lStandart6.Location = new System.Drawing.Point(11, 352);
-            this.lStandart6.Name = "lStandart6";
-            this.lStandart6.Size = new System.Drawing.Size(44, 21);
-            this.lStandart6.TabIndex = 10;
-            this.lStandart6.Text = "Tarih";
             // 
             // guna2GradientPanel3
             // 
@@ -199,7 +133,7 @@ namespace BilgeSoft
             "KART",
             "KART-NAKİT"});
             this.cmbOdemeTuru.Location = new System.Drawing.Point(9, 111);
-            this.cmbOdemeTuru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbOdemeTuru.Margin = new System.Windows.Forms.Padding(2);
             this.cmbOdemeTuru.Name = "cmbOdemeTuru";
             this.cmbOdemeTuru.ShadowDecoration.BorderRadius = 20;
             this.cmbOdemeTuru.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -209,76 +143,6 @@ namespace BilgeSoft
             this.cmbOdemeTuru.Size = new System.Drawing.Size(246, 31);
             this.cmbOdemeTuru.TabIndex = 172;
             this.cmbOdemeTuru.SelectedIndexChanged += new System.EventHandler(this.cmbOdemeTuru_SelectedIndexChanged);
-            // 
-            // tNakit
-            // 
-            this.tNakit.Animated = true;
-            this.tNakit.AutoRoundedCorners = true;
-            this.tNakit.BackColor = System.Drawing.Color.Transparent;
-            this.tNakit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tNakit.BorderRadius = 11;
-            this.tNakit.BorderThickness = 0;
-            this.tNakit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tNakit.DefaultText = "0";
-            this.tNakit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tNakit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tNakit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tNakit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tNakit.Enabled = false;
-            this.tNakit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tNakit.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
-            this.tNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.tNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tNakit.Location = new System.Drawing.Point(9, 167);
-            this.tNakit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tNakit.Name = "tNakit";
-            this.tNakit.PasswordChar = '\0';
-            this.tNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tNakit.PlaceholderText = "";
-            this.tNakit.SelectedText = "";
-            this.tNakit.ShadowDecoration.BorderRadius = 14;
-            this.tNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tNakit.ShadowDecoration.Depth = 20;
-            this.tNakit.ShadowDecoration.Enabled = true;
-            this.tNakit.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.tNakit.Size = new System.Drawing.Size(112, 24);
-            this.tNakit.TabIndex = 173;
-            this.tNakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tKart
-            // 
-            this.tKart.Animated = true;
-            this.tKart.AutoRoundedCorners = true;
-            this.tKart.BackColor = System.Drawing.Color.Transparent;
-            this.tKart.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tKart.BorderRadius = 11;
-            this.tKart.BorderThickness = 0;
-            this.tKart.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tKart.DefaultText = "0";
-            this.tKart.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tKart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tKart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tKart.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tKart.Enabled = false;
-            this.tKart.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tKart.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
-            this.tKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.tKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tKart.Location = new System.Drawing.Point(140, 167);
-            this.tKart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tKart.Name = "tKart";
-            this.tKart.PasswordChar = '\0';
-            this.tKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.tKart.PlaceholderText = "";
-            this.tKart.SelectedText = "";
-            this.tKart.ShadowDecoration.BorderRadius = 14;
-            this.tKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tKart.ShadowDecoration.Depth = 20;
-            this.tKart.ShadowDecoration.Enabled = true;
-            this.tKart.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
-            this.tKart.Size = new System.Drawing.Size(112, 24);
-            this.tKart.TabIndex = 174;
-            this.tKart.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tAciklama
             // 
@@ -327,7 +191,7 @@ namespace BilgeSoft
             this.bEkle.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bEkle.ImageSize = new System.Drawing.Size(40, 40);
             this.bEkle.Location = new System.Drawing.Point(136, 415);
-            this.bEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEkle.Margin = new System.Windows.Forms.Padding(2);
             this.bEkle.Name = "bEkle";
             this.bEkle.ShadowDecoration.BorderRadius = 15;
             this.bEkle.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -350,7 +214,7 @@ namespace BilgeSoft
             this.dtTarih.ForeColor = System.Drawing.Color.Black;
             this.dtTarih.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtTarih.Location = new System.Drawing.Point(14, 377);
-            this.dtTarih.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtTarih.Margin = new System.Windows.Forms.Padding(2);
             this.dtTarih.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtTarih.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtTarih.Name = "dtTarih";
@@ -361,7 +225,143 @@ namespace BilgeSoft
             this.dtTarih.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.dtTarih.Size = new System.Drawing.Size(236, 24);
             this.dtTarih.TabIndex = 177;
-            this.dtTarih.Value = new System.DateTime(2023, 10, 2, 22, 4, 37, 809);
+            this.dtTarih.Value = new System.DateTime(2023, 10, 5, 0, 0, 0, 0);
+            // 
+            // tKart
+            // 
+            this.tKart.Animated = true;
+            this.tKart.AutoRoundedCorners = true;
+            this.tKart.BackColor = System.Drawing.Color.Transparent;
+            this.tKart.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tKart.BorderRadius = 11;
+            this.tKart.BorderThickness = 0;
+            this.tKart.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tKart.DefaultText = "0";
+            this.tKart.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tKart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tKart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tKart.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tKart.Enabled = false;
+            this.tKart.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tKart.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
+            this.tKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.tKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tKart.Location = new System.Drawing.Point(140, 167);
+            this.tKart.Margin = new System.Windows.Forms.Padding(4);
+            this.tKart.Name = "tKart";
+            this.tKart.PasswordChar = '\0';
+            this.tKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tKart.PlaceholderText = "";
+            this.tKart.SelectedText = "";
+            this.tKart.ShadowDecoration.BorderRadius = 14;
+            this.tKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tKart.ShadowDecoration.Depth = 20;
+            this.tKart.ShadowDecoration.Enabled = true;
+            this.tKart.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.tKart.Size = new System.Drawing.Size(112, 24);
+            this.tKart.TabIndex = 174;
+            this.tKart.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tNakit
+            // 
+            this.tNakit.Animated = true;
+            this.tNakit.AutoRoundedCorners = true;
+            this.tNakit.BackColor = System.Drawing.Color.Transparent;
+            this.tNakit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tNakit.BorderRadius = 11;
+            this.tNakit.BorderThickness = 0;
+            this.tNakit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tNakit.DefaultText = "0";
+            this.tNakit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tNakit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tNakit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tNakit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tNakit.Enabled = false;
+            this.tNakit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tNakit.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
+            this.tNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.tNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tNakit.Location = new System.Drawing.Point(9, 167);
+            this.tNakit.Margin = new System.Windows.Forms.Padding(4);
+            this.tNakit.Name = "tNakit";
+            this.tNakit.PasswordChar = '\0';
+            this.tNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.tNakit.PlaceholderText = "";
+            this.tNakit.SelectedText = "";
+            this.tNakit.ShadowDecoration.BorderRadius = 14;
+            this.tNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tNakit.ShadowDecoration.Depth = 20;
+            this.tNakit.ShadowDecoration.Enabled = true;
+            this.tNakit.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
+            this.tNakit.Size = new System.Drawing.Size(112, 24);
+            this.tNakit.TabIndex = 173;
+            this.tNakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lGelirGider
+            // 
+            this.lGelirGider.AutoSize = true;
+            this.lGelirGider.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lGelirGider.ForeColor = System.Drawing.Color.White;
+            this.lGelirGider.Location = new System.Drawing.Point(10, 5);
+            this.lGelirGider.Name = "lGelirGider";
+            this.lGelirGider.Size = new System.Drawing.Size(111, 25);
+            this.lGelirGider.TabIndex = 0;
+            this.lGelirGider.Text = "Gelir/Gider";
+            // 
+            // lStandart6
+            // 
+            this.lStandart6.AutoSize = true;
+            this.lStandart6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart6.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart6.Location = new System.Drawing.Point(11, 352);
+            this.lStandart6.Name = "lStandart6";
+            this.lStandart6.Size = new System.Drawing.Size(44, 21);
+            this.lStandart6.TabIndex = 10;
+            this.lStandart6.Text = "Tarih";
+            // 
+            // lStandart5
+            // 
+            this.lStandart5.AutoSize = true;
+            this.lStandart5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart5.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart5.Location = new System.Drawing.Point(10, 193);
+            this.lStandart5.Name = "lStandart5";
+            this.lStandart5.Size = new System.Drawing.Size(75, 21);
+            this.lStandart5.TabIndex = 8;
+            this.lStandart5.Text = "Açıklama";
+            // 
+            // lStandart4
+            // 
+            this.lStandart4.AutoSize = true;
+            this.lStandart4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart4.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart4.Location = new System.Drawing.Point(136, 141);
+            this.lStandart4.Name = "lStandart4";
+            this.lStandart4.Size = new System.Drawing.Size(40, 21);
+            this.lStandart4.TabIndex = 7;
+            this.lStandart4.Text = "Kart";
+            // 
+            // lStandart3
+            // 
+            this.lStandart3.AutoSize = true;
+            this.lStandart3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart3.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart3.Location = new System.Drawing.Point(10, 141);
+            this.lStandart3.Name = "lStandart3";
+            this.lStandart3.Size = new System.Drawing.Size(48, 21);
+            this.lStandart3.TabIndex = 6;
+            this.lStandart3.Text = "Nakit";
+            // 
+            // lStandart2
+            // 
+            this.lStandart2.AutoSize = true;
+            this.lStandart2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart2.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart2.Location = new System.Drawing.Point(10, 86);
+            this.lStandart2.Name = "lStandart2";
+            this.lStandart2.Size = new System.Drawing.Size(100, 21);
+            this.lStandart2.TabIndex = 3;
+            this.lStandart2.Text = "Ödeme Türü";
             // 
             // fGelirGider
             // 

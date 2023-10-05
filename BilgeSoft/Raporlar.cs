@@ -103,10 +103,8 @@ namespace BilgeSoft
             f.reportViewer1.LocalReport.DataSources.Add(rs);
             f.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\rpStokUrun.rdlc";
 
-            ReportParameter[] rPrm = new ReportParameter[3];
+            ReportParameter[] rPrm = new ReportParameter[1];
             rPrm[0] = new ReportParameter("Baslik", Baslik);
-            rPrm[1] = new ReportParameter("TarihBaslangic", TarihBaslangic);
-            rPrm[2] = new ReportParameter("TarihBitis", TarihBitis);
             f.reportViewer1.LocalReport.SetParameters(rPrm);
             f.reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
             f.reportViewer1.ZoomMode = ZoomMode.PageWidth;

@@ -418,7 +418,7 @@ namespace BilgeSoft
             this.dtBitis.ShadowDecoration.Enabled = true;
             this.dtBitis.Size = new System.Drawing.Size(148, 40);
             this.dtBitis.TabIndex = 92;
-            this.dtBitis.Value = new System.DateTime(2023, 9, 21, 19, 14, 45, 154);
+            this.dtBitis.Value = new System.DateTime(2023, 10, 5, 0, 0, 0, 0);
             // 
             // dtBaslangic
             // 
@@ -442,7 +442,7 @@ namespace BilgeSoft
             this.dtBaslangic.ShadowDecoration.Enabled = true;
             this.dtBaslangic.Size = new System.Drawing.Size(148, 40);
             this.dtBaslangic.TabIndex = 91;
-            this.dtBaslangic.Value = new System.DateTime(2023, 9, 21, 19, 14, 45, 154);
+            this.dtBaslangic.Value = new System.DateTime(2023, 10, 5, 0, 0, 0, 0);
             // 
             // tableLayoutPanel2
             // 
@@ -584,7 +584,7 @@ namespace BilgeSoft
             this.tSatisKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSatisKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSatisKart.Location = new System.Drawing.Point(49, 74);
-            this.tSatisKart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tSatisKart.Margin = new System.Windows.Forms.Padding(5);
             this.tSatisKart.Name = "tSatisKart";
             this.tSatisKart.PasswordChar = '\0';
             this.tSatisKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -616,7 +616,7 @@ namespace BilgeSoft
             this.tSatisNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSatisNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSatisNakit.Location = new System.Drawing.Point(49, 45);
-            this.tSatisNakit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tSatisNakit.Margin = new System.Windows.Forms.Padding(4);
             this.tSatisNakit.Name = "tSatisNakit";
             this.tSatisNakit.PasswordChar = '\0';
             this.tSatisNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -676,7 +676,7 @@ namespace BilgeSoft
             this.tGelirNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGelirNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGelirNakit.Location = new System.Drawing.Point(49, 34);
-            this.tGelirNakit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tGelirNakit.Margin = new System.Windows.Forms.Padding(5);
             this.tGelirNakit.Name = "tGelirNakit";
             this.tGelirNakit.PasswordChar = '\0';
             this.tGelirNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -708,7 +708,7 @@ namespace BilgeSoft
             this.tGelirKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGelirKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGelirKart.Location = new System.Drawing.Point(49, 68);
-            this.tGelirKart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tGelirKart.Margin = new System.Windows.Forms.Padding(5);
             this.tGelirKart.Name = "tGelirKart";
             this.tGelirKart.PasswordChar = '\0';
             this.tGelirKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -823,7 +823,7 @@ namespace BilgeSoft
             this.tIadeKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tIadeKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tIadeKart.Location = new System.Drawing.Point(49, 77);
-            this.tIadeKart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tIadeKart.Margin = new System.Windows.Forms.Padding(5);
             this.tIadeKart.Name = "tIadeKart";
             this.tIadeKart.PasswordChar = '\0';
             this.tIadeKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -855,7 +855,7 @@ namespace BilgeSoft
             this.tIadeNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tIadeNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tIadeNakit.Location = new System.Drawing.Point(49, 44);
-            this.tIadeNakit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tIadeNakit.Margin = new System.Windows.Forms.Padding(5);
             this.tIadeNakit.Name = "tIadeNakit";
             this.tIadeNakit.PasswordChar = '\0';
             this.tIadeNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -1007,7 +1007,7 @@ namespace BilgeSoft
             this.tKartKomisyon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKartKomisyon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKartKomisyon.Location = new System.Drawing.Point(19, 89);
-            this.tKartKomisyon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tKartKomisyon.Margin = new System.Windows.Forms.Padding(5);
             this.tKartKomisyon.Name = "tKartKomisyon";
             this.tKartKomisyon.PasswordChar = '\0';
             this.tKartKomisyon.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -1039,7 +1039,7 @@ namespace BilgeSoft
             this.tKdvToplam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKdvToplam.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKdvToplam.Location = new System.Drawing.Point(19, 36);
-            this.tKdvToplam.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tKdvToplam.Margin = new System.Windows.Forms.Padding(5);
             this.tKdvToplam.Name = "tKdvToplam";
             this.tKdvToplam.PasswordChar = '\0';
             this.tKdvToplam.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -1098,7 +1098,7 @@ namespace BilgeSoft
             this.tGiderNakit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGiderNakit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGiderNakit.Location = new System.Drawing.Point(49, 35);
-            this.tGiderNakit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tGiderNakit.Margin = new System.Windows.Forms.Padding(5);
             this.tGiderNakit.Name = "tGiderNakit";
             this.tGiderNakit.PasswordChar = '\0';
             this.tGiderNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
@@ -1130,7 +1130,7 @@ namespace BilgeSoft
             this.tGiderKart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGiderKart.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGiderKart.Location = new System.Drawing.Point(49, 66);
-            this.tGiderKart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tGiderKart.Margin = new System.Windows.Forms.Padding(5);
             this.tGiderKart.Name = "tGiderKart";
             this.tGiderKart.PasswordChar = '\0';
             this.tGiderKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));

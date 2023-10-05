@@ -115,18 +115,10 @@ namespace BilgeSoft
 
         private void bLisans_Click(object sender, EventArgs e)
         {
-            Lic license = new Lic();
-
-        }
-
-        private void tKullaniciAdi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tSifre_TextChanged(object sender, EventArgs e)
-        {
-
+            Lic lic = new Lic();
+            fLisans f = new fLisans();
+            f.lKontrolNo.Text = lic.EkrandaGoster().ToString();
+            f.Show();
         }
     }
 }

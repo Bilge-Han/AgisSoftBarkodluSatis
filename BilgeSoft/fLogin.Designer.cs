@@ -79,7 +79,7 @@ namespace BilgeSoft
             this.bLisans.ShadowDecoration.Color = System.Drawing.Color.Maroon;
             this.bLisans.ShadowDecoration.Enabled = true;
             this.bLisans.Size = new System.Drawing.Size(150, 28);
-            this.bLisans.TabIndex = 52;
+            this.bLisans.TabIndex = 3;
             this.bLisans.Text = "Lisans";
             this.bLisans.Click += new System.EventHandler(this.bLisans_Click);
             // 
@@ -111,7 +111,7 @@ namespace BilgeSoft
             this.tSifre.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tSifre.ShadowDecoration.Enabled = true;
             this.tSifre.Size = new System.Drawing.Size(202, 30);
-            this.tSifre.TabIndex = 51;
+            this.tSifre.TabIndex = 1;
             // 
             // label4
             // 
@@ -148,7 +148,7 @@ namespace BilgeSoft
             this.guna2Button1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2Button1.ShadowDecoration.Enabled = true;
             this.guna2Button1.Size = new System.Drawing.Size(123, 70);
-            this.guna2Button1.TabIndex = 50;
+            this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Giriş";
             this.guna2Button1.Click += new System.EventHandler(this.bGiris_Click);
             // 
@@ -192,7 +192,7 @@ namespace BilgeSoft
             this.tKullaniciAdi.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tKullaniciAdi.ShadowDecoration.Enabled = true;
             this.tKullaniciAdi.Size = new System.Drawing.Size(202, 30);
-            this.tKullaniciAdi.TabIndex = 48;
+            this.tKullaniciAdi.TabIndex = 0;
             // 
             // guna2ControlBox1
             // 
@@ -205,7 +205,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Location = new System.Drawing.Point(463, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox1.TabIndex = 49;
+            this.guna2ControlBox1.TabIndex = 4;
             // 
             // pictureBox1
             // 

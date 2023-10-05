@@ -30,9 +30,9 @@ namespace BilgeSoft
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUrunGiris));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -383,9 +383,8 @@ namespace BilgeSoft
             // bUrunGrubuEkle
             // 
             this.bUrunGrubuEkle.Animated = true;
-            this.bUrunGrubuEkle.AutoRoundedCorners = true;
             this.bUrunGrubuEkle.BackColor = System.Drawing.Color.Transparent;
-            this.bUrunGrubuEkle.BorderRadius = 23;
+            this.bUrunGrubuEkle.BorderRadius = 10;
             this.bUrunGrubuEkle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bUrunGrubuEkle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bUrunGrubuEkle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -403,7 +402,7 @@ namespace BilgeSoft
             this.bUrunGrubuEkle.Location = new System.Drawing.Point(8, 99);
             this.bUrunGrubuEkle.Margin = new System.Windows.Forms.Padding(2);
             this.bUrunGrubuEkle.Name = "bUrunGrubuEkle";
-            this.bUrunGrubuEkle.ShadowDecoration.BorderRadius = 40;
+            this.bUrunGrubuEkle.ShadowDecoration.BorderRadius = 10;
             this.bUrunGrubuEkle.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.bUrunGrubuEkle.ShadowDecoration.Enabled = true;
             this.bUrunGrubuEkle.Size = new System.Drawing.Size(120, 49);
@@ -416,9 +415,8 @@ namespace BilgeSoft
             // bBarkodOlustur
             // 
             this.bBarkodOlustur.Animated = true;
-            this.bBarkodOlustur.AutoRoundedCorners = true;
             this.bBarkodOlustur.BackColor = System.Drawing.Color.Transparent;
-            this.bBarkodOlustur.BorderRadius = 23;
+            this.bBarkodOlustur.BorderRadius = 10;
             this.bBarkodOlustur.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bBarkodOlustur.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bBarkodOlustur.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -436,7 +434,7 @@ namespace BilgeSoft
             this.bBarkodOlustur.Location = new System.Drawing.Point(8, 22);
             this.bBarkodOlustur.Margin = new System.Windows.Forms.Padding(2);
             this.bBarkodOlustur.Name = "bBarkodOlustur";
-            this.bBarkodOlustur.ShadowDecoration.BorderRadius = 40;
+            this.bBarkodOlustur.ShadowDecoration.BorderRadius = 10;
             this.bBarkodOlustur.ShadowDecoration.Color = System.Drawing.Color.DarkOrange;
             this.bBarkodOlustur.ShadowDecoration.Enabled = true;
             this.bBarkodOlustur.Size = new System.Drawing.Size(120, 49);
@@ -692,9 +690,8 @@ namespace BilgeSoft
             // bIptal
             // 
             this.bIptal.Animated = true;
-            this.bIptal.AutoRoundedCorners = true;
             this.bIptal.BackColor = System.Drawing.Color.Transparent;
-            this.bIptal.BorderRadius = 23;
+            this.bIptal.BorderRadius = 10;
             this.bIptal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bIptal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bIptal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -712,7 +709,7 @@ namespace BilgeSoft
             this.bIptal.Location = new System.Drawing.Point(9, 99);
             this.bIptal.Margin = new System.Windows.Forms.Padding(2);
             this.bIptal.Name = "bIptal";
-            this.bIptal.ShadowDecoration.BorderRadius = 40;
+            this.bIptal.ShadowDecoration.BorderRadius = 10;
             this.bIptal.ShadowDecoration.Color = System.Drawing.Color.Brown;
             this.bIptal.ShadowDecoration.Enabled = true;
             this.bIptal.Size = new System.Drawing.Size(120, 49);
@@ -726,9 +723,8 @@ namespace BilgeSoft
             // bKaydet
             // 
             this.bKaydet.Animated = true;
-            this.bKaydet.AutoRoundedCorners = true;
             this.bKaydet.BackColor = System.Drawing.Color.Transparent;
-            this.bKaydet.BorderRadius = 23;
+            this.bKaydet.BorderRadius = 10;
             this.bKaydet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bKaydet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bKaydet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -746,7 +742,7 @@ namespace BilgeSoft
             this.bKaydet.Location = new System.Drawing.Point(9, 22);
             this.bKaydet.Margin = new System.Windows.Forms.Padding(2);
             this.bKaydet.Name = "bKaydet";
-            this.bKaydet.ShadowDecoration.BorderRadius = 40;
+            this.bKaydet.ShadowDecoration.BorderRadius = 10;
             this.bKaydet.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
             this.bKaydet.ShadowDecoration.Enabled = true;
             this.bKaydet.Size = new System.Drawing.Size(120, 49);
@@ -906,20 +902,20 @@ namespace BilgeSoft
             this.gridUrunler.BackgroundColor = System.Drawing.Color.White;
             this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridUrunler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Sil});
             this.gridUrunler.ContextMenuStrip = this.contextMenuStrip1;
-            this.gridUrunler.DefaultCellStyle = dataGridViewCellStyle4;
+            this.gridUrunler.DefaultCellStyle = dataGridViewCellStyle1;
             this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridUrunler.EnableHeadersVisualStyles = false;
             this.gridUrunler.Location = new System.Drawing.Point(0, 0);
@@ -927,15 +923,15 @@ namespace BilgeSoft
             this.gridUrunler.ReadOnly = true;
             this.gridUrunler.RowHeadersVisible = false;
             this.gridUrunler.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUrunler.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUrunler.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -948,13 +944,13 @@ namespace BilgeSoft
             // 
             // Sil
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle5.NullValue")));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Orange;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.Sil.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.Sil.DefaultCellStyle = dataGridViewCellStyle2;
             this.Sil.HeaderText = "Sil";
             this.Sil.MinimumWidth = 6;
             this.Sil.Name = "Sil";
