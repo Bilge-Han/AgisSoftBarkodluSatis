@@ -699,6 +699,19 @@ namespace BilgeSoft
             }
         }
 
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tOdenen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
