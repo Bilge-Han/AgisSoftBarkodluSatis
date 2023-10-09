@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Guna.UI2.WinForms;
 namespace BilgeSoft
 {
     public partial class fHizliButonUrunEkle : Form
@@ -53,7 +53,7 @@ namespace BilgeSoft
                 fSatis f = (fSatis)Application.OpenForms["fSatis"];
                 if (f!=null)
                 {
-                    Button b = f.Controls.Find("bHizli" + id,true).FirstOrDefault() as Button;
+                    Guna2Button b = f.Controls.Find("bHizli" + id,true).FirstOrDefault() as Guna2Button;
                     //Veritabanından çeker güncelleyipte yapabiliriz burdan direktte güncelleyebiliriz.
                     b.Text = urunAd + "\n" + fiyat.ToString("C2");
                 }

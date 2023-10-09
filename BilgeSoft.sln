@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeSoft", "BilgeSoft\BilgeSoft.csproj", "{AE3C32EA-86D7-4651-AA63-0A4FFDF06460}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BilgeSoftSetup", "BilgeSoftSetup\BilgeSoftSetup.vdproj", "{7647094C-BCF2-4C3E-BAC8-75E98A21CF46}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lisans", "Lisans\Lisans.csproj", "{46BBBABA-9B6B-4A2F-B61E-4F1BF7094734}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AgisSoftSetup", "AgisSoftSetup\AgisSoftSetup.vdproj", "{ED4F73F0-2488-4E04-B89A-C35A5BABAA91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +19,12 @@ Global
 		{AE3C32EA-86D7-4651-AA63-0A4FFDF06460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE3C32EA-86D7-4651-AA63-0A4FFDF06460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE3C32EA-86D7-4651-AA63-0A4FFDF06460}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7647094C-BCF2-4C3E-BAC8-75E98A21CF46}.Debug|Any CPU.ActiveCfg = Debug
-		{7647094C-BCF2-4C3E-BAC8-75E98A21CF46}.Release|Any CPU.ActiveCfg = Release
 		{46BBBABA-9B6B-4A2F-B61E-4F1BF7094734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46BBBABA-9B6B-4A2F-B61E-4F1BF7094734}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46BBBABA-9B6B-4A2F-B61E-4F1BF7094734}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46BBBABA-9B6B-4A2F-B61E-4F1BF7094734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED4F73F0-2488-4E04-B89A-C35A5BABAA91}.Debug|Any CPU.ActiveCfg = Debug
+		{ED4F73F0-2488-4E04-B89A-C35A5BABAA91}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

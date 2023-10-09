@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Guna.UI2.WinForms;
 namespace BilgeSoft
 {
     public partial class fSatis : Form
@@ -38,7 +38,7 @@ namespace BilgeSoft
             var hizliUrun = _db.HizliButon.ToList();
             foreach (var item in hizliUrun)
             {
-                Button bH = this.Controls.Find("bHizli" + item.Id, true).FirstOrDefault() as Button;
+                Guna2Button bH = this.Controls.Find("bHizli" + item.Id, true).FirstOrDefault() as Guna2Button;
                 if (bH != null)
                 {
                     double fiyat = İslemler.DoubleYap(item.Fiyat.ToString());
@@ -48,7 +48,7 @@ namespace BilgeSoft
         }
         private void HizliButonClick(object sender, EventArgs e)
         {
-            Button bt = (Button)sender;
+            Guna2Button bt = (Guna2Button)sender;
             int butonId = Convert.ToInt16(bt.Name.ToString().Substring(6, bt.Name.Length - 6));
             if (bt.Text.StartsWith("-"))
             {
@@ -201,7 +201,7 @@ namespace BilgeSoft
         {
             if (e.Button == MouseButtons.Right)
             {
-                Button b = (Button)sender;
+                Guna2Button b = (Guna2Button)sender;
                 if (!b.Text.StartsWith("-"))
                 {
                     int butonId = Convert.ToInt16(b.Name.ToString().Substring(6, b.Name.Length - 6));
@@ -224,13 +224,13 @@ namespace BilgeSoft
             guncelle.Fiyat = 0;
             _db.SaveChanges();
             double fiyat = 0;
-            Button b = this.Controls.Find("bHizli" + butonId, true).FirstOrDefault() as Button;
+            Guna2Button b = this.Controls.Find("bHizli" + butonId, true).FirstOrDefault() as Guna2Button;
             b.Text = "-" + "\n" + fiyat.ToString("C2");
         }
 
         private void bNx_Click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
+            Guna2Button b = (Guna2Button)sender;
             if (b.Text == ",")
             {
                 int virgul = tNumarator.Text.Count(x => x == ',');
@@ -295,7 +295,7 @@ namespace BilgeSoft
 
         private void OdenenHizli_Click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
+            Guna2Button b = (Guna2Button)sender;
             OdenenButonMiktar(b.Text);
             #region eski
             //double genelToplam = İslemler.DoubleYap(tGenelToplam.Text);
@@ -699,19 +699,9 @@ namespace BilgeSoft
             }
         }
 
-        private void guna2Button11_Click(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tableLayoutPanel12_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tOdenen_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

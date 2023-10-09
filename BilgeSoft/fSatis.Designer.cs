@@ -237,7 +237,7 @@ namespace BilgeSoft
             this.lStandart2.ForeColor = System.Drawing.Color.White;
             this.lStandart2.Location = new System.Drawing.Point(11, 12);
             this.lStandart2.Name = "lStandart2";
-            this.lStandart2.Size = new System.Drawing.Size(185, 28);
+            this.lStandart2.Size = new System.Drawing.Size(147, 21);
             this.lStandart2.TabIndex = 10;
             this.lStandart2.Text = "Nakit-Kart Ödeme";
             // 
@@ -271,6 +271,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
             this.guna2ControlBox1.TabIndex = 97;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // splitContainer3
             // 
@@ -335,7 +336,7 @@ namespace BilgeSoft
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.label3.Location = new System.Drawing.Point(349, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
+            this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 38;
             this.label3.Text = "Kullanıcı :";
             // 
@@ -347,7 +348,7 @@ namespace BilgeSoft
             this.chYazdirma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.chYazdirma.Location = new System.Drawing.Point(159, 7);
             this.chYazdirma.Name = "chYazdirma";
-            this.chYazdirma.Size = new System.Drawing.Size(190, 29);
+            this.chYazdirma.Size = new System.Drawing.Size(156, 24);
             this.chYazdirma.TabIndex = 37;
             this.chYazdirma.Text = "Yazdırma Durumu";
             this.chYazdirma.UseVisualStyleBackColor = false;
@@ -486,7 +487,7 @@ namespace BilgeSoft
             this.lNakit.AutoSize = true;
             this.lNakit.Location = new System.Drawing.Point(462, 44);
             this.lNakit.Name = "lNakit";
-            this.lNakit.Size = new System.Drawing.Size(40, 17);
+            this.lNakit.Size = new System.Drawing.Size(32, 13);
             this.lNakit.TabIndex = 7;
             this.lNakit.Text = "Nakit";
             this.lNakit.Visible = false;
@@ -496,7 +497,7 @@ namespace BilgeSoft
             this.lKart.AutoSize = true;
             this.lKart.Location = new System.Drawing.Point(459, 10);
             this.lKart.Name = "lKart";
-            this.lKart.Size = new System.Drawing.Size(34, 17);
+            this.lKart.Size = new System.Drawing.Size(26, 13);
             this.lKart.TabIndex = 6;
             this.lKart.Text = "Kart";
             this.lKart.Visible = false;
@@ -509,7 +510,7 @@ namespace BilgeSoft
             this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
             this.lKullanici.Location = new System.Drawing.Point(409, 13);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(41, 17);
+            this.lKullanici.Size = new System.Drawing.Size(34, 13);
             this.lKullanici.TabIndex = 5;
             this.lKullanici.Text = "kllnc";
             // 
@@ -525,10 +526,11 @@ namespace BilgeSoft
             this.chSatisIadeIslemi.ForeColor = System.Drawing.Color.White;
             this.chSatisIadeIslemi.Location = new System.Drawing.Point(3, 4);
             this.chSatisIadeIslemi.Name = "chSatisIadeIslemi";
-            this.chSatisIadeIslemi.Size = new System.Drawing.Size(150, 34);
+            this.chSatisIadeIslemi.Size = new System.Drawing.Size(125, 28);
             this.chSatisIadeIslemi.TabIndex = 4;
             this.chSatisIadeIslemi.Text = "Satış Yapılıyor";
             this.chSatisIadeIslemi.UseVisualStyleBackColor = false;
+            this.chSatisIadeIslemi.CheckedChanged += new System.EventHandler(this.chSatisIadeIslemi_CheckedChanged);
             // 
             // label6
             // 
@@ -537,7 +539,7 @@ namespace BilgeSoft
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.label6.Location = new System.Drawing.Point(108, 38);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 25);
+            this.label6.Size = new System.Drawing.Size(60, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "Barkod";
             // 
@@ -548,7 +550,7 @@ namespace BilgeSoft
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.label5.Location = new System.Drawing.Point(9, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 25);
+            this.label5.Size = new System.Drawing.Size(52, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Miktar";
             // 
@@ -557,15 +559,17 @@ namespace BilgeSoft
             this.tBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tBarkod.Location = new System.Drawing.Point(106, 61);
             this.tBarkod.Name = "tBarkod";
-            this.tBarkod.Size = new System.Drawing.Size(232, 30);
+            this.tBarkod.Size = new System.Drawing.Size(232, 26);
             this.tBarkod.TabIndex = 1;
+            this.tBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBarkod_KeyDown);
+            this.tBarkod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tBarkod_KeyPress);
             // 
             // tMiktar
             // 
             this.tMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tMiktar.Location = new System.Drawing.Point(9, 61);
             this.tMiktar.Name = "tMiktar";
-            this.tMiktar.Size = new System.Drawing.Size(78, 30);
+            this.tMiktar.Size = new System.Drawing.Size(78, 26);
             this.tMiktar.TabIndex = 0;
             this.tMiktar.Text = "1";
             this.tMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -616,6 +620,7 @@ namespace BilgeSoft
             this.gridSatisListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridSatisListesi.Size = new System.Drawing.Size(454, 457);
             this.gridSatisListesi.TabIndex = 1;
+            this.gridSatisListesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSatisListesi_CellContentClick);
             // 
             // Tarih
             // 
@@ -755,6 +760,7 @@ namespace BilgeSoft
             this.bKartNakit.TabIndex = 42;
             this.bKartNakit.Text = "Kart / Nakit (F1)";
             this.bKartNakit.TextOffset = new System.Drawing.Point(0, -14);
+            this.bKartNakit.Click += new System.EventHandler(this.bKartNakit_Click);
             // 
             // bKart
             // 
@@ -780,6 +786,7 @@ namespace BilgeSoft
             this.bKart.TabIndex = 41;
             this.bKart.Text = "Kredi Kartı (F1)";
             this.bKart.TextOffset = new System.Drawing.Point(0, -14);
+            this.bKart.Click += new System.EventHandler(this.bKart_Click);
             // 
             // bNakit
             // 
@@ -803,6 +810,7 @@ namespace BilgeSoft
             this.bNakit.Size = new System.Drawing.Size(86, 112);
             this.bNakit.TabIndex = 40;
             this.bNakit.Text = "Nakit (F1)";
+            this.bNakit.Click += new System.EventHandler(this.bNakit_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -854,7 +862,6 @@ namespace BilgeSoft
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(92, 69);
             this.tableLayoutPanel12.TabIndex = 0;
-            this.tableLayoutPanel12.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel12_Paint);
             // 
             // tOdenen
             // 
@@ -866,11 +873,10 @@ namespace BilgeSoft
             this.tOdenen.Location = new System.Drawing.Point(3, 37);
             this.tOdenen.Name = "tOdenen";
             this.tOdenen.ReadOnly = true;
-            this.tOdenen.Size = new System.Drawing.Size(86, 23);
+            this.tOdenen.Size = new System.Drawing.Size(86, 19);
             this.tOdenen.TabIndex = 0;
             this.tOdenen.Text = "0";
             this.tOdenen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tOdenen.TextChanged += new System.EventHandler(this.tOdenen_TextChanged);
             // 
             // label1
             // 
@@ -879,7 +885,7 @@ namespace BilgeSoft
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 28);
+            this.label1.Size = new System.Drawing.Size(68, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ödenen";
             // 
@@ -910,7 +916,7 @@ namespace BilgeSoft
             this.tParaUstu.Location = new System.Drawing.Point(3, 37);
             this.tParaUstu.Name = "tParaUstu";
             this.tParaUstu.ReadOnly = true;
-            this.tParaUstu.Size = new System.Drawing.Size(86, 23);
+            this.tParaUstu.Size = new System.Drawing.Size(86, 19);
             this.tParaUstu.TabIndex = 0;
             this.tParaUstu.Text = "0";
             this.tParaUstu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -923,7 +929,7 @@ namespace BilgeSoft
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label2.Size = new System.Drawing.Size(84, 28);
+            this.label2.Size = new System.Drawing.Size(69, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Para Üstü";
             // 
@@ -1042,6 +1048,7 @@ namespace BilgeSoft
             this.bHizli22.TabIndex = 39;
             this.bHizli22.Text = "bHizli";
             this.bHizli22.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli21
             // 
@@ -1064,6 +1071,7 @@ namespace BilgeSoft
             this.bHizli21.TabIndex = 21;
             this.bHizli21.Text = "bHizli";
             this.bHizli21.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli23
             // 
@@ -1086,6 +1094,7 @@ namespace BilgeSoft
             this.bHizli23.TabIndex = 20;
             this.bHizli23.Text = "bHizli";
             this.bHizli23.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli25
             // 
@@ -1108,6 +1117,7 @@ namespace BilgeSoft
             this.bHizli25.TabIndex = 19;
             this.bHizli25.Text = "bHizli";
             this.bHizli25.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli24
             // 
@@ -1130,6 +1140,7 @@ namespace BilgeSoft
             this.bHizli24.TabIndex = 18;
             this.bHizli24.Text = "bHizli";
             this.bHizli24.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli1
             // 
@@ -1152,6 +1163,7 @@ namespace BilgeSoft
             this.bHizli1.TabIndex = 16;
             this.bHizli1.Text = "bHizli";
             this.bHizli1.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli2
             // 
@@ -1174,6 +1186,7 @@ namespace BilgeSoft
             this.bHizli2.TabIndex = 17;
             this.bHizli2.Text = "bHizli";
             this.bHizli2.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli3
             // 
@@ -1196,6 +1209,7 @@ namespace BilgeSoft
             this.bHizli3.TabIndex = 22;
             this.bHizli3.Text = "bHizli";
             this.bHizli3.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli4
             // 
@@ -1218,6 +1232,7 @@ namespace BilgeSoft
             this.bHizli4.TabIndex = 23;
             this.bHizli4.Text = "bHizli";
             this.bHizli4.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli5
             // 
@@ -1240,6 +1255,7 @@ namespace BilgeSoft
             this.bHizli5.TabIndex = 24;
             this.bHizli5.Text = "bHizli";
             this.bHizli5.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli6
             // 
@@ -1262,6 +1278,7 @@ namespace BilgeSoft
             this.bHizli6.TabIndex = 25;
             this.bHizli6.Text = "bHizli";
             this.bHizli6.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli7
             // 
@@ -1284,6 +1301,7 @@ namespace BilgeSoft
             this.bHizli7.TabIndex = 26;
             this.bHizli7.Text = "bHizli";
             this.bHizli7.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli8
             // 
@@ -1306,6 +1324,7 @@ namespace BilgeSoft
             this.bHizli8.TabIndex = 27;
             this.bHizli8.Text = "bHizli";
             this.bHizli8.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli9
             // 
@@ -1328,6 +1347,7 @@ namespace BilgeSoft
             this.bHizli9.TabIndex = 28;
             this.bHizli9.Text = "bHizli";
             this.bHizli9.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli10
             // 
@@ -1350,6 +1370,7 @@ namespace BilgeSoft
             this.bHizli10.TabIndex = 29;
             this.bHizli10.Text = "bHizli";
             this.bHizli10.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli12
             // 
@@ -1372,6 +1393,7 @@ namespace BilgeSoft
             this.bHizli12.TabIndex = 30;
             this.bHizli12.Text = "bHizli";
             this.bHizli12.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli11
             // 
@@ -1394,6 +1416,7 @@ namespace BilgeSoft
             this.bHizli11.TabIndex = 31;
             this.bHizli11.Text = "bHizli";
             this.bHizli11.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli13
             // 
@@ -1416,6 +1439,7 @@ namespace BilgeSoft
             this.bHizli13.TabIndex = 31;
             this.bHizli13.Text = "bHizli";
             this.bHizli13.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli14
             // 
@@ -1438,6 +1462,7 @@ namespace BilgeSoft
             this.bHizli14.TabIndex = 32;
             this.bHizli14.Text = "bHizli";
             this.bHizli14.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli15
             // 
@@ -1460,6 +1485,7 @@ namespace BilgeSoft
             this.bHizli15.TabIndex = 33;
             this.bHizli15.Text = "bHizli";
             this.bHizli15.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli16
             // 
@@ -1482,6 +1508,7 @@ namespace BilgeSoft
             this.bHizli16.TabIndex = 34;
             this.bHizli16.Text = "bHizli";
             this.bHizli16.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli17
             // 
@@ -1504,6 +1531,7 @@ namespace BilgeSoft
             this.bHizli17.TabIndex = 35;
             this.bHizli17.Text = "bHizli";
             this.bHizli17.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli18
             // 
@@ -1526,6 +1554,7 @@ namespace BilgeSoft
             this.bHizli18.TabIndex = 36;
             this.bHizli18.Text = "bHizli";
             this.bHizli18.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli19
             // 
@@ -1548,6 +1577,7 @@ namespace BilgeSoft
             this.bHizli19.TabIndex = 37;
             this.bHizli19.Text = "bHizli";
             this.bHizli19.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // bHizli20
             // 
@@ -1570,6 +1600,7 @@ namespace BilgeSoft
             this.bHizli20.TabIndex = 38;
             this.bHizli20.Text = "bHizli";
             this.bHizli20.Click += new System.EventHandler(this.HizliButonClick);
+            this.bHizli20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bh_MouseDown);
             // 
             // tableLayoutPanel6
             // 
@@ -1757,7 +1788,7 @@ namespace BilgeSoft
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(215, 231);
             this.tableLayoutPanel8.TabIndex = 1;
@@ -1770,7 +1801,7 @@ namespace BilgeSoft
             this.tNumarator.Location = new System.Drawing.Point(1, 1);
             this.tNumarator.Margin = new System.Windows.Forms.Padding(1);
             this.tNumarator.Name = "tNumarator";
-            this.tNumarator.Size = new System.Drawing.Size(213, 34);
+            this.tNumarator.Size = new System.Drawing.Size(213, 29);
             this.tNumarator.TabIndex = 2;
             this.tNumarator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1794,7 +1825,7 @@ namespace BilgeSoft
             this.tableLayoutPanel9.Controls.Add(this.bn8, 1, 2);
             this.tableLayoutPanel9.Controls.Add(this.bn9, 2, 2);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 34);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 40);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
@@ -1804,7 +1835,7 @@ namespace BilgeSoft
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(215, 197);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(215, 191);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
             // bnB
@@ -1821,7 +1852,7 @@ namespace BilgeSoft
             this.bnB.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bnB.ForeColor = System.Drawing.Color.White;
             this.bnB.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bnB.Location = new System.Drawing.Point(3, 149);
+            this.bnB.Location = new System.Drawing.Point(3, 143);
             this.bnB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bnB.Name = "bnB";
             this.bnB.Size = new System.Drawing.Size(65, 46);
@@ -1843,7 +1874,7 @@ namespace BilgeSoft
             this.bn0.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn0.ForeColor = System.Drawing.Color.White;
             this.bn0.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn0.Location = new System.Drawing.Point(74, 149);
+            this.bn0.Location = new System.Drawing.Point(74, 143);
             this.bn0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn0.Name = "bn0";
             this.bn0.Size = new System.Drawing.Size(65, 46);
@@ -1865,7 +1896,7 @@ namespace BilgeSoft
             this.bnV.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bnV.ForeColor = System.Drawing.Color.White;
             this.bnV.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bnV.Location = new System.Drawing.Point(145, 149);
+            this.bnV.Location = new System.Drawing.Point(145, 143);
             this.bnV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bnV.Name = "bnV";
             this.bnV.Size = new System.Drawing.Size(67, 46);
@@ -1890,7 +1921,7 @@ namespace BilgeSoft
             this.bn1.Location = new System.Drawing.Point(3, 2);
             this.bn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn1.Name = "bn1";
-            this.bn1.Size = new System.Drawing.Size(65, 45);
+            this.bn1.Size = new System.Drawing.Size(65, 43);
             this.bn1.TabIndex = 13;
             this.bn1.Text = "1";
             this.bn1.Click += new System.EventHandler(this.bNx_Click);
@@ -1912,7 +1943,7 @@ namespace BilgeSoft
             this.bn2.Location = new System.Drawing.Point(74, 2);
             this.bn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn2.Name = "bn2";
-            this.bn2.Size = new System.Drawing.Size(65, 45);
+            this.bn2.Size = new System.Drawing.Size(65, 43);
             this.bn2.TabIndex = 14;
             this.bn2.Text = "2";
             this.bn2.Click += new System.EventHandler(this.bNx_Click);
@@ -1934,7 +1965,7 @@ namespace BilgeSoft
             this.bn3.Location = new System.Drawing.Point(145, 2);
             this.bn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn3.Name = "bn3";
-            this.bn3.Size = new System.Drawing.Size(67, 45);
+            this.bn3.Size = new System.Drawing.Size(67, 43);
             this.bn3.TabIndex = 17;
             this.bn3.Text = "3";
             this.bn3.Click += new System.EventHandler(this.bNx_Click);
@@ -1953,10 +1984,10 @@ namespace BilgeSoft
             this.bn4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn4.ForeColor = System.Drawing.Color.White;
             this.bn4.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn4.Location = new System.Drawing.Point(3, 51);
+            this.bn4.Location = new System.Drawing.Point(3, 49);
             this.bn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn4.Name = "bn4";
-            this.bn4.Size = new System.Drawing.Size(65, 45);
+            this.bn4.Size = new System.Drawing.Size(65, 43);
             this.bn4.TabIndex = 18;
             this.bn4.Text = "4";
             this.bn4.Click += new System.EventHandler(this.bNx_Click);
@@ -1975,10 +2006,10 @@ namespace BilgeSoft
             this.bn5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn5.ForeColor = System.Drawing.Color.White;
             this.bn5.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn5.Location = new System.Drawing.Point(74, 51);
+            this.bn5.Location = new System.Drawing.Point(74, 49);
             this.bn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn5.Name = "bn5";
-            this.bn5.Size = new System.Drawing.Size(65, 45);
+            this.bn5.Size = new System.Drawing.Size(65, 43);
             this.bn5.TabIndex = 19;
             this.bn5.Text = "5";
             this.bn5.Click += new System.EventHandler(this.bNx_Click);
@@ -1997,10 +2028,10 @@ namespace BilgeSoft
             this.bn6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn6.ForeColor = System.Drawing.Color.White;
             this.bn6.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn6.Location = new System.Drawing.Point(145, 51);
+            this.bn6.Location = new System.Drawing.Point(145, 49);
             this.bn6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn6.Name = "bn6";
-            this.bn6.Size = new System.Drawing.Size(67, 45);
+            this.bn6.Size = new System.Drawing.Size(67, 43);
             this.bn6.TabIndex = 20;
             this.bn6.Text = "6";
             this.bn6.Click += new System.EventHandler(this.bNx_Click);
@@ -2019,10 +2050,10 @@ namespace BilgeSoft
             this.bn7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn7.ForeColor = System.Drawing.Color.White;
             this.bn7.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn7.Location = new System.Drawing.Point(3, 100);
+            this.bn7.Location = new System.Drawing.Point(3, 96);
             this.bn7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn7.Name = "bn7";
-            this.bn7.Size = new System.Drawing.Size(65, 45);
+            this.bn7.Size = new System.Drawing.Size(65, 43);
             this.bn7.TabIndex = 21;
             this.bn7.Text = "7";
             this.bn7.Click += new System.EventHandler(this.bNx_Click);
@@ -2041,10 +2072,10 @@ namespace BilgeSoft
             this.bn8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn8.ForeColor = System.Drawing.Color.White;
             this.bn8.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn8.Location = new System.Drawing.Point(74, 100);
+            this.bn8.Location = new System.Drawing.Point(74, 96);
             this.bn8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn8.Name = "bn8";
-            this.bn8.Size = new System.Drawing.Size(65, 45);
+            this.bn8.Size = new System.Drawing.Size(65, 43);
             this.bn8.TabIndex = 22;
             this.bn8.Text = "8";
             this.bn8.Click += new System.EventHandler(this.bNx_Click);
@@ -2063,10 +2094,10 @@ namespace BilgeSoft
             this.bn9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bn9.ForeColor = System.Drawing.Color.White;
             this.bn9.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.bn9.Location = new System.Drawing.Point(145, 100);
+            this.bn9.Location = new System.Drawing.Point(145, 96);
             this.bn9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bn9.Name = "bn9";
-            this.bn9.Size = new System.Drawing.Size(67, 45);
+            this.bn9.Size = new System.Drawing.Size(67, 43);
             this.bn9.TabIndex = 23;
             this.bn9.Text = "9";
             this.bn9.Click += new System.EventHandler(this.bNx_Click);
@@ -2173,6 +2204,7 @@ namespace BilgeSoft
             this.bZRaporAl.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bZRaporAl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bZRaporAl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bZRaporAl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bZRaporAl.FillColor = System.Drawing.Color.DarkCyan;
             this.bZRaporAl.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bZRaporAl.ForeColor = System.Drawing.Color.White;
@@ -2180,7 +2212,7 @@ namespace BilgeSoft
             this.bZRaporAl.Location = new System.Drawing.Point(112, 118);
             this.bZRaporAl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bZRaporAl.Name = "bZRaporAl";
-            this.bZRaporAl.Size = new System.Drawing.Size(103, 54);
+            this.bZRaporAl.Size = new System.Drawing.Size(104, 54);
             this.bZRaporAl.TabIndex = 21;
             this.bZRaporAl.Text = "Z Raporu Al";
             this.bZRaporAl.Click += new System.EventHandler(this.bZRaporAl_Click);
@@ -2194,6 +2226,7 @@ namespace BilgeSoft
             this.bOdenen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bOdenen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bOdenen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bOdenen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bOdenen.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.bOdenen.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bOdenen.ForeColor = System.Drawing.Color.White;
@@ -2215,6 +2248,7 @@ namespace BilgeSoft
             this.bTemizle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bTemizle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bTemizle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bTemizle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bTemizle.FillColor = System.Drawing.Color.YellowGreen;
             this.bTemizle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bTemizle.ForeColor = System.Drawing.Color.White;
@@ -2222,7 +2256,7 @@ namespace BilgeSoft
             this.bTemizle.Location = new System.Drawing.Point(112, 176);
             this.bTemizle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bTemizle.Name = "bTemizle";
-            this.bTemizle.Size = new System.Drawing.Size(103, 55);
+            this.bTemizle.Size = new System.Drawing.Size(104, 55);
             this.bTemizle.TabIndex = 22;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.Click += new System.EventHandler(this.bTemizle_Click);
@@ -2236,6 +2270,7 @@ namespace BilgeSoft
             this.bIslemBeklet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bIslemBeklet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bIslemBeklet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bIslemBeklet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bIslemBeklet.FillColor = System.Drawing.Color.MediumTurquoise;
             this.bIslemBeklet.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bIslemBeklet.ForeColor = System.Drawing.Color.White;
@@ -2243,7 +2278,7 @@ namespace BilgeSoft
             this.bIslemBeklet.Location = new System.Drawing.Point(112, 60);
             this.bIslemBeklet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bIslemBeklet.Name = "bIslemBeklet";
-            this.bIslemBeklet.Size = new System.Drawing.Size(103, 54);
+            this.bIslemBeklet.Size = new System.Drawing.Size(104, 54);
             this.bIslemBeklet.TabIndex = 19;
             this.bIslemBeklet.Text = "İşlem Beklet";
             this.bIslemBeklet.Click += new System.EventHandler(this.bIslemBeklet_Click);
@@ -2257,6 +2292,7 @@ namespace BilgeSoft
             this.bIade.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bIade.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bIade.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bIade.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bIade.FillColor = System.Drawing.Color.MediumAquamarine;
             this.bIade.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bIade.ForeColor = System.Drawing.Color.White;
@@ -2264,7 +2300,7 @@ namespace BilgeSoft
             this.bIade.Location = new System.Drawing.Point(112, 2);
             this.bIade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bIade.Name = "bIade";
-            this.bIade.Size = new System.Drawing.Size(103, 54);
+            this.bIade.Size = new System.Drawing.Size(104, 54);
             this.bIade.TabIndex = 20;
             this.bIade.Text = "İade İşlemi";
             this.bIade.Click += new System.EventHandler(this.bIade_Click);

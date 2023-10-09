@@ -32,8 +32,6 @@ namespace BilgeSoft
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lKullanici = new BilgeSoft.lStandart();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,8 +57,6 @@ namespace BilgeSoft
             this.guna2GradientPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.Controls.Add(this.label1);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox3);
-            this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox2);
-            this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox1);
             this.guna2GradientPanel3.Controls.Add(this.label3);
             this.guna2GradientPanel3.Controls.Add(this.lKullanici);
             this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -100,42 +96,11 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(454, 6);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(516, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox3.TabIndex = 99;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.Animated = true;
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox2.CustomIconSize = 35F;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(484, 6);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox2.TabIndex = 98;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.CustomIconSize = 35F;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(516, 6);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox1.TabIndex = 97;
             // 
             // label3
             // 
@@ -166,7 +131,7 @@ namespace BilgeSoft
             this.panel1.Controls.Add(this.lIsYeri);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 41);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(553, 424);
             this.panel1.TabIndex = 107;
@@ -187,7 +152,7 @@ namespace BilgeSoft
             this.tableLayoutPanel2.Controls.Add(this.bGenelRapor, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.bSatisIslemi, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 41);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -213,7 +178,7 @@ namespace BilgeSoft
             this.bCikis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bCikis.ImageSize = new System.Drawing.Size(40, 40);
             this.bCikis.Location = new System.Drawing.Point(332, 244);
-            this.bCikis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bCikis.Margin = new System.Windows.Forms.Padding(2);
             this.bCikis.Name = "bCikis";
             this.bCikis.Size = new System.Drawing.Size(162, 118);
             this.bCikis.TabIndex = 8;
@@ -237,7 +202,7 @@ namespace BilgeSoft
             this.bKullaniciDegistir.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bKullaniciDegistir.ImageSize = new System.Drawing.Size(40, 40);
             this.bKullaniciDegistir.Location = new System.Drawing.Point(167, 244);
-            this.bKullaniciDegistir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bKullaniciDegistir.Margin = new System.Windows.Forms.Padding(2);
             this.bKullaniciDegistir.Name = "bKullaniciDegistir";
             this.bKullaniciDegistir.Size = new System.Drawing.Size(161, 118);
             this.bKullaniciDegistir.TabIndex = 7;
@@ -261,7 +226,7 @@ namespace BilgeSoft
             this.bYedekleme.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bYedekleme.ImageSize = new System.Drawing.Size(40, 40);
             this.bYedekleme.Location = new System.Drawing.Point(2, 244);
-            this.bYedekleme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bYedekleme.Margin = new System.Windows.Forms.Padding(2);
             this.bYedekleme.Name = "bYedekleme";
             this.bYedekleme.Size = new System.Drawing.Size(161, 118);
             this.bYedekleme.TabIndex = 6;
@@ -285,7 +250,7 @@ namespace BilgeSoft
             this.bFiyatGuncelle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bFiyatGuncelle.ImageSize = new System.Drawing.Size(40, 40);
             this.bFiyatGuncelle.Location = new System.Drawing.Point(332, 123);
-            this.bFiyatGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bFiyatGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.bFiyatGuncelle.Name = "bFiyatGuncelle";
             this.bFiyatGuncelle.Size = new System.Drawing.Size(162, 117);
             this.bFiyatGuncelle.TabIndex = 5;
@@ -309,7 +274,7 @@ namespace BilgeSoft
             this.bAyarlar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bAyarlar.ImageSize = new System.Drawing.Size(40, 40);
             this.bAyarlar.Location = new System.Drawing.Point(167, 123);
-            this.bAyarlar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bAyarlar.Margin = new System.Windows.Forms.Padding(2);
             this.bAyarlar.Name = "bAyarlar";
             this.bAyarlar.Size = new System.Drawing.Size(161, 117);
             this.bAyarlar.TabIndex = 4;
@@ -333,7 +298,7 @@ namespace BilgeSoft
             this.bUrunGiris.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bUrunGiris.ImageSize = new System.Drawing.Size(40, 40);
             this.bUrunGiris.Location = new System.Drawing.Point(2, 123);
-            this.bUrunGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bUrunGiris.Margin = new System.Windows.Forms.Padding(2);
             this.bUrunGiris.Name = "bUrunGiris";
             this.bUrunGiris.Size = new System.Drawing.Size(161, 117);
             this.bUrunGiris.TabIndex = 3;
@@ -357,7 +322,7 @@ namespace BilgeSoft
             this.bStok.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bStok.ImageSize = new System.Drawing.Size(40, 40);
             this.bStok.Location = new System.Drawing.Point(332, 2);
-            this.bStok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bStok.Margin = new System.Windows.Forms.Padding(2);
             this.bStok.Name = "bStok";
             this.bStok.Size = new System.Drawing.Size(162, 117);
             this.bStok.TabIndex = 2;
@@ -381,7 +346,7 @@ namespace BilgeSoft
             this.bGenelRapor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bGenelRapor.ImageSize = new System.Drawing.Size(40, 40);
             this.bGenelRapor.Location = new System.Drawing.Point(167, 2);
-            this.bGenelRapor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bGenelRapor.Margin = new System.Windows.Forms.Padding(2);
             this.bGenelRapor.Name = "bGenelRapor";
             this.bGenelRapor.Size = new System.Drawing.Size(161, 117);
             this.bGenelRapor.TabIndex = 1;
@@ -405,7 +370,7 @@ namespace BilgeSoft
             this.bSatisIslemi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bSatisIslemi.ImageSize = new System.Drawing.Size(40, 40);
             this.bSatisIslemi.Location = new System.Drawing.Point(2, 2);
-            this.bSatisIslemi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bSatisIslemi.Margin = new System.Windows.Forms.Padding(2);
             this.bSatisIslemi.Name = "bSatisIslemi";
             this.bSatisIslemi.Size = new System.Drawing.Size(161, 117);
             this.bSatisIslemi.TabIndex = 0;
@@ -435,6 +400,8 @@ namespace BilgeSoft
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(553, 465);
+            this.MinimumSize = new System.Drawing.Size(553, 465);
             this.Name = "fBaslangic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barkodlu Satış Programı";
@@ -452,8 +419,6 @@ namespace BilgeSoft
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         public System.Windows.Forms.Label label3;
         internal lStandart lKullanici;
         private System.Windows.Forms.Panel panel1;

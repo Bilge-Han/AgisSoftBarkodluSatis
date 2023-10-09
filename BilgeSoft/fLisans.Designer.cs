@@ -158,7 +158,7 @@ namespace BilgeSoft
             this.tLisans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tLisans.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tLisans.Location = new System.Drawing.Point(10, 119);
-            this.tLisans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tLisans.Margin = new System.Windows.Forms.Padding(4);
             this.tLisans.Name = "tLisans";
             this.tLisans.PasswordChar = '\0';
             this.tLisans.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -188,7 +188,7 @@ namespace BilgeSoft
             this.bTamam.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bTamam.ImageSize = new System.Drawing.Size(40, 40);
             this.bTamam.Location = new System.Drawing.Point(80, 160);
-            this.bTamam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bTamam.Margin = new System.Windows.Forms.Padding(2);
             this.bTamam.Name = "bTamam";
             this.bTamam.ShadowDecoration.BorderRadius = 15;
             this.bTamam.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -212,6 +212,7 @@ namespace BilgeSoft
             this.Controls.Add(this.lStandart1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLisans";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LİSANS İŞLEMİ";
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
