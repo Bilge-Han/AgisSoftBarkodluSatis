@@ -86,6 +86,8 @@ namespace BilgeSoft
 
         private void fRapor_Load(object sender, EventArgs e)
         {
+            dtBaslangic.Value = DateTime.Now;
+            dtBitis.Value = DateTime.Now;
             guna2GradientPanel2.BorderRadius = 30;
             bGoster.BorderRadius = 15;
             bGelirEkle.Text = "";
@@ -154,15 +156,6 @@ namespace BilgeSoft
             Raporlar.KdvToplam = tKdvToplam.Text;
             Raporlar.KartKomisyon = tKartKomisyon.Text;
             Raporlar.RaporSayfasiRaporu(gridListe);
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2GradientPanel6_Paint(object sender, PaintEventArgs e)
-        {
         }
     }
 }

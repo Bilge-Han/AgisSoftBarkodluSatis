@@ -110,7 +110,6 @@ namespace BilgeSoft
                         case "Kullanici":
                             dgv.Columns[i].HeaderText = "Kullanıcı";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;   break;
-
                     }
                 }
             }
@@ -175,7 +174,7 @@ namespace BilgeSoft
         {
             SaveFileDialog save = new SaveFileDialog();
             save.Filter = "Veri yedek dosyası|0.bak";
-            save.FileName = "Agis_Soft" + DateTime.Now.ToShortDateString();
+            save.FileName = "Agis_Soft - " + DateTime.Now.ToShortDateString();
             if (save.ShowDialog()==DialogResult.OK)
             {
                 try
@@ -199,6 +198,21 @@ namespace BilgeSoft
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
+                }
+            }
+        }
+
+        public static void HizliButonGuncelle(string barkod,string urunAd,double? fiyat)
+        {
+            using (var db = new BarkodDbEntities())
+            {
+                if (db.HizliButon.Any(a => a.Barkod == barkod))
+                {
+                    var guncelle = db.HizliButon.Where(a => a.Barkod == barkod).SingleOrDefault();
+                    guncelle.Barkod = barkod;
+                    guncelle.UrunAd = urunAd;
+                    guncelle.Fiyat = fiyat;
+                    db.SaveChanges();
                 }
             }
         }

@@ -120,5 +120,10 @@ namespace BilgeSoft
             f.lKontrolNo.Text = lic.EkrandaGoster().ToString();
             f.Show();
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

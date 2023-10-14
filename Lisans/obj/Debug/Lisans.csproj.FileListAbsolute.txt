@@ -14,3 +14,4 @@ C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\Lisans\obj\Debug\Lisans.cs
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\Lisans\obj\Debug\Lisans.csproj.CoreCompileInputs.cache
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\Lisans\obj\Debug\Lisans.dll
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\Lisans\obj\Debug\Lisans.pdb
+C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\Lisans\obj\Debug\Lisans.csproj.AssemblyReference.cache

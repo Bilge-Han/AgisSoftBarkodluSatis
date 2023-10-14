@@ -51,7 +51,7 @@ namespace BilgeSoft
             this.listUrunGrup.Location = new System.Drawing.Point(14, 118);
             this.listUrunGrup.Name = "listUrunGrup";
             this.listUrunGrup.Size = new System.Drawing.Size(257, 179);
-            this.listUrunGrup.TabIndex = 2;
+            this.listUrunGrup.TabIndex = 1;
             // 
             // lStandart1
             // 
@@ -99,7 +99,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.Location = new System.Drawing.Point(201, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox3.TabIndex = 99;
+            this.guna2ControlBox3.TabIndex = 4;
             // 
             // lStandart3
             // 
@@ -126,7 +126,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.Location = new System.Drawing.Point(232, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox2.TabIndex = 98;
+            this.guna2ControlBox2.TabIndex = 5;
             // 
             // guna2ControlBox1
             // 
@@ -140,7 +140,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Location = new System.Drawing.Point(263, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox1.TabIndex = 97;
+            this.guna2ControlBox1.TabIndex = 6;
             // 
             // tUrunGrupAd
             // 
@@ -169,7 +169,7 @@ namespace BilgeSoft
             this.tUrunGrupAd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunGrupAd.ShadowDecoration.Enabled = true;
             this.tUrunGrupAd.Size = new System.Drawing.Size(256, 27);
-            this.tUrunGrupAd.TabIndex = 183;
+            this.tUrunGrupAd.TabIndex = 0;
             // 
             // bSil
             // 
@@ -188,14 +188,14 @@ namespace BilgeSoft
             this.bSil.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bSil.ImageSize = new System.Drawing.Size(40, 40);
             this.bSil.Location = new System.Drawing.Point(14, 303);
-            this.bSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bSil.Margin = new System.Windows.Forms.Padding(2);
             this.bSil.Name = "bSil";
             this.bSil.ShadowDecoration.BorderRadius = 15;
             this.bSil.ShadowDecoration.Color = System.Drawing.Color.Brown;
             this.bSil.ShadowDecoration.Depth = 20;
             this.bSil.ShadowDecoration.Enabled = true;
             this.bSil.Size = new System.Drawing.Size(121, 74);
-            this.bSil.TabIndex = 184;
+            this.bSil.TabIndex = 3;
             this.bSil.Text = "Sil";
             this.bSil.Click += new System.EventHandler(this.bSil_Click);
             // 
@@ -217,14 +217,14 @@ namespace BilgeSoft
             this.bEkle.ImageOffset = new System.Drawing.Point(-5, 0);
             this.bEkle.ImageSize = new System.Drawing.Size(40, 40);
             this.bEkle.Location = new System.Drawing.Point(149, 303);
-            this.bEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEkle.Margin = new System.Windows.Forms.Padding(2);
             this.bEkle.Name = "bEkle";
             this.bEkle.ShadowDecoration.BorderRadius = 15;
             this.bEkle.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.bEkle.ShadowDecoration.Depth = 20;
             this.bEkle.ShadowDecoration.Enabled = true;
             this.bEkle.Size = new System.Drawing.Size(121, 73);
-            this.bEkle.TabIndex = 186;
+            this.bEkle.TabIndex = 2;
             this.bEkle.Text = "Ekle";
             this.bEkle.Click += new System.EventHandler(this.bEkle_Click);
             // 

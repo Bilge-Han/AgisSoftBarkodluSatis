@@ -271,7 +271,6 @@ namespace BilgeSoft
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
             this.guna2ControlBox1.TabIndex = 97;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // splitContainer3
             // 
@@ -957,6 +956,7 @@ namespace BilgeSoft
             this.tGenelToplam.Name = "tGenelToplam";
             this.tGenelToplam.PasswordChar = '\0';
             this.tGenelToplam.PlaceholderText = "";
+            this.tGenelToplam.ReadOnly = true;
             this.tGenelToplam.SelectedText = "";
             this.tGenelToplam.Size = new System.Drawing.Size(178, 38);
             this.tGenelToplam.TabIndex = 2;
@@ -2316,7 +2316,6 @@ namespace BilgeSoft
             this.Name = "fSatis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BilgeSoftSatış";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fSatis_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fSatis_KeyDown);
             this.guna2GradientPanel3.ResumeLayout(false);

@@ -265,7 +265,7 @@ namespace BilgeSoft
             this.tBarkod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tBarkod.ShadowDecoration.Enabled = true;
             this.tBarkod.Size = new System.Drawing.Size(193, 27);
-            this.tBarkod.TabIndex = 184;
+            this.tBarkod.TabIndex = 0;
             this.tBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBarkod_KeyDown);
             // 
             // tYeniFiyat
@@ -295,7 +295,7 @@ namespace BilgeSoft
             this.tYeniFiyat.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tYeniFiyat.ShadowDecoration.Enabled = true;
             this.tYeniFiyat.Size = new System.Drawing.Size(117, 24);
-            this.tYeniFiyat.TabIndex = 185;
+            this.tYeniFiyat.TabIndex = 1;
             this.tYeniFiyat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // bYeniFiyat
@@ -323,7 +323,7 @@ namespace BilgeSoft
             this.bYeniFiyat.ShadowDecoration.Depth = 20;
             this.bYeniFiyat.ShadowDecoration.Enabled = true;
             this.bYeniFiyat.Size = new System.Drawing.Size(121, 73);
-            this.bYeniFiyat.TabIndex = 187;
+            this.bYeniFiyat.TabIndex = 2;
             this.bYeniFiyat.Text = "Kaydet";
             this.bYeniFiyat.Click += new System.EventHandler(this.bYeniFiyat_Click);
             // 

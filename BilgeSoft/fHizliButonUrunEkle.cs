@@ -78,5 +78,30 @@ namespace BilgeSoft
             }
         }
 
+        private void hızlıButonEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridUrunler.Rows.Count > 0)
+            {
+                string barkod = gridUrunler.CurrentRow.Cells["Barkod"].Value.ToString();
+                string urunAd = gridUrunler.CurrentRow.Cells["UrunAd"].Value.ToString();
+                double fiyat = Convert.ToDouble(gridUrunler.CurrentRow.Cells["SatisFiyat"].Value.ToString());
+                int id = Convert.ToInt16(lButonId.Text);
+
+                //Find 1.anahtarda arama yapar
+                var guncellenecekButon = _db.HizliButon.Find(id);
+                guncellenecekButon.Barkod = barkod;
+                guncellenecekButon.UrunAd = urunAd;
+                guncellenecekButon.Fiyat = fiyat;
+                _db.SaveChanges();
+                MessageBox.Show("Buton tanımlanmıştır.");
+                fSatis f = (fSatis)Application.OpenForms["fSatis"];
+                if (f != null)
+                {
+                    Guna2Button b = f.Controls.Find("bHizli" + id, true).FirstOrDefault() as Guna2Button;
+                    //Veritabanından çeker güncelleyipte yapabiliriz burdan direktte güncelleyebiliriz.
+                    b.Text = urunAd + "\n" + fiyat.ToString("C2");
+                }
+            }
+        }
     }
 }

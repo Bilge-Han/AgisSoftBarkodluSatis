@@ -16,5 +16,6 @@ namespace BilgeSoft
     {
         public int Id { get; set; }
         public Nullable<int> BarkodNo { get; set; }
+        public Nullable<int> GBarkodNo { get; set; }
     }
 }

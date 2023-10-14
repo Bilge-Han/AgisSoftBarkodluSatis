@@ -110,6 +110,7 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="BarkodNo" Type="Int32" />
+    <Property Name="GBarkodNo" Type="Int32" />
   </EntityType>
   <EntityType Name="Birim">
     <Key>

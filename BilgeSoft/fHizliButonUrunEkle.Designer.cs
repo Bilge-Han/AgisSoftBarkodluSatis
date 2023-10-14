@@ -44,6 +44,8 @@ namespace BilgeSoft
             this.chTumu = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.gridUrunler = new System.Windows.Forms.DataGridView();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.hızlıButonEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -51,6 +53,7 @@ namespace BilgeSoft
             this.splitContainer1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).BeginInit();
+            this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel3
@@ -81,7 +84,7 @@ namespace BilgeSoft
             this.tGunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tGunaLabel1.ForeColor = System.Drawing.Color.White;
             this.tGunaLabel1.Location = new System.Drawing.Point(9, 4);
-            this.tGunaLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tGunaLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.tGunaLabel1.Name = "tGunaLabel1";
             this.tGunaLabel1.Size = new System.Drawing.Size(138, 27);
             this.tGunaLabel1.TabIndex = 13;
@@ -100,7 +103,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.Location = new System.Drawing.Point(879, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox3.TabIndex = 99;
+            this.guna2ControlBox3.TabIndex = 3;
             // 
             // guna2ControlBox2
             // 
@@ -115,7 +118,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.Location = new System.Drawing.Point(910, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox2.TabIndex = 98;
+            this.guna2ControlBox2.TabIndex = 4;
             // 
             // guna2ControlBox1
             // 
@@ -129,7 +132,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Location = new System.Drawing.Point(941, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox1.TabIndex = 97;
+            this.guna2ControlBox1.TabIndex = 5;
             // 
             // splitContainer1
             // 
@@ -163,7 +166,7 @@ namespace BilgeSoft
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.SeaShell;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(978, 159);
             this.guna2GradientPanel1.TabIndex = 0;
@@ -195,7 +198,7 @@ namespace BilgeSoft
             this.tUrunAra.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunAra.ShadowDecoration.Enabled = true;
             this.tUrunAra.Size = new System.Drawing.Size(292, 28);
-            this.tUrunAra.TabIndex = 14;
+            this.tUrunAra.TabIndex = 0;
             this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
             // 
             // lButonId
@@ -231,7 +234,7 @@ namespace BilgeSoft
             this.chTumu.Location = new System.Drawing.Point(329, 79);
             this.chTumu.Name = "chTumu";
             this.chTumu.Size = new System.Drawing.Size(162, 29);
-            this.chTumu.TabIndex = 11;
+            this.chTumu.TabIndex = 1;
             this.chTumu.Text = "Tümünü Göster";
             this.chTumu.UseVisualStyleBackColor = false;
             this.chTumu.CheckedChanged += new System.EventHandler(this.chTumu_CheckedChanged);
@@ -265,6 +268,7 @@ namespace BilgeSoft
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridUrunler.ContextMenuStrip = this.guna2ContextMenuStrip1;
             this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridUrunler.EnableHeadersVisualStyles = false;
             this.gridUrunler.GridColor = System.Drawing.SystemColors.Control;
@@ -284,6 +288,29 @@ namespace BilgeSoft
             this.gridUrunler.Size = new System.Drawing.Size(978, 358);
             this.gridUrunler.TabIndex = 2;
             this.gridUrunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentDoubleClick);
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hızlıButonEkleToolStripMenuItem});
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(157, 26);
+            // 
+            // hızlıButonEkleToolStripMenuItem
+            // 
+            this.hızlıButonEkleToolStripMenuItem.Name = "hızlıButonEkleToolStripMenuItem";
+            this.hızlıButonEkleToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.hızlıButonEkleToolStripMenuItem.Text = "Hızlı Buton Ekle";
+            this.hızlıButonEkleToolStripMenuItem.Click += new System.EventHandler(this.hızlıButonEkleToolStripMenuItem_Click);
             // 
             // fHizliButonUrunEkle
             // 
@@ -306,6 +333,7 @@ namespace BilgeSoft
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunler)).EndInit();
+            this.guna2ContextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -325,5 +353,7 @@ namespace BilgeSoft
         private System.Windows.Forms.CheckBox chTumu;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView gridUrunler;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hızlıButonEkleToolStripMenuItem;
     }
 }

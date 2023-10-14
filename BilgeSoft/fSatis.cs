@@ -324,11 +324,9 @@ namespace BilgeSoft
             {
                 if (odenenMiktar != "")
                 {
-                    double odenenPara = İslemler.DoubleYap(odenenMiktar);
-                    //double sonuc = odenenPara - İslemler.DoubleYap(tGenelToplam.Text);
-                    tOdenen.Text = odenenPara.ToString("C2");
+                    double odenen = İslemler.DoubleYap(odenenMiktar);
+                    tOdenen.Text = odenen.ToString("C2");
                     ParaUstuGuncelle(odenenMiktar, tGenelToplam.Text);
-                    //ParaUstuHesap(sonuc);
                 }
             }
             else
@@ -337,6 +335,11 @@ namespace BilgeSoft
                 Console.Beep(900, 500);
                 MessageBox.Show("Şu anda bir satış bulunmuyor.");
             }
+        }
+        private void ParaUstuGuncelle(string odenenText, string genelToplamText)
+        {
+            double guncelParaUstu = İslemler.DoubleYap(odenenText) - İslemler.DoubleYap(genelToplamText);
+            ParaUstuHesap(guncelParaUstu);
         }
         private void ParaUstuHesap(double sonuc)
         {
@@ -347,12 +350,15 @@ namespace BilgeSoft
                 {
                     if (sonuc >= 0)
                     {
+                        //tOdenen.Text = odenen.ToString("C2");
                         tParaUstu.Text = sonuc.ToString("C2");
                         tNumarator.Clear();
                         tBarkod.Focus();
                     }
                     else
                     {
+                        tOdenen.Text = 0.ToString("C2");
+                        tParaUstu.Text = 0.ToString("C2");
                         Console.Beep(900, 500);
                         MessageBox.Show("Yetersiz Tutar");
                         tNumarator.Clear();
@@ -366,11 +372,7 @@ namespace BilgeSoft
             }
         }
 
-        private void ParaUstuGuncelle(string odenenText, string genelToplamText)
-        {
-            double guncelParaUstu = İslemler.DoubleYap(odenenText) - İslemler.DoubleYap(genelToplamText);
-            ParaUstuHesap(guncelParaUstu);
-        }
+
         private void bBarkod_Click(object sender, EventArgs e)
         {
             if (tNumarator.Text != "")
@@ -697,11 +699,6 @@ namespace BilgeSoft
             {
                 chSatisIadeIslemi.Text = "Satış Yapılıyor";
             }
-        }
-
-        private void guna2ControlBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

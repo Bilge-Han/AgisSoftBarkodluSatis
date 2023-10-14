@@ -74,6 +74,8 @@ namespace BilgeSoft
         BarkodDbEntities dbx = new BarkodDbEntities();
         private void fStok_Load(object sender, EventArgs e)
         {
+            dateBaslangic.Value = DateTime.Now;
+            dateBitis.Value = DateTime.Now;
             cmbIslemTuru.SelectedIndex = 0;
             rdTumu.Checked = true;
             cmbUrunGrubu.DisplayMember = "UrunGrupAd";

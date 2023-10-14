@@ -6,6 +6,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="BarkodNo" Type="int" />
+    <Property Name="GBarkodNo" Type="int" />
   </EntityType>
   <EntityType Name="Birim">
     <Key>
@@ -44,6 +45,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IslemNo" Type="int" />
+    <Property Name="ZNumara" Type="int" />
     <Property Name="Iade" Type="bit" />
     <Property Name="OdemeSekli" Type="nvarchar" MaxLength="50" />
     <Property Name="Nakit" Type="float" />
@@ -54,7 +56,6 @@
     <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
     <Property Name="Tarih" Type="datetime" />
     <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
-    <Property Name="ZNumara" Type="int" />
   </EntityType>
   <EntityType Name="Kullanici">
     <Key>
@@ -93,6 +94,7 @@
     </Key>
     <Property Name="SatisId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IslemNo" Type="int" />
+    <Property Name="ZNumara" Type="int" />
     <Property Name="UrunAd" Type="nvarchar" MaxLength="50" />
     <Property Name="Barkod" Type="nvarchar" MaxLength="50" />
     <Property Name="UrunGrup" Type="nvarchar" MaxLength="50" />
@@ -106,7 +108,6 @@
     <Property Name="Iade" Type="bit" />
     <Property Name="Tarih" Type="datetime" />
     <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
-    <Property Name="ZNumara" Type="int" />
   </EntityType>
   <EntityType Name="StokHareket">
     <Key>

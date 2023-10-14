@@ -83,7 +83,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.Location = new System.Drawing.Point(200, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox3.TabIndex = 99;
+            this.guna2ControlBox3.TabIndex = 6;
             // 
             // guna2ControlBox2
             // 
@@ -98,7 +98,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.Location = new System.Drawing.Point(231, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox2.TabIndex = 98;
+            this.guna2ControlBox2.TabIndex = 7;
             // 
             // guna2ControlBox1
             // 
@@ -112,7 +112,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Location = new System.Drawing.Point(263, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox1.TabIndex = 97;
+            this.guna2ControlBox1.TabIndex = 8;
             // 
             // lGelirGider
             // 
@@ -154,7 +154,7 @@ namespace BilgeSoft
             this.cmbOdemeTuru.ShadowDecoration.Enabled = true;
             this.cmbOdemeTuru.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.cmbOdemeTuru.Size = new System.Drawing.Size(246, 31);
-            this.cmbOdemeTuru.TabIndex = 172;
+            this.cmbOdemeTuru.TabIndex = 0;
             this.cmbOdemeTuru.SelectedIndexChanged += new System.EventHandler(this.cmbOdemeTuru_SelectedIndexChanged);
             // 
             // tAciklama
@@ -184,7 +184,7 @@ namespace BilgeSoft
             this.tAciklama.ShadowDecoration.Enabled = true;
             this.tAciklama.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.tAciklama.Size = new System.Drawing.Size(236, 124);
-            this.tAciklama.TabIndex = 175;
+            this.tAciklama.TabIndex = 3;
             // 
             // bEkle
             // 
@@ -211,7 +211,7 @@ namespace BilgeSoft
             this.bEkle.ShadowDecoration.Depth = 20;
             this.bEkle.ShadowDecoration.Enabled = true;
             this.bEkle.Size = new System.Drawing.Size(116, 73);
-            this.bEkle.TabIndex = 176;
+            this.bEkle.TabIndex = 5;
             this.bEkle.Text = "Ekle";
             this.bEkle.Click += new System.EventHandler(this.bEkle_Click);
             // 
@@ -237,7 +237,7 @@ namespace BilgeSoft
             this.dtTarih.ShadowDecoration.Enabled = true;
             this.dtTarih.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.dtTarih.Size = new System.Drawing.Size(236, 24);
-            this.dtTarih.TabIndex = 177;
+            this.dtTarih.TabIndex = 4;
             this.dtTarih.Value = new System.DateTime(2023, 10, 5, 0, 0, 0, 0);
             // 
             // tKart
@@ -272,7 +272,7 @@ namespace BilgeSoft
             this.tKart.ShadowDecoration.Enabled = true;
             this.tKart.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.tKart.Size = new System.Drawing.Size(112, 24);
-            this.tKart.TabIndex = 174;
+            this.tKart.TabIndex = 2;
             this.tKart.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tNakit
@@ -307,7 +307,7 @@ namespace BilgeSoft
             this.tNakit.ShadowDecoration.Enabled = true;
             this.tNakit.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3);
             this.tNakit.Size = new System.Drawing.Size(112, 24);
-            this.tNakit.TabIndex = 173;
+            this.tNakit.TabIndex = 1;
             this.tNakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lStandart6

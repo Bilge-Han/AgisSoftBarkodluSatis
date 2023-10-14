@@ -76,10 +76,10 @@ namespace BilgeSoft
             this.tUrunAra = new BilgeSoft.tStandart();
             this.lStandart9 = new BilgeSoft.lStandart();
             this.gridUrunler = new BilgeSoft.gridOzel();
-            this.Sil = new System.Windows.Forms.DataGridViewImageColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Sil = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -275,7 +275,7 @@ namespace BilgeSoft
             this.cmbUrunGrubu.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.cmbUrunGrubu.ShadowDecoration.Enabled = true;
             this.cmbUrunGrubu.Size = new System.Drawing.Size(160, 31);
-            this.cmbUrunGrubu.TabIndex = 171;
+            this.cmbUrunGrubu.TabIndex = 3;
             // 
             // tAciklama
             // 
@@ -305,7 +305,7 @@ namespace BilgeSoft
             this.tAciklama.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tAciklama.ShadowDecoration.Enabled = true;
             this.tAciklama.Size = new System.Drawing.Size(160, 31);
-            this.tAciklama.TabIndex = 170;
+            this.tAciklama.TabIndex = 2;
             // 
             // tUrunAdi
             // 
@@ -335,7 +335,7 @@ namespace BilgeSoft
             this.tUrunAdi.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunAdi.ShadowDecoration.Enabled = true;
             this.tUrunAdi.Size = new System.Drawing.Size(160, 31);
-            this.tUrunAdi.TabIndex = 169;
+            this.tUrunAdi.TabIndex = 1;
             // 
             // tBarkod
             // 
@@ -365,7 +365,7 @@ namespace BilgeSoft
             this.tBarkod.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tBarkod.ShadowDecoration.Enabled = true;
             this.tBarkod.Size = new System.Drawing.Size(160, 31);
-            this.tBarkod.TabIndex = 168;
+            this.tBarkod.TabIndex = 0;
             this.tBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBarkod_KeyDown);
             this.tBarkod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAlisFiyati_KeyPress);
             // 
@@ -378,7 +378,7 @@ namespace BilgeSoft
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(147, 216);
-            this.guna2Panel2.TabIndex = 1;
+            this.guna2Panel2.TabIndex = 2;
             // 
             // bUrunGrubuEkle
             // 
@@ -406,7 +406,7 @@ namespace BilgeSoft
             this.bUrunGrubuEkle.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.bUrunGrubuEkle.ShadowDecoration.Enabled = true;
             this.bUrunGrubuEkle.Size = new System.Drawing.Size(120, 49);
-            this.bUrunGrubuEkle.TabIndex = 165;
+            this.bUrunGrubuEkle.TabIndex = 1;
             this.bUrunGrubuEkle.Text = "Ürün        Grubu Ekle";
             this.bUrunGrubuEkle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bUrunGrubuEkle.UseTransparentBackground = true;
@@ -438,7 +438,7 @@ namespace BilgeSoft
             this.bBarkodOlustur.ShadowDecoration.Color = System.Drawing.Color.DarkOrange;
             this.bBarkodOlustur.ShadowDecoration.Enabled = true;
             this.bBarkodOlustur.Size = new System.Drawing.Size(120, 49);
-            this.bBarkodOlustur.TabIndex = 164;
+            this.bBarkodOlustur.TabIndex = 0;
             this.bBarkodOlustur.Text = "Barkod    Oluştur";
             this.bBarkodOlustur.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bBarkodOlustur.UseTransparentBackground = true;
@@ -461,7 +461,7 @@ namespace BilgeSoft
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(298, 216);
-            this.guna2Panel3.TabIndex = 2;
+            this.guna2Panel3.TabIndex = 1;
             // 
             // tKdvOrani
             // 
@@ -491,7 +491,7 @@ namespace BilgeSoft
             this.tKdvOrani.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tKdvOrani.ShadowDecoration.Enabled = true;
             this.tKdvOrani.Size = new System.Drawing.Size(160, 31);
-            this.tKdvOrani.TabIndex = 172;
+            this.tKdvOrani.TabIndex = 4;
             this.tKdvOrani.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tKdvOrani.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAlisFiyati_KeyPress);
             // 
@@ -518,7 +518,7 @@ namespace BilgeSoft
             this.cmbBirim.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.cmbBirim.ShadowDecoration.Enabled = true;
             this.cmbBirim.Size = new System.Drawing.Size(160, 31);
-            this.cmbBirim.TabIndex = 171;
+            this.cmbBirim.TabIndex = 3;
             // 
             // tMiktar
             // 
@@ -548,7 +548,7 @@ namespace BilgeSoft
             this.tMiktar.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tMiktar.ShadowDecoration.Enabled = true;
             this.tMiktar.Size = new System.Drawing.Size(160, 31);
-            this.tMiktar.TabIndex = 170;
+            this.tMiktar.TabIndex = 2;
             this.tMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tMiktar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAlisFiyati_KeyPress);
             // 
@@ -580,7 +580,7 @@ namespace BilgeSoft
             this.tSatisFiyati.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tSatisFiyati.ShadowDecoration.Enabled = true;
             this.tSatisFiyati.Size = new System.Drawing.Size(160, 31);
-            this.tSatisFiyati.TabIndex = 169;
+            this.tSatisFiyati.TabIndex = 1;
             this.tSatisFiyati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tSatisFiyati.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAlisFiyati_KeyPress);
             // 
@@ -612,7 +612,7 @@ namespace BilgeSoft
             this.tAlisFiyati.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tAlisFiyati.ShadowDecoration.Enabled = true;
             this.tAlisFiyati.Size = new System.Drawing.Size(160, 31);
-            this.tAlisFiyati.TabIndex = 168;
+            this.tAlisFiyati.TabIndex = 0;
             this.tAlisFiyati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tAlisFiyati.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tAlisFiyati_KeyPress);
             // 
@@ -713,7 +713,7 @@ namespace BilgeSoft
             this.bIptal.ShadowDecoration.Color = System.Drawing.Color.Brown;
             this.bIptal.ShadowDecoration.Enabled = true;
             this.bIptal.Size = new System.Drawing.Size(120, 49);
-            this.bIptal.TabIndex = 167;
+            this.bIptal.TabIndex = 1;
             this.bIptal.Text = "İptal";
             this.bIptal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bIptal.TextOffset = new System.Drawing.Point(10, 0);
@@ -746,7 +746,7 @@ namespace BilgeSoft
             this.bKaydet.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
             this.bKaydet.ShadowDecoration.Enabled = true;
             this.bKaydet.Size = new System.Drawing.Size(120, 49);
-            this.bKaydet.TabIndex = 166;
+            this.bKaydet.TabIndex = 0;
             this.bKaydet.Text = "Kaydet";
             this.bKaydet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bKaydet.UseTransparentBackground = true;
@@ -899,7 +899,7 @@ namespace BilgeSoft
             // 
             this.gridUrunler.AllowUserToAddRows = false;
             this.gridUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridUrunler.BackgroundColor = System.Drawing.Color.White;
+            this.gridUrunler.BackgroundColor = System.Drawing.Color.SeaShell;
             this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -921,6 +921,7 @@ namespace BilgeSoft
             this.gridUrunler.Location = new System.Drawing.Point(0, 0);
             this.gridUrunler.Name = "gridUrunler";
             this.gridUrunler.ReadOnly = true;
+            this.gridUrunler.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gridUrunler.RowHeadersVisible = false;
             this.gridUrunler.RowHeadersWidth = 51;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -941,20 +942,6 @@ namespace BilgeSoft
             this.gridUrunler.TabIndex = 0;
             this.gridUrunler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentClick);
             this.gridUrunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentDoubleClick);
-            // 
-            // Sil
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Orange;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Sil.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Sil.HeaderText = "Sil";
-            this.Sil.MinimumWidth = 6;
-            this.Sil.Name = "Sil";
-            this.Sil.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 
@@ -977,6 +964,21 @@ namespace BilgeSoft
             this.silToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
+            // 
+            // Sil
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.Sil.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Sil.HeaderText = "Sil";
+            this.Sil.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.Sil.MinimumWidth = 6;
+            this.Sil.Name = "Sil";
+            this.Sil.ReadOnly = true;
             // 
             // fUrunGiris
             // 
@@ -1019,7 +1021,6 @@ namespace BilgeSoft
         private tStandart tUrunAra;
         private lStandart lStandart9;
         private gridOzel gridUrunler;
-        private System.Windows.Forms.DataGridViewImageColumn Sil;
         internal lStandart lKullanici;
         private lStandart lStandart23114;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
@@ -1059,5 +1060,6 @@ namespace BilgeSoft
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewImageColumn Sil;
     }
 }

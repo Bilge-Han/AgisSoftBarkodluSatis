@@ -29,8 +29,8 @@ namespace BilgeSoft
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -97,6 +97,7 @@ namespace BilgeSoft
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 41);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.splitContainer1.Name = "splitContainer1";
@@ -174,7 +175,7 @@ namespace BilgeSoft
             this.tAra.ShadowDecoration.Depth = 20;
             this.tAra.ShadowDecoration.Enabled = true;
             this.tAra.Size = new System.Drawing.Size(190, 57);
-            this.tAra.TabIndex = 10;
+            this.tAra.TabIndex = 6;
             this.tAra.Text = "Ara";
             this.tAra.Click += new System.EventHandler(this.bAra_Click);
             // 
@@ -204,7 +205,7 @@ namespace BilgeSoft
             this.dateBitis.Location = new System.Drawing.Point(8, 86);
             this.dateBitis.Name = "dateBitis";
             this.dateBitis.Size = new System.Drawing.Size(241, 26);
-            this.dateBitis.TabIndex = 7;
+            this.dateBitis.TabIndex = 5;
             this.dateBitis.Value = new System.DateTime(2023, 10, 5, 22, 38, 51, 0);
             // 
             // lStandart5
@@ -225,7 +226,7 @@ namespace BilgeSoft
             this.dateBaslangic.Location = new System.Drawing.Point(8, 34);
             this.dateBaslangic.Name = "dateBaslangic";
             this.dateBaslangic.Size = new System.Drawing.Size(241, 26);
-            this.dateBaslangic.TabIndex = 5;
+            this.dateBaslangic.TabIndex = 4;
             this.dateBaslangic.Value = new System.DateTime(2023, 10, 5, 22, 38, 51, 0);
             // 
             // lStandart4
@@ -266,7 +267,7 @@ namespace BilgeSoft
             this.cmbUrunGrubu.Location = new System.Drawing.Point(7, 31);
             this.cmbUrunGrubu.Name = "cmbUrunGrubu";
             this.cmbUrunGrubu.Size = new System.Drawing.Size(241, 28);
-            this.cmbUrunGrubu.TabIndex = 8;
+            this.cmbUrunGrubu.TabIndex = 3;
             // 
             // lStandart3
             // 
@@ -308,7 +309,7 @@ namespace BilgeSoft
             this.rdUrunGrubu.Location = new System.Drawing.Point(8, 55);
             this.rdUrunGrubu.Name = "rdUrunGrubu";
             this.rdUrunGrubu.Size = new System.Drawing.Size(169, 24);
-            this.rdUrunGrubu.TabIndex = 7;
+            this.rdUrunGrubu.TabIndex = 2;
             this.rdUrunGrubu.Text = "Ürün Grubuna Göre";
             this.rdUrunGrubu.UseVisualStyleBackColor = false;
             this.rdUrunGrubu.CheckedChanged += new System.EventHandler(this.rdUrunGrubu_CheckedChanged);
@@ -335,7 +336,7 @@ namespace BilgeSoft
             this.rdTumu.Location = new System.Drawing.Point(8, 32);
             this.rdTumu.Name = "rdTumu";
             this.rdTumu.Size = new System.Drawing.Size(67, 24);
-            this.rdTumu.TabIndex = 6;
+            this.rdTumu.TabIndex = 1;
             this.rdTumu.TabStop = true;
             this.rdTumu.Text = "Tümü";
             this.rdTumu.UseVisualStyleBackColor = false;
@@ -382,13 +383,14 @@ namespace BilgeSoft
             this.cmbIslemTuru.Location = new System.Drawing.Point(7, 34);
             this.cmbIslemTuru.Name = "cmbIslemTuru";
             this.cmbIslemTuru.Size = new System.Drawing.Size(241, 28);
-            this.cmbIslemTuru.TabIndex = 3;
+            this.cmbIslemTuru.TabIndex = 0;
             this.cmbIslemTuru.SelectedIndexChanged += new System.EventHandler(this.cmbIslemTuru_SelectedIndexChanged);
             // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Margin = new System.Windows.Forms.Padding(0);
             this.splitContainer2.Name = "splitContainer2";
@@ -449,7 +451,7 @@ namespace BilgeSoft
             this.tUrunAra.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tUrunAra.ShadowDecoration.Enabled = true;
             this.tUrunAra.Size = new System.Drawing.Size(284, 28);
-            this.tUrunAra.TabIndex = 45;
+            this.tUrunAra.TabIndex = 0;
             this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
             // 
             // tRaporAl
@@ -476,7 +478,7 @@ namespace BilgeSoft
             this.tRaporAl.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tRaporAl.ShadowDecoration.Enabled = true;
             this.tRaporAl.Size = new System.Drawing.Size(153, 48);
-            this.tRaporAl.TabIndex = 44;
+            this.tRaporAl.TabIndex = 1;
             this.tRaporAl.Text = "Rapor Al";
             this.tRaporAl.Click += new System.EventHandler(this.bRaporAl_Click);
             // 
@@ -500,17 +502,17 @@ namespace BilgeSoft
             this.gridListe.BackgroundColor = System.Drawing.Color.White;
             this.gridListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridListe.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridListe.DefaultCellStyle = dataGridViewCellStyle1;
             this.gridListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListe.EnableHeadersVisualStyles = false;
             this.gridListe.Location = new System.Drawing.Point(0, 0);
@@ -519,22 +521,22 @@ namespace BilgeSoft
             this.gridListe.ReadOnly = true;
             this.gridListe.RowHeadersVisible = false;
             this.gridListe.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridListe.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridListe.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridListe.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridListe.RowTemplate.Height = 32;
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridListe.Size = new System.Drawing.Size(719, 596);
-            this.gridListe.TabIndex = 1;
+            this.gridListe.TabIndex = 0;
             // 
             // guna2GradientPanel3
             // 

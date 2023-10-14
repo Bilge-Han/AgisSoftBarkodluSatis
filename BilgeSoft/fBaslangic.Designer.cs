@@ -100,7 +100,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox3.TabIndex = 99;
+            this.guna2ControlBox3.TabIndex = 9;
             // 
             // label3
             // 

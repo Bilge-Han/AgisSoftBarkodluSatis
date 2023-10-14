@@ -126,7 +126,6 @@ namespace BilgeSoft
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1008, 377);
             this.guna2GradientPanel1.TabIndex = 10;
-            this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -181,7 +180,7 @@ namespace BilgeSoft
             this.rbGider.Margin = new System.Windows.Forms.Padding(0);
             this.rbGider.Name = "rbGider";
             this.rbGider.Size = new System.Drawing.Size(155, 25);
-            this.rbGider.TabIndex = 111;
+            this.rbGider.TabIndex = 4;
             this.rbGider.Text = "Gider (İade Hariç)";
             this.rbGider.UncheckedState.BorderColor = System.Drawing.Color.Turquoise;
             this.rbGider.UncheckedState.BorderThickness = 0;
@@ -205,7 +204,7 @@ namespace BilgeSoft
             this.rbGelir.Location = new System.Drawing.Point(15, 158);
             this.rbGelir.Name = "rbGelir";
             this.rbGelir.Size = new System.Drawing.Size(155, 25);
-            this.rbGelir.TabIndex = 110;
+            this.rbGelir.TabIndex = 3;
             this.rbGelir.Text = "Gelir (Satış Hariç)";
             this.rbGelir.UncheckedState.BorderColor = System.Drawing.Color.Turquoise;
             this.rbGelir.UncheckedState.BorderThickness = 0;
@@ -229,7 +228,7 @@ namespace BilgeSoft
             this.rbIade.Location = new System.Drawing.Point(15, 130);
             this.rbIade.Name = "rbIade";
             this.rbIade.Size = new System.Drawing.Size(59, 25);
-            this.rbIade.TabIndex = 109;
+            this.rbIade.TabIndex = 2;
             this.rbIade.Text = "İade";
             this.rbIade.UncheckedState.BorderColor = System.Drawing.Color.Turquoise;
             this.rbIade.UncheckedState.BorderThickness = 0;
@@ -253,7 +252,7 @@ namespace BilgeSoft
             this.rbSatis.Location = new System.Drawing.Point(15, 99);
             this.rbSatis.Name = "rbSatis";
             this.rbSatis.Size = new System.Drawing.Size(83, 25);
-            this.rbSatis.TabIndex = 108;
+            this.rbSatis.TabIndex = 1;
             this.rbSatis.Text = "Satışlar";
             this.rbSatis.UncheckedState.BorderColor = System.Drawing.Color.Turquoise;
             this.rbSatis.UncheckedState.BorderThickness = 0;
@@ -277,7 +276,7 @@ namespace BilgeSoft
             this.rbTumu.Location = new System.Drawing.Point(15, 68);
             this.rbTumu.Name = "rbTumu";
             this.rbTumu.Size = new System.Drawing.Size(69, 25);
-            this.rbTumu.TabIndex = 107;
+            this.rbTumu.TabIndex = 0;
             this.rbTumu.Text = "Tümü";
             this.rbTumu.UncheckedState.BorderColor = System.Drawing.Color.Turquoise;
             this.rbTumu.UncheckedState.BorderThickness = 0;
@@ -323,7 +322,7 @@ namespace BilgeSoft
             this.bGoster.ShadowDecoration.Color = System.Drawing.Color.DarkOliveGreen;
             this.bGoster.ShadowDecoration.Enabled = true;
             this.bGoster.Size = new System.Drawing.Size(133, 65);
-            this.bGoster.TabIndex = 105;
+            this.bGoster.TabIndex = 5;
             this.bGoster.Text = "Göster";
             this.bGoster.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bGoster.Click += new System.EventHandler(this.bGoster_Click);
@@ -380,7 +379,7 @@ namespace BilgeSoft
             this.bRaporAl.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.bRaporAl.ShadowDecoration.Enabled = true;
             this.bRaporAl.Size = new System.Drawing.Size(148, 40);
-            this.bRaporAl.TabIndex = 88;
+            this.bRaporAl.TabIndex = 8;
             this.bRaporAl.Text = "Rapor Al";
             this.bRaporAl.Click += new System.EventHandler(this.bRaporAl_Click);
             // 
@@ -417,8 +416,8 @@ namespace BilgeSoft
             this.dtBitis.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.dtBitis.ShadowDecoration.Enabled = true;
             this.dtBitis.Size = new System.Drawing.Size(148, 40);
-            this.dtBitis.TabIndex = 92;
-            this.dtBitis.Value = new System.DateTime(2023, 10, 5, 0, 0, 0, 0);
+            this.dtBitis.TabIndex = 7;
+            this.dtBitis.Value = new System.DateTime(2023, 10, 10, 16, 52, 26, 0);
             // 
             // dtBaslangic
             // 
@@ -441,8 +440,8 @@ namespace BilgeSoft
             this.dtBaslangic.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.dtBaslangic.ShadowDecoration.Enabled = true;
             this.dtBaslangic.Size = new System.Drawing.Size(148, 40);
-            this.dtBaslangic.TabIndex = 91;
-            this.dtBaslangic.Value = new System.DateTime(2023, 10, 5, 0, 0, 0, 0);
+            this.dtBaslangic.TabIndex = 6;
+            this.dtBaslangic.Value = new System.DateTime(2023, 10, 10, 0, 0, 0, 0);
             // 
             // tableLayoutPanel2
             // 
@@ -589,6 +588,7 @@ namespace BilgeSoft
             this.tSatisKart.PasswordChar = '\0';
             this.tSatisKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSatisKart.PlaceholderText = "";
+            this.tSatisKart.ReadOnly = true;
             this.tSatisKart.SelectedText = "";
             this.tSatisKart.ShadowDecoration.BorderRadius = 20;
             this.tSatisKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -621,6 +621,7 @@ namespace BilgeSoft
             this.tSatisNakit.PasswordChar = '\0';
             this.tSatisNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tSatisNakit.PlaceholderText = "";
+            this.tSatisNakit.ReadOnly = true;
             this.tSatisNakit.SelectedText = "";
             this.tSatisNakit.ShadowDecoration.BorderRadius = 15;
             this.tSatisNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -681,6 +682,7 @@ namespace BilgeSoft
             this.tGelirNakit.PasswordChar = '\0';
             this.tGelirNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGelirNakit.PlaceholderText = "";
+            this.tGelirNakit.ReadOnly = true;
             this.tGelirNakit.SelectedText = "";
             this.tGelirNakit.ShadowDecoration.BorderRadius = 20;
             this.tGelirNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -713,6 +715,7 @@ namespace BilgeSoft
             this.tGelirKart.PasswordChar = '\0';
             this.tGelirKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGelirKart.PlaceholderText = "";
+            this.tGelirKart.ReadOnly = true;
             this.tGelirKart.SelectedText = "";
             this.tGelirKart.ShadowDecoration.BorderRadius = 20;
             this.tGelirKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -828,6 +831,7 @@ namespace BilgeSoft
             this.tIadeKart.PasswordChar = '\0';
             this.tIadeKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tIadeKart.PlaceholderText = "";
+            this.tIadeKart.ReadOnly = true;
             this.tIadeKart.SelectedText = "";
             this.tIadeKart.ShadowDecoration.BorderRadius = 20;
             this.tIadeKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -860,6 +864,7 @@ namespace BilgeSoft
             this.tIadeNakit.PasswordChar = '\0';
             this.tIadeNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tIadeNakit.PlaceholderText = "";
+            this.tIadeNakit.ReadOnly = true;
             this.tIadeNakit.SelectedText = "";
             this.tIadeNakit.ShadowDecoration.BorderRadius = 20;
             this.tIadeNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -909,7 +914,7 @@ namespace BilgeSoft
             this.bGelirEkle.ShadowDecoration.Enabled = true;
             this.bGelirEkle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.bGelirEkle.Size = new System.Drawing.Size(60, 60);
-            this.bGelirEkle.TabIndex = 100;
+            this.bGelirEkle.TabIndex = 9;
             this.bGelirEkle.Text = "İconS";
             this.bGelirEkle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bGelirEkle.Click += new System.EventHandler(this.bGelirEkle_Click);
@@ -944,7 +949,7 @@ namespace BilgeSoft
             this.bGiderEkle.ShadowDecoration.Enabled = true;
             this.bGiderEkle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.bGiderEkle.Size = new System.Drawing.Size(60, 60);
-            this.bGiderEkle.TabIndex = 97;
+            this.bGiderEkle.TabIndex = 10;
             this.bGiderEkle.Text = "İconS";
             this.bGiderEkle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bGiderEkle.Click += new System.EventHandler(this.bGiderEkle_Click);
@@ -1012,6 +1017,7 @@ namespace BilgeSoft
             this.tKartKomisyon.PasswordChar = '\0';
             this.tKartKomisyon.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKartKomisyon.PlaceholderText = "";
+            this.tKartKomisyon.ReadOnly = true;
             this.tKartKomisyon.SelectedText = "";
             this.tKartKomisyon.ShadowDecoration.BorderRadius = 20;
             this.tKartKomisyon.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -1044,6 +1050,7 @@ namespace BilgeSoft
             this.tKdvToplam.PasswordChar = '\0';
             this.tKdvToplam.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tKdvToplam.PlaceholderText = "";
+            this.tKdvToplam.ReadOnly = true;
             this.tKdvToplam.SelectedText = "";
             this.tKdvToplam.ShadowDecoration.BorderRadius = 20;
             this.tKdvToplam.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -1103,6 +1110,7 @@ namespace BilgeSoft
             this.tGiderNakit.PasswordChar = '\0';
             this.tGiderNakit.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGiderNakit.PlaceholderText = "";
+            this.tGiderNakit.ReadOnly = true;
             this.tGiderNakit.SelectedText = "";
             this.tGiderNakit.ShadowDecoration.BorderRadius = 20;
             this.tGiderNakit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -1135,6 +1143,7 @@ namespace BilgeSoft
             this.tGiderKart.PasswordChar = '\0';
             this.tGiderKart.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tGiderKart.PlaceholderText = "";
+            this.tGiderKart.ReadOnly = true;
             this.tGiderKart.SelectedText = "";
             this.tGiderKart.ShadowDecoration.BorderRadius = 20;
             this.tGiderKart.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -1312,7 +1321,7 @@ namespace BilgeSoft
             this.gridListe.RowTemplate.Height = 32;
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridListe.Size = new System.Drawing.Size(1008, 352);
-            this.gridListe.TabIndex = 2;
+            this.gridListe.TabIndex = 11;
             this.gridListe.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridListe_CellFormatting);
             // 
             // guna2ContextMenuStrip1

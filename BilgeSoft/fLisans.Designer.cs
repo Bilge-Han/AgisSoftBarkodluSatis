@@ -88,7 +88,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.Location = new System.Drawing.Point(171, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox3.TabIndex = 99;
+            this.guna2ControlBox3.TabIndex = 2;
             // 
             // guna2ControlBox2
             // 
@@ -103,7 +103,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.Location = new System.Drawing.Point(202, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox2.TabIndex = 98;
+            this.guna2ControlBox2.TabIndex = 3;
             // 
             // guna2ControlBox1
             // 
@@ -117,7 +117,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.Location = new System.Drawing.Point(233, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2ControlBox1.TabIndex = 97;
+            this.guna2ControlBox1.TabIndex = 4;
             // 
             // guna2GradientPanel3
             // 
@@ -168,7 +168,7 @@ namespace BilgeSoft
             this.tLisans.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tLisans.ShadowDecoration.Enabled = true;
             this.tLisans.Size = new System.Drawing.Size(246, 24);
-            this.tLisans.TabIndex = 101;
+            this.tLisans.TabIndex = 0;
             this.tLisans.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // bTamam
@@ -195,7 +195,7 @@ namespace BilgeSoft
             this.bTamam.ShadowDecoration.Depth = 20;
             this.bTamam.ShadowDecoration.Enabled = true;
             this.bTamam.Size = new System.Drawing.Size(116, 37);
-            this.bTamam.TabIndex = 177;
+            this.bTamam.TabIndex = 1;
             this.bTamam.Text = "Tamam";
             this.bTamam.Click += new System.EventHandler(this.bTamam_Click);
             // 

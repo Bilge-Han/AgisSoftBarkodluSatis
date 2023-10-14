@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Guna.UI2.WinForms;
 namespace BilgeSoft
 {
     public partial class fNakitKart : Form
@@ -33,16 +33,21 @@ namespace BilgeSoft
             double nakit = İslemler.DoubleYap(tNakit.Text);
             double genelToplam = İslemler.DoubleYap(f.tGenelToplam.Text);
             double kart = genelToplam - nakit;
-            f.lNakit.Text = nakit.ToString("C2");
-            f.lKart.Text = kart.ToString("C2");
-            f.SatisYap("Kart-Nakit");
-            f.tGenelToplam.Text = genelToplam.ToString("C2");
-            f.Temizle();
-            this.Hide();
+            if (kart > 0)
+            {
+                f.lNakit.Text = nakit.ToString("C2");
+                f.lKart.Text = kart.ToString("C2");
+                f.SatisYap("Kart-Nakit");
+                f.tGenelToplam.Text = genelToplam.ToString("C2");
+                f.Temizle();
+                this.Hide();
+            }
+            else if (kart == 0) { MessageBox.Show("Girdiğiniz nakit değeri toplam tutar ile eşit. Lütfen nakit satış yapınız."); }
+            else { MessageBox.Show("Girdiğiniz nakit değeri toplam tutarın üzerinde. Girdiğiniz değerleri kontrol ediniz."); }
         }
         private void bNx_Click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
+            Guna2Button b = (Guna2Button)sender;
             if (b.Text == ",")
             {
                 int virgul = tNakit.Text.Count(x => x == ',');
@@ -74,7 +79,7 @@ namespace BilgeSoft
 
         private void tNakit_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsDigit(e.KeyChar)==false && e.KeyChar!=(char)08)
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08)
             {
                 e.Handled = true;
             }

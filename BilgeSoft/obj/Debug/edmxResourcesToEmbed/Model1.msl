@@ -99,6 +99,7 @@
     <EntitySetMapping Name="Barkod">
       <EntityTypeMapping TypeName="BarkodDbModel.Barkod">
         <MappingFragment StoreEntitySet="Barkod">
+          <ScalarProperty Name="GBarkodNo" ColumnName="GBarkodNo" />
           <ScalarProperty Name="BarkodNo" ColumnName="BarkodNo" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>

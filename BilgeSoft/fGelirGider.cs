@@ -21,8 +21,8 @@ namespace BilgeSoft
         private void fGelirGider_Load(object sender, EventArgs e)
         {
             lGelirGider.Text = gelirgider + " İŞLEMİ YAPILIYOR";
+            dtTarih.Value = DateTime.Now;
         }
-
         private void cmbOdemeTuru_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbOdemeTuru.SelectedIndex==0)
