@@ -168,6 +168,20 @@ namespace BilgeSoft
                 db.SaveChanges();
             }
 
+
+            // ürün girişi yaparken firma seçecek, firma tablosu olacak, firmaya borçlar alacaklar gözükecek. Toplu giriş yapacaksın.
+            // şube eklenecek, 
+            // toplu üründe firma seçilecek, ürünler listelenecek, hangi şubeye alındığı seçilecek.
+            // stok takibinde hangi şubede hangi üründen ne kadar var onlarda görülecek.
+            // bir kısımda şubeler listenelip raporları listede gözükebilecek.
+            // Satışta da şube bilgisi tutulacak, genel raporda'da şube bilgisi girilecek ya da genel bütün şubelerin toplamı da gözükecek.
+            // !.-Ortak db kullandığı için şubeyi dikkatli yapmam lazım ha -.!
+            // KULLANICI eklerken şube de seçilecek, ayarlar kısmında şube ekleme ve seçme kısmı yapılacak. ???
+            // satışta şube bilgisi de olacak.
+            // kullanıcı girişinde şube kontrolü de yapılacak.
+            // banka tablosu eklenecek. bankalara göre kart komisyonlar eklenecek, ayrı ayrı detaylandırılacak.
+
+
             İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text);
             Temizle();
             gridUrunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();

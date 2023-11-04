@@ -91,7 +91,8 @@ namespace BilgeSoft
                         case "Birim":
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; break;
                         case "Miktar":
-                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;   break;
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].DefaultCellStyle.Format = "N3"; break;
                         case "OdemeSekli":
                             dgv.Columns[i].HeaderText = "Ödeme Şekli";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; break;
