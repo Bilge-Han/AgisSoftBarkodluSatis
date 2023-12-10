@@ -750,7 +750,6 @@ namespace BilgeSoft
             this.bKartNakit.ForeColor = System.Drawing.Color.White;
             this.bKartNakit.HoverState.FillColor = System.Drawing.Color.LimeGreen;
             this.bKartNakit.Image = global::BilgeSoft.Properties.Resources.pay;
-            this.bKartNakit.ImageOffset = new System.Drawing.Point(0, 10);
             this.bKartNakit.ImageSize = new System.Drawing.Size(60, 60);
             this.bKartNakit.Location = new System.Drawing.Point(187, 2);
             this.bKartNakit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -758,7 +757,6 @@ namespace BilgeSoft
             this.bKartNakit.Size = new System.Drawing.Size(86, 112);
             this.bKartNakit.TabIndex = 42;
             this.bKartNakit.Text = "Kart / Nakit (F1)";
-            this.bKartNakit.TextOffset = new System.Drawing.Point(0, -14);
             this.bKartNakit.Click += new System.EventHandler(this.bKartNakit_Click);
             // 
             // bKart
@@ -776,7 +774,6 @@ namespace BilgeSoft
             this.bKart.ForeColor = System.Drawing.Color.White;
             this.bKart.HoverState.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.bKart.Image = global::BilgeSoft.Properties.Resources.pos_terminal;
-            this.bKart.ImageOffset = new System.Drawing.Point(0, 5);
             this.bKart.ImageSize = new System.Drawing.Size(60, 60);
             this.bKart.Location = new System.Drawing.Point(95, 2);
             this.bKart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -784,7 +781,6 @@ namespace BilgeSoft
             this.bKart.Size = new System.Drawing.Size(86, 112);
             this.bKart.TabIndex = 41;
             this.bKart.Text = "Kredi Kartı (F1)";
-            this.bKart.TextOffset = new System.Drawing.Point(0, -14);
             this.bKart.Click += new System.EventHandler(this.bKart_Click);
             // 
             // bNakit
@@ -798,10 +794,11 @@ namespace BilgeSoft
             this.bNakit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.bNakit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bNakit.FillColor = System.Drawing.Color.Firebrick;
-            this.bNakit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bNakit.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bNakit.ForeColor = System.Drawing.Color.White;
             this.bNakit.HoverState.FillColor = System.Drawing.Color.Red;
             this.bNakit.Image = global::BilgeSoft.Properties.Resources.lira__2_;
+            this.bNakit.ImageOffset = new System.Drawing.Point(18, -25);
             this.bNakit.ImageSize = new System.Drawing.Size(45, 45);
             this.bNakit.Location = new System.Drawing.Point(3, 2);
             this.bNakit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -809,6 +806,7 @@ namespace BilgeSoft
             this.bNakit.Size = new System.Drawing.Size(86, 112);
             this.bNakit.TabIndex = 40;
             this.bNakit.Text = "Nakit (F1)";
+            this.bNakit.TextOffset = new System.Drawing.Point(-12, 20);
             this.bNakit.Click += new System.EventHandler(this.bNakit_Click);
             // 
             // tableLayoutPanel4

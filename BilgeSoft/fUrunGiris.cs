@@ -180,7 +180,7 @@ namespace BilgeSoft
             // satışta şube bilgisi de olacak.
             // kullanıcı girişinde şube kontrolü de yapılacak.
             // banka tablosu eklenecek. bankalara göre kart komisyonlar eklenecek, ayrı ayrı detaylandırılacak.
-
+            // Fiyat güncelleme işlemi güncellenecek, örn %10 indirim her şubeye vs.
 
             İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text);
             Temizle();
