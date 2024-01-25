@@ -44,7 +44,6 @@ namespace BilgeSoft
             }
             
         }
-        
         public static void GridDuzenle(DataGridView dgv)
         {
             if (dgv.Columns.Count>0)

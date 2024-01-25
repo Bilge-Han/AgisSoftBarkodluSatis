@@ -181,6 +181,7 @@ namespace BilgeSoft
             // kullanıcı girişinde şube kontrolü de yapılacak.
             // banka tablosu eklenecek. bankalara göre kart komisyonlar eklenecek, ayrı ayrı detaylandırılacak.
             // Fiyat güncelleme işlemi güncellenecek, örn %10 indirim her şubeye vs.
+            // https://www.udemy.com/course/c-ve-devexpress-ile-gelismis-on-muhasebe-yazlm-3/
 
             İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text);
             Temizle();
