@@ -22,5 +22,6 @@ namespace BilgeSoft
         public string UrunGrup { get; set; }
         public string Kullanici { get; set; }
         public Nullable<System.DateTime> Tarih { get; set; }
+        public Nullable<int> ToptancıID { get; set; }
     }
 }

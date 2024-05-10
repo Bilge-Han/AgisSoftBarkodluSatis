@@ -194,6 +194,10 @@ namespace BilgeSoft
                 gridSatisListesi.ClearSelection();
                 GenelToplamHesap();
                 tBarkod.Focus();
+                if (gridSatisListesi.Rows.Count < 1)
+                {
+                    lMusteri.Text = "Müşteri Seçilmedi";
+                }
             }
         }
 
@@ -357,10 +361,21 @@ namespace BilgeSoft
                     }
                     else
                     {
+                        //if (lMusteri.Text!="Müşteri Seçilmedi")
+                        //{
+                        //   DialogResult onay = MessageBox.Show("Kalan Tutarın Veresiye Olarak Eklenmesini " +
+                        //        "İstiyor Musunuz?", "YETERSİZ TUTAR", MessageBoxButtons.YesNo);
+                        //    if (onay==DialogResult.Yes)
+                        //    {
+                        //        //BURADA SATIŞ YAP
+                        //    }
+                        //}
+                        //else { 
+                        MessageBox.Show("Yetersiz Tutar");
                         tOdenen.Text = 0.ToString("C2");
                         tParaUstu.Text = 0.ToString("C2");
                         Console.Beep(900, 500);
-                        MessageBox.Show("Yetersiz Tutar");
+
                         tNumarator.Clear();
                     }
                 }
@@ -371,8 +386,6 @@ namespace BilgeSoft
                 tParaUstu.Text = 0.ToString("C2");
             }
         }
-
-
         private void bBarkod_Click(object sender, EventArgs e)
         {
             if (tNumarator.Text != "")
@@ -445,6 +458,7 @@ namespace BilgeSoft
         {
 
             tMiktar.Text = "1";
+            lMusteri.Text = "Müşteri Seçilmedi";
             tBarkod.Clear();
             tGenelToplam.Text = 0.ToString("C2");
             tOdenen.Text = 0.ToString("C2");
@@ -484,6 +498,14 @@ namespace BilgeSoft
                     satis.Iade = satisIade;
                     satis.Tarih = DateTime.Now;
                     satis.Kullanici = lKullanici.Text;
+                    if (_db.Musteriler.Any(a => a.MusteriAdSoyad == lMusteri.Text))
+                    {
+                        var musteri = _db.Musteriler.Where(a => a.MusteriAdSoyad == lMusteri.Text).SingleOrDefault();
+                        satis.MusteriID = musteri.MusteriID;
+                        musteri.Alinacak = İslemler.DoubleYap(gridSatisListesi.Rows[i].Cells["Toplam"].Value.ToString());
+                        musteri.Odenen = İslemler.DoubleYap(gridSatisListesi.Rows[i].Cells["Toplam"].Value.ToString());
+                    }
+                    else { satis.MusteriID = 0; }
                     _db.Satis.Add(satis); // bu modeli tabloya ekle
                     _db.SaveChanges();
 
@@ -523,6 +545,11 @@ namespace BilgeSoft
                 }
                 islemOzet.OdemeSekli = odemeSekli;
                 islemOzet.Kullanici = lKullanici.Text;
+                if (_db.Musteriler.Any(a => a.MusteriAdSoyad == lMusteri.Text))
+                {
+                    islemOzet.MusteriID = _db.Musteriler.Where(a => a.MusteriAdSoyad == lMusteri.Text).Select(a => a.MusteriID).FirstOrDefault();
+                }
+                else { islemOzet.MusteriID = 0; }
                 islemOzet.Tarih = DateTime.Now;
                 switch (odemeSekli)
                 {
@@ -535,7 +562,6 @@ namespace BilgeSoft
                     case "Kart-Nakit":
                         islemOzet.Nakit = İslemler.DoubleYap(lNakit.Text);
                         islemOzet.Kart = İslemler.DoubleYap(lKart.Text); break;
-
                 }
                 _db.IslemOzet.Add(islemOzet);
                 _db.SaveChanges();
@@ -699,6 +725,12 @@ namespace BilgeSoft
             {
                 chSatisIadeIslemi.Text = "Satış Yapılıyor";
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            fMusteriSec f = new fMusteriSec();
+            f.ShowDialog();
         }
     }
 }

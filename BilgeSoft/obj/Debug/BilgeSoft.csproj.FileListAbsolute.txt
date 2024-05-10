@@ -355,3 +355,5 @@ C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeS
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.exe
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.pdb
 C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.csproj.AssemblyReference.cache
+C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.fMusteriSec.resources
+C:\Users\bilge\Documents\GitHub\AgisSoftBarkodluSatis\BilgeSoft\obj\Debug\BilgeSoft.fMusteriToptantiEkle.resources

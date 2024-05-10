@@ -83,5 +83,12 @@ namespace BilgeSoft
             login.Show();
             this.Hide();
         }
+
+        private void bMusteriToptanciEkle_Click(object sender, EventArgs e)
+        {
+            fMusteriToptantiEkle f = new fMusteriToptantiEkle();
+            //f.lKullanici.Text = lKullanici.Text;
+            f.ShowDialog();
+        }
     }
 }

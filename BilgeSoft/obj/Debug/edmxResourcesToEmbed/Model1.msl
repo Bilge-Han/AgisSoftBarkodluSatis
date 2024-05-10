@@ -50,6 +50,7 @@
     <EntitySetMapping Name="IslemOzet">
       <EntityTypeMapping TypeName="BarkodDbModel.IslemOzet">
         <MappingFragment StoreEntitySet="IslemOzet">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
           <ScalarProperty Name="ZNumara" ColumnName="ZNumara" />
           <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
@@ -69,6 +70,7 @@
     <EntitySetMapping Name="Satis">
       <EntityTypeMapping TypeName="BarkodDbModel.Satis">
         <MappingFragment StoreEntitySet="Satis">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
           <ScalarProperty Name="ZNumara" ColumnName="ZNumara" />
           <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
@@ -116,6 +118,7 @@
     <EntitySetMapping Name="StokHareket">
       <EntityTypeMapping TypeName="BarkodDbModel.StokHareket">
         <MappingFragment StoreEntitySet="StokHareket">
+          <ScalarProperty Name="ToptancıID" ColumnName="ToptancıID" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
           <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
           <ScalarProperty Name="UrunGrup" ColumnName="UrunGrup" />
@@ -174,6 +177,36 @@
           <ScalarProperty Name="bitis" ColumnName="bitis" />
           <ScalarProperty Name="baslangic" ColumnName="baslangic" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Toptancilar">
+      <EntityTypeMapping TypeName="BarkodDbModel.Toptancilar">
+        <MappingFragment StoreEntitySet="Toptancilar">
+          <ScalarProperty Name="OzetNotlar" ColumnName="OzetNotlar" />
+          <ScalarProperty Name="VergiNumarasi" ColumnName="VergiNumarasi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Verilecek" ColumnName="Verilecek" />
+          <ScalarProperty Name="Alinacak" ColumnName="Alinacak" />
+          <ScalarProperty Name="YetkiliAdSoyad" ColumnName="YetkiliAdSoyad" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+          <ScalarProperty Name="FirmaID" ColumnName="FirmaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteriler">
+      <EntityTypeMapping TypeName="BarkodDbModel.Musteriler">
+        <MappingFragment StoreEntitySet="Musteriler">
+          <ScalarProperty Name="OzetNotlar" ColumnName="OzetNotlar" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Odenen" ColumnName="Odenen" />
+          <ScalarProperty Name="Alinacak" ColumnName="Alinacak" />
+          <ScalarProperty Name="MusteriAdSoyad" ColumnName="MusteriAdSoyad" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

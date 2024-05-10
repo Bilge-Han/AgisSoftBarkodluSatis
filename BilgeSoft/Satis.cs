@@ -30,5 +30,6 @@ namespace BilgeSoft
         public Nullable<System.DateTime> Tarih { get; set; }
         public string Kullanici { get; set; }
         public Nullable<int> ZNumara { get; set; }
+        public Nullable<int> MusteriID { get; set; }
     }
 }

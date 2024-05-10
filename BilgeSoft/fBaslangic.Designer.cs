@@ -36,6 +36,8 @@ namespace BilgeSoft
             this.lKullanici = new BilgeSoft.lStandart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.bMusteriToptanciEkle = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.bCikis = new Guna.UI2.WinForms.Guna2Button();
             this.bKullaniciDegistir = new Guna.UI2.WinForms.Guna2Button();
             this.bYedekleme = new Guna.UI2.WinForms.Guna2Button();
@@ -46,6 +48,7 @@ namespace BilgeSoft
             this.bGenelRapor = new Guna.UI2.WinForms.Guna2Button();
             this.bSatisIslemi = new Guna.UI2.WinForms.Guna2Button();
             this.lIsYeri = new BilgeSoft.lStandart();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -70,7 +73,7 @@ namespace BilgeSoft
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(553, 41);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(800, 41);
             this.guna2GradientPanel3.TabIndex = 106;
             // 
             // label1
@@ -96,7 +99,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(516, 6);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(763, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
@@ -133,15 +136,19 @@ namespace BilgeSoft
             this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(553, 424);
+            this.panel1.Size = new System.Drawing.Size(800, 599);
             this.panel1.TabIndex = 107;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.guna2Button2, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.bMusteriToptanciEkle, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.guna2Button1, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.bCikis, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.bKullaniciDegistir, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.bYedekleme, 0, 2);
@@ -151,15 +158,63 @@ namespace BilgeSoft
             this.tableLayoutPanel2.Controls.Add(this.bStok, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.bGenelRapor, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.bSatisIslemi, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 41);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 39);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(496, 364);
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(738, 531);
             this.tableLayoutPanel2.TabIndex = 7;
+            // 
+            // bMusteriToptanciEkle
+            // 
+            this.bMusteriToptanciEkle.Animated = true;
+            this.bMusteriToptanciEkle.BorderRadius = 10;
+            this.bMusteriToptanciEkle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bMusteriToptanciEkle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bMusteriToptanciEkle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bMusteriToptanciEkle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bMusteriToptanciEkle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bMusteriToptanciEkle.FillColor = System.Drawing.Color.Teal;
+            this.bMusteriToptanciEkle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bMusteriToptanciEkle.ForeColor = System.Drawing.Color.White;
+            this.bMusteriToptanciEkle.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bMusteriToptanciEkle.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bMusteriToptanciEkle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bMusteriToptanciEkle.ImageSize = new System.Drawing.Size(40, 40);
+            this.bMusteriToptanciEkle.Location = new System.Drawing.Point(248, 398);
+            this.bMusteriToptanciEkle.Margin = new System.Windows.Forms.Padding(2);
+            this.bMusteriToptanciEkle.Name = "bMusteriToptanciEkle";
+            this.bMusteriToptanciEkle.Size = new System.Drawing.Size(242, 131);
+            this.bMusteriToptanciEkle.TabIndex = 10;
+            this.bMusteriToptanciEkle.Text = "Müşteri / Toptancı Ekle";
+            this.bMusteriToptanciEkle.Click += new System.EventHandler(this.bMusteriToptanciEkle_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button1.FillColor = System.Drawing.Color.Teal;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Button1.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button1.Location = new System.Drawing.Point(494, 398);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(242, 131);
+            this.guna2Button1.TabIndex = 9;
+            this.guna2Button1.Text = "Müşteri Rapor";
             // 
             // bCikis
             // 
@@ -177,10 +232,10 @@ namespace BilgeSoft
             this.bCikis.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bCikis.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bCikis.ImageSize = new System.Drawing.Size(40, 40);
-            this.bCikis.Location = new System.Drawing.Point(332, 244);
+            this.bCikis.Location = new System.Drawing.Point(494, 266);
             this.bCikis.Margin = new System.Windows.Forms.Padding(2);
             this.bCikis.Name = "bCikis";
-            this.bCikis.Size = new System.Drawing.Size(162, 118);
+            this.bCikis.Size = new System.Drawing.Size(242, 128);
             this.bCikis.TabIndex = 8;
             this.bCikis.Text = "Çıkış";
             this.bCikis.Click += new System.EventHandler(this.bCikis_Click);
@@ -201,10 +256,10 @@ namespace BilgeSoft
             this.bKullaniciDegistir.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bKullaniciDegistir.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bKullaniciDegistir.ImageSize = new System.Drawing.Size(40, 40);
-            this.bKullaniciDegistir.Location = new System.Drawing.Point(167, 244);
+            this.bKullaniciDegistir.Location = new System.Drawing.Point(248, 266);
             this.bKullaniciDegistir.Margin = new System.Windows.Forms.Padding(2);
             this.bKullaniciDegistir.Name = "bKullaniciDegistir";
-            this.bKullaniciDegistir.Size = new System.Drawing.Size(161, 118);
+            this.bKullaniciDegistir.Size = new System.Drawing.Size(242, 128);
             this.bKullaniciDegistir.TabIndex = 7;
             this.bKullaniciDegistir.Text = "Kullanıcı Değiştir";
             this.bKullaniciDegistir.Click += new System.EventHandler(this.bKullaniciDegistir_Click);
@@ -225,10 +280,10 @@ namespace BilgeSoft
             this.bYedekleme.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bYedekleme.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bYedekleme.ImageSize = new System.Drawing.Size(40, 40);
-            this.bYedekleme.Location = new System.Drawing.Point(2, 244);
+            this.bYedekleme.Location = new System.Drawing.Point(2, 266);
             this.bYedekleme.Margin = new System.Windows.Forms.Padding(2);
             this.bYedekleme.Name = "bYedekleme";
-            this.bYedekleme.Size = new System.Drawing.Size(161, 118);
+            this.bYedekleme.Size = new System.Drawing.Size(242, 128);
             this.bYedekleme.TabIndex = 6;
             this.bYedekleme.Text = "Yedekleme";
             this.bYedekleme.Click += new System.EventHandler(this.bYedekleme_Click);
@@ -249,10 +304,10 @@ namespace BilgeSoft
             this.bFiyatGuncelle.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bFiyatGuncelle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bFiyatGuncelle.ImageSize = new System.Drawing.Size(40, 40);
-            this.bFiyatGuncelle.Location = new System.Drawing.Point(332, 123);
+            this.bFiyatGuncelle.Location = new System.Drawing.Point(494, 134);
             this.bFiyatGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.bFiyatGuncelle.Name = "bFiyatGuncelle";
-            this.bFiyatGuncelle.Size = new System.Drawing.Size(162, 117);
+            this.bFiyatGuncelle.Size = new System.Drawing.Size(242, 128);
             this.bFiyatGuncelle.TabIndex = 5;
             this.bFiyatGuncelle.Text = "Fiyat Güncelle";
             this.bFiyatGuncelle.Click += new System.EventHandler(this.bFiyatGuncelle_Click);
@@ -273,10 +328,10 @@ namespace BilgeSoft
             this.bAyarlar.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bAyarlar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bAyarlar.ImageSize = new System.Drawing.Size(40, 40);
-            this.bAyarlar.Location = new System.Drawing.Point(167, 123);
+            this.bAyarlar.Location = new System.Drawing.Point(248, 134);
             this.bAyarlar.Margin = new System.Windows.Forms.Padding(2);
             this.bAyarlar.Name = "bAyarlar";
-            this.bAyarlar.Size = new System.Drawing.Size(161, 117);
+            this.bAyarlar.Size = new System.Drawing.Size(242, 128);
             this.bAyarlar.TabIndex = 4;
             this.bAyarlar.Text = "Ayarlar";
             this.bAyarlar.Click += new System.EventHandler(this.bAyarlar_Click);
@@ -297,10 +352,10 @@ namespace BilgeSoft
             this.bUrunGiris.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bUrunGiris.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bUrunGiris.ImageSize = new System.Drawing.Size(40, 40);
-            this.bUrunGiris.Location = new System.Drawing.Point(2, 123);
+            this.bUrunGiris.Location = new System.Drawing.Point(2, 134);
             this.bUrunGiris.Margin = new System.Windows.Forms.Padding(2);
             this.bUrunGiris.Name = "bUrunGiris";
-            this.bUrunGiris.Size = new System.Drawing.Size(161, 117);
+            this.bUrunGiris.Size = new System.Drawing.Size(242, 128);
             this.bUrunGiris.TabIndex = 3;
             this.bUrunGiris.Text = "Ürün Giriş";
             this.bUrunGiris.Click += new System.EventHandler(this.bUrunGiris_Click);
@@ -321,10 +376,10 @@ namespace BilgeSoft
             this.bStok.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bStok.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bStok.ImageSize = new System.Drawing.Size(40, 40);
-            this.bStok.Location = new System.Drawing.Point(332, 2);
+            this.bStok.Location = new System.Drawing.Point(494, 2);
             this.bStok.Margin = new System.Windows.Forms.Padding(2);
             this.bStok.Name = "bStok";
-            this.bStok.Size = new System.Drawing.Size(162, 117);
+            this.bStok.Size = new System.Drawing.Size(242, 128);
             this.bStok.TabIndex = 2;
             this.bStok.Text = "Stok Takibi";
             this.bStok.Click += new System.EventHandler(this.bStok_Click);
@@ -345,10 +400,10 @@ namespace BilgeSoft
             this.bGenelRapor.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bGenelRapor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bGenelRapor.ImageSize = new System.Drawing.Size(40, 40);
-            this.bGenelRapor.Location = new System.Drawing.Point(167, 2);
+            this.bGenelRapor.Location = new System.Drawing.Point(248, 2);
             this.bGenelRapor.Margin = new System.Windows.Forms.Padding(2);
             this.bGenelRapor.Name = "bGenelRapor";
-            this.bGenelRapor.Size = new System.Drawing.Size(161, 117);
+            this.bGenelRapor.Size = new System.Drawing.Size(242, 128);
             this.bGenelRapor.TabIndex = 1;
             this.bGenelRapor.Text = "Genel Rapor";
             this.bGenelRapor.Click += new System.EventHandler(this.bGenelRapor_Click);
@@ -372,7 +427,7 @@ namespace BilgeSoft
             this.bSatisIslemi.Location = new System.Drawing.Point(2, 2);
             this.bSatisIslemi.Margin = new System.Windows.Forms.Padding(2);
             this.bSatisIslemi.Name = "bSatisIslemi";
-            this.bSatisIslemi.Size = new System.Drawing.Size(161, 117);
+            this.bSatisIslemi.Size = new System.Drawing.Size(242, 128);
             this.bSatisIslemi.TabIndex = 0;
             this.bSatisIslemi.Text = "Satış İşlemi";
             this.bSatisIslemi.Click += new System.EventHandler(this.bSatisIslemi_Click);
@@ -390,18 +445,41 @@ namespace BilgeSoft
             this.lIsYeri.Text = "İş Yeri";
             this.lIsYeri.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.BorderRadius = 10;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button2.FillColor = System.Drawing.Color.Teal;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button2.Location = new System.Drawing.Point(2, 398);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(242, 131);
+            this.guna2Button2.TabIndex = 11;
+            this.guna2Button2.Text = "Toptancı Rapor";
+            // 
             // fBaslangic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(553, 465);
+            this.ClientSize = new System.Drawing.Size(800, 640);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(553, 465);
-            this.MinimumSize = new System.Drawing.Size(553, 465);
+            this.MaximumSize = new System.Drawing.Size(800, 640);
+            this.MinimumSize = new System.Drawing.Size(800, 640);
             this.Name = "fBaslangic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barkodlu Satış Programı";
@@ -433,5 +511,8 @@ namespace BilgeSoft
         public Guna.UI2.WinForms.Guna2Button bGenelRapor;
         public Guna.UI2.WinForms.Guna2Button bSatisIslemi;
         internal lStandart lIsYeri;
+        public Guna.UI2.WinForms.Guna2Button bMusteriToptanciEkle;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

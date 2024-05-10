@@ -24,6 +24,7 @@ namespace BilgeSoft
             İslemler.GridDuzenle(gridUrunler);
             GrupDoldur();
             BirimDoldur();
+            ToptanciDoldur();
         }
         private void KullaniciAta()
         {
@@ -127,7 +128,7 @@ namespace BilgeSoft
                         {
                             UrunEkle();
                         }
-                        else MessageBox.Show("Lütfen EAN13 Geçerli Gramahlı Ürün Barkod Numarası Giriniz : (5 karakter uzunluğunda)");
+                        else MessageBox.Show("Lütfen EAN13 Geçerli Gramajlı Ürün Barkod Numarası Giriniz : (5 karakter uzunluğunda)");
                     }
                 }
             }
@@ -153,6 +154,7 @@ namespace BilgeSoft
             urun.Birim = cmbBirim.Text;
             urun.Tarih = DateTime.Now;
             urun.Kullanici = lKullanici.Text;
+            
             db.Urun.Add(urun);
             db.SaveChanges();
             if (tBarkod.Text.Length == 8 && tBarkod.Text == OlusturulanBarkod())
@@ -183,7 +185,7 @@ namespace BilgeSoft
             // Fiyat güncelleme işlemi güncellenecek, örn %10 indirim her şubeye vs.
             // https://www.udemy.com/course/c-ve-devexpress-ile-gelismis-on-muhasebe-yazlm-3/
 
-            İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text);
+            İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text,cmbToptanci.Text);
             Temizle();
             gridUrunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();
             İslemler.GridDuzenle(gridUrunler);
@@ -217,7 +219,7 @@ namespace BilgeSoft
             guncelle.Kullanici = lKullanici.Text;
             db.SaveChanges();
             İslemler.HizliButonGuncelle(guncelle.Barkod, guncelle.UrunAd, guncelle.SatisFiyat);
-            İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text);
+            İslemler.StokHareket(tBarkod.Text, tUrunAdi.Text, cmbBirim.Text, Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text,cmbToptanci.Text);
             Temizle();
             gridUrunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();
             İslemler.GridDuzenle(gridUrunler);
@@ -285,11 +287,16 @@ namespace BilgeSoft
             cmbBirim.ValueMember = "Id";
             cmbBirim.DataSource = db.Birim.OrderBy(a => a.BirimAd).ToList();
         }
+        private void ToptanciDoldur()
+        {
+            cmbToptanci.DisplayMember = "FirmaAdi";
+            cmbToptanci.ValueMember = "FirmaID";
+            cmbToptanci.DataSource = db.Toptancilar.OrderBy(a => a.FirmaAdi).ToList();
+        }
         private void bBarkodOlustur_Click(object sender, EventArgs e)
         {
             tBarkod.Text = OlusturulanBarkod();
             tUrunAdi.Focus();
-
         }
         private string OlusturulanBarkod()
         {
@@ -350,7 +357,6 @@ namespace BilgeSoft
                             db.SaveChanges();
                             HizliButonDoldur();
                         }
-
                     }
                     MessageBox.Show("Ürün Silinmiştir");
                     gridUrunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();

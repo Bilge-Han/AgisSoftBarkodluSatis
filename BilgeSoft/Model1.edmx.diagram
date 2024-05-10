@@ -13,13 +13,15 @@
         <EntityTypeShape EntityType="BarkodDbModel.Satis" Width="1.5" PointX="4.375" PointY="4.125" />
         <EntityTypeShape EntityType="BarkodDbModel.UrunGrup" Width="1.5" PointX="2.375" PointY="5.75" />
         <EntityTypeShape EntityType="BarkodDbModel.Barkod" Width="1.5" PointX="8.375" PointY="0.75" />
-        <EntityTypeShape EntityType="BarkodDbModel.Birim" Width="1.5" PointX="6" PointY="4.5" />
-        <EntityTypeShape EntityType="BarkodDbModel.StokHareket" Width="1.5" PointX="6" PointY="6" />
+        <EntityTypeShape EntityType="BarkodDbModel.Birim" Width="1.5" PointX="6.75" PointY="4.375" />
+        <EntityTypeShape EntityType="BarkodDbModel.StokHareket" Width="1.5" PointX="6.75" PointY="6" />
         <EntityTypeShape EntityType="BarkodDbModel.Sabit" Width="1.5" PointX="8.375" PointY="2.5" />
-        <EntityTypeShape EntityType="BarkodDbModel.Zno" Width="1.5" PointX="10.125" PointY="1" />
-        <EntityTypeShape EntityType="BarkodDbModel.Kullanici" Width="1.5" PointX="8.25" PointY="5.75" />
-        <EntityTypeShape EntityType="BarkodDbModel.Guvenlik" Width="1.5" PointX="2.375" PointY="7.5" />
-      </Diagram>
+        <EntityTypeShape EntityType="BarkodDbModel.Zno" Width="1.5" PointX="10.125" PointY="0.75" />
+        <EntityTypeShape EntityType="BarkodDbModel.Kullanici" Width="1.5" PointX="8.375" PointY="5.125" />
+        <EntityTypeShape EntityType="BarkodDbModel.Guvenlik" Width="1.5" PointX="2.375" PointY="7.25" />
+        <EntityTypeShape EntityType="BarkodDbModel.Toptancilar" Width="1.5" PointX="10.125" PointY="5.375" />
+        <EntityTypeShape EntityType="BarkodDbModel.Musteriler" Width="1.5" PointX="10.125" PointY="2.375" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

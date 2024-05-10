@@ -115,10 +115,12 @@ namespace BilgeSoft
             }
         }
 
-        public static void StokHareket(string barkod,string urunAd,string birim,double miktar,string urunGrup,string kullanici)
+        public static void StokHareket(string barkod,string urunAd,string birim,double miktar,string urunGrup,string kullanici,string toptanci)
         {
             using (var db=new BarkodDbEntities())
             {
+                
+                
                 StokHareket sh = new StokHareket();
                 sh.Barkod = barkod;
                 sh.UrunAd = urunAd;
@@ -126,6 +128,12 @@ namespace BilgeSoft
                 sh.Miktar = miktar;
                 sh.UrunGrup = urunGrup;
                 sh.Kullanici = kullanici;
+                if (db.Toptancilar.Any(a => a.FirmaAdi == toptanci))
+                {
+                    int firmaId = db.Toptancilar.Where(a => a.FirmaAdi == toptanci).Select(a => a.FirmaID).FirstOrDefault();
+                    sh.ToptancıID = firmaId;
+                }
+                else { sh.ToptancıID = 0; }
                 sh.Tarih = DateTime.Now;
                 db.StokHareket.Add(sh);
                 db.SaveChanges();

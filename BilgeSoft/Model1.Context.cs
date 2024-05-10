@@ -39,5 +39,7 @@ namespace BilgeSoft
         public virtual DbSet<Zno> Zno { get; set; }
         public virtual DbSet<Kullanici> Kullanici { get; set; }
         public virtual DbSet<Guvenlik> Guvenlik { get; set; }
+        public virtual DbSet<Toptancilar> Toptancilar { get; set; }
+        public virtual DbSet<Musteriler> Musteriler { get; set; }
     }
 }

@@ -284,7 +284,6 @@ namespace BilgeSoft
                         }
                     }
                 }
-              
             }
             else MessageBox.Show("Terazi Ön Ek bilgisi giriniz.");
         }

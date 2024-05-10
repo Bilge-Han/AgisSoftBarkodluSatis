@@ -34,6 +34,9 @@ namespace BilgeSoft
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.cmbToptanci = new System.Windows.Forms.ComboBox();
+            this.lStandart7 = new BilgeSoft.lStandart();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tAra = new BilgeSoft.tGunaButton();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -45,6 +48,10 @@ namespace BilgeSoft
             this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
             this.lStandart3 = new BilgeSoft.lStandart();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rdToptanci = new System.Windows.Forms.RadioButton();
             this.rdUrunGrubu = new System.Windows.Forms.RadioButton();
             this.lStandart2 = new BilgeSoft.lStandart();
             this.rdTumu = new System.Windows.Forms.RadioButton();
@@ -69,6 +76,7 @@ namespace BilgeSoft
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel9.SuspendLayout();
             this.guna2GradientPanel7.SuspendLayout();
             this.guna2GradientPanel6.SuspendLayout();
             this.guna2GradientPanel5.SuspendLayout();
@@ -119,6 +127,7 @@ namespace BilgeSoft
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.White;
+            this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel9);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel7);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel6);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel5);
@@ -132,6 +141,46 @@ namespace BilgeSoft
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(285, 688);
             this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // guna2GradientPanel9
+            // 
+            this.guna2GradientPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel9.BorderRadius = 20;
+            this.guna2GradientPanel9.Controls.Add(this.cmbToptanci);
+            this.guna2GradientPanel9.Controls.Add(this.lStandart7);
+            this.guna2GradientPanel9.FillColor = System.Drawing.Color.White;
+            this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(9, 327);
+            this.guna2GradientPanel9.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GradientPanel9.Name = "guna2GradientPanel9";
+            this.guna2GradientPanel9.ShadowDecoration.BorderRadius = 20;
+            this.guna2GradientPanel9.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2GradientPanel9.ShadowDecoration.Depth = 15;
+            this.guna2GradientPanel9.ShadowDecoration.Enabled = true;
+            this.guna2GradientPanel9.Size = new System.Drawing.Size(300, 69);
+            this.guna2GradientPanel9.TabIndex = 16;
+            // 
+            // cmbToptanci
+            // 
+            this.cmbToptanci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbToptanci.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbToptanci.FormattingEnabled = true;
+            this.cmbToptanci.Location = new System.Drawing.Point(7, 31);
+            this.cmbToptanci.Name = "cmbToptanci";
+            this.cmbToptanci.Size = new System.Drawing.Size(241, 28);
+            this.cmbToptanci.TabIndex = 3;
+            // 
+            // lStandart7
+            // 
+            this.lStandart7.AutoSize = true;
+            this.lStandart7.BackColor = System.Drawing.Color.Transparent;
+            this.lStandart7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lStandart7.ForeColor = System.Drawing.Color.Teal;
+            this.lStandart7.Location = new System.Drawing.Point(3, 8);
+            this.lStandart7.Name = "lStandart7";
+            this.lStandart7.Size = new System.Drawing.Size(72, 21);
+            this.lStandart7.TabIndex = 7;
+            this.lStandart7.Text = "Toptancı";
             // 
             // guna2GradientPanel7
             // 
@@ -189,7 +238,7 @@ namespace BilgeSoft
             this.guna2GradientPanel6.Controls.Add(this.lStandart4);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(9, 324);
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(9, 414);
             this.guna2GradientPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.ShadowDecoration.BorderRadius = 20;
@@ -249,7 +298,7 @@ namespace BilgeSoft
             this.guna2GradientPanel5.Controls.Add(this.lStandart3);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(10, 228);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(9, 241);
             this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.BorderRadius = 20;
@@ -285,6 +334,10 @@ namespace BilgeSoft
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel4.BorderRadius = 20;
+            this.guna2GradientPanel4.Controls.Add(this.checkBox3);
+            this.guna2GradientPanel4.Controls.Add(this.checkBox2);
+            this.guna2GradientPanel4.Controls.Add(this.checkBox1);
+            this.guna2GradientPanel4.Controls.Add(this.rdToptanci);
             this.guna2GradientPanel4.Controls.Add(this.rdUrunGrubu);
             this.guna2GradientPanel4.Controls.Add(this.lStandart2);
             this.guna2GradientPanel4.Controls.Add(this.rdTumu);
@@ -297,8 +350,52 @@ namespace BilgeSoft
             this.guna2GradientPanel4.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel4.ShadowDecoration.Depth = 15;
             this.guna2GradientPanel4.ShadowDecoration.Enabled = true;
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(300, 87);
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(300, 108);
             this.guna2GradientPanel4.TabIndex = 14;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(163, 81);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(103, 17);
+            this.checkBox3.TabIndex = 9;
+            this.checkBox3.Text = "Toptancıya göre";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(163, 37);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(119, 17);
+            this.checkBox2.TabIndex = 8;
+            this.checkBox2.Text = "Ürün Grubuna Göre";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(163, 14);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(53, 17);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "Tümü";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // rdToptanci
+            // 
+            this.rdToptanci.AutoSize = true;
+            this.rdToptanci.BackColor = System.Drawing.Color.Transparent;
+            this.rdToptanci.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rdToptanci.ForeColor = System.Drawing.Color.Black;
+            this.rdToptanci.Location = new System.Drawing.Point(8, 81);
+            this.rdToptanci.Name = "rdToptanci";
+            this.rdToptanci.Size = new System.Drawing.Size(144, 24);
+            this.rdToptanci.TabIndex = 6;
+            this.rdToptanci.Text = "Toptancıya Göre";
+            this.rdToptanci.UseVisualStyleBackColor = false;
+            this.rdToptanci.CheckedChanged += new System.EventHandler(this.rdToptanci_CheckedChanged);
             // 
             // rdUrunGrubu
             // 
@@ -648,6 +745,8 @@ namespace BilgeSoft
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel9.ResumeLayout(false);
+            this.guna2GradientPanel9.PerformLayout();
             this.guna2GradientPanel7.ResumeLayout(false);
             this.guna2GradientPanel6.ResumeLayout(false);
             this.guna2GradientPanel6.PerformLayout();
@@ -704,5 +803,12 @@ namespace BilgeSoft
         public System.Windows.Forms.Label label3;
         internal lStandart lKullanici;
         private tGuna tUrunAra;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
+        private System.Windows.Forms.ComboBox cmbToptanci;
+        private lStandart lStandart7;
+        private System.Windows.Forms.RadioButton rdToptanci;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

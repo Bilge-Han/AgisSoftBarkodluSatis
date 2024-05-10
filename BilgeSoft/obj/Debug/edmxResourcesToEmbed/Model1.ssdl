@@ -45,7 +45,6 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IslemNo" Type="int" />
-    <Property Name="ZNumara" Type="int" />
     <Property Name="Iade" Type="bit" />
     <Property Name="OdemeSekli" Type="nvarchar" MaxLength="50" />
     <Property Name="Nakit" Type="float" />
@@ -56,6 +55,8 @@
     <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
     <Property Name="Tarih" Type="datetime" />
     <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZNumara" Type="int" />
+    <Property Name="MusteriID" Type="int" />
   </EntityType>
   <EntityType Name="Kullanici">
     <Key>
@@ -74,6 +75,19 @@
     <Property Name="Ayarlar" Type="bit" />
     <Property Name="FiyatGuncelle" Type="bit" />
     <Property Name="Yedekleme" Type="bit" />
+  </EntityType>
+  <EntityType Name="Musteriler">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MusteriAdSoyad" Type="varchar" MaxLength="100" />
+    <Property Name="Alinacak" Type="float" />
+    <Property Name="Odenen" Type="float" />
+    <Property Name="Telefon" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Adres" Type="varchar" MaxLength="255" />
+    <Property Name="OzetNotlar" Type="text" />
   </EntityType>
   <EntityType Name="Sabit">
     <Key>
@@ -94,7 +108,6 @@
     </Key>
     <Property Name="SatisId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IslemNo" Type="int" />
-    <Property Name="ZNumara" Type="int" />
     <Property Name="UrunAd" Type="nvarchar" MaxLength="50" />
     <Property Name="Barkod" Type="nvarchar" MaxLength="50" />
     <Property Name="UrunGrup" Type="nvarchar" MaxLength="50" />
@@ -108,6 +121,8 @@
     <Property Name="Iade" Type="bit" />
     <Property Name="Tarih" Type="datetime" />
     <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZNumara" Type="int" />
+    <Property Name="MusteriID" Type="int" />
   </EntityType>
   <EntityType Name="StokHareket">
     <Key>
@@ -121,6 +136,7 @@
     <Property Name="UrunGrup" Type="nvarchar" MaxLength="50" />
     <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
     <Property Name="Tarih" Type="datetime" />
+    <Property Name="ToptancıID" Type="int" />
   </EntityType>
   <EntityType Name="Terazi">
     <Key>
@@ -128,6 +144,21 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TeraziOnEk" Type="int" />
+  </EntityType>
+  <EntityType Name="Toptancilar">
+    <Key>
+      <PropertyRef Name="FirmaID" />
+    </Key>
+    <Property Name="FirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirmaAdi" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="YetkiliAdSoyad" Type="varchar" MaxLength="100" />
+    <Property Name="Alinacak" Type="float" />
+    <Property Name="Verilecek" Type="float" />
+    <Property Name="Telefon" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Adres" Type="varchar" MaxLength="255" />
+    <Property Name="VergiNumarasi" Type="varchar" MaxLength="50" />
+    <Property Name="OzetNotlar" Type="text" />
   </EntityType>
   <EntityType Name="Urun">
     <Key>
@@ -170,10 +201,12 @@
     <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Musteriler" EntityType="Self.Musteriler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sabit" EntityType="Self.Sabit" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Satis" EntityType="Self.Satis" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="StokHareket" EntityType="Self.StokHareket" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Toptancilar" EntityType="Self.Toptancilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UrunGrup" EntityType="Self.UrunGrup" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Zno" EntityType="Self.Zno" Schema="dbo" store:Type="Tables" />

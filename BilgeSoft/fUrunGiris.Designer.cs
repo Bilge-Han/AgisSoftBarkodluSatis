@@ -76,10 +76,12 @@ namespace BilgeSoft
             this.tUrunAra = new BilgeSoft.tStandart();
             this.lStandart9 = new BilgeSoft.lStandart();
             this.gridUrunler = new BilgeSoft.gridOzel();
+            this.Sil = new System.Windows.Forms.DataGridViewImageColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Sil = new System.Windows.Forms.DataGridViewImageColumn();
+            this.tGunaLabel10 = new BilgeSoft.tGunaLabel();
+            this.cmbToptanci = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -116,7 +118,7 @@ namespace BilgeSoft
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridUrunler);
-            this.splitContainer1.Size = new System.Drawing.Size(1008, 729);
+            this.splitContainer1.Size = new System.Drawing.Size(1035, 711);
             this.splitContainer1.SplitterDistance = 311;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -130,7 +132,7 @@ namespace BilgeSoft
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1008, 311);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1035, 311);
             this.guna2GradientPanel1.TabIndex = 22;
             // 
             // tableLayoutPanel1
@@ -155,11 +157,13 @@ namespace BilgeSoft
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.81818F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 270);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1035, 270);
             this.tableLayoutPanel1.TabIndex = 99;
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.cmbToptanci);
+            this.guna2Panel1.Controls.Add(this.tGunaLabel10);
             this.guna2Panel1.Controls.Add(this.chUrunTipi);
             this.guna2Panel1.Controls.Add(this.tGunaLabel4);
             this.guna2Panel1.Controls.Add(this.tGunaLabel3);
@@ -170,10 +174,10 @@ namespace BilgeSoft
             this.guna2Panel1.Controls.Add(this.tUrunAdi);
             this.guna2Panel1.Controls.Add(this.tBarkod);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(52, 26);
+            this.guna2Panel1.Location = new System.Drawing.Point(53, 26);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(298, 216);
+            this.guna2Panel1.Size = new System.Drawing.Size(306, 216);
             this.guna2Panel1.TabIndex = 0;
             // 
             // chUrunTipi
@@ -194,7 +198,7 @@ namespace BilgeSoft
             this.chUrunTipi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(70)))), ((int)(((byte)(100)))));
             this.chUrunTipi.Image = global::BilgeSoft.Properties.Resources.pos_terminal;
             this.chUrunTipi.ImageSize = new System.Drawing.Size(30, 30);
-            this.chUrunTipi.Location = new System.Drawing.Point(43, 4);
+            this.chUrunTipi.Location = new System.Drawing.Point(0, 0);
             this.chUrunTipi.Margin = new System.Windows.Forms.Padding(2);
             this.chUrunTipi.Name = "chUrunTipi";
             this.chUrunTipi.ShadowDecoration.BorderRadius = 10;
@@ -211,7 +215,7 @@ namespace BilgeSoft
             this.tGunaLabel4.BackColor = System.Drawing.Color.Transparent;
             this.tGunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tGunaLabel4.ForeColor = System.Drawing.Color.Teal;
-            this.tGunaLabel4.Location = new System.Drawing.Point(12, 150);
+            this.tGunaLabel4.Location = new System.Drawing.Point(12, 141);
             this.tGunaLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.tGunaLabel4.Name = "tGunaLabel4";
             this.tGunaLabel4.Size = new System.Drawing.Size(92, 23);
@@ -223,7 +227,7 @@ namespace BilgeSoft
             this.tGunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.tGunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tGunaLabel3.ForeColor = System.Drawing.Color.Teal;
-            this.tGunaLabel3.Location = new System.Drawing.Point(30, 113);
+            this.tGunaLabel3.Location = new System.Drawing.Point(30, 104);
             this.tGunaLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.tGunaLabel3.Name = "tGunaLabel3";
             this.tGunaLabel3.Size = new System.Drawing.Size(74, 23);
@@ -235,7 +239,7 @@ namespace BilgeSoft
             this.tGunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.tGunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tGunaLabel2.ForeColor = System.Drawing.Color.Teal;
-            this.tGunaLabel2.Location = new System.Drawing.Point(31, 78);
+            this.tGunaLabel2.Location = new System.Drawing.Point(31, 69);
             this.tGunaLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.tGunaLabel2.Name = "tGunaLabel2";
             this.tGunaLabel2.Size = new System.Drawing.Size(71, 23);
@@ -247,7 +251,7 @@ namespace BilgeSoft
             this.tGunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.tGunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tGunaLabel1.ForeColor = System.Drawing.Color.Teal;
-            this.tGunaLabel1.Location = new System.Drawing.Point(43, 44);
+            this.tGunaLabel1.Location = new System.Drawing.Point(43, 35);
             this.tGunaLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.tGunaLabel1.Name = "tGunaLabel1";
             this.tGunaLabel1.Size = new System.Drawing.Size(57, 23);
@@ -268,7 +272,7 @@ namespace BilgeSoft
             this.cmbUrunGrubu.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cmbUrunGrubu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.cmbUrunGrubu.ItemHeight = 25;
-            this.cmbUrunGrubu.Location = new System.Drawing.Point(110, 149);
+            this.cmbUrunGrubu.Location = new System.Drawing.Point(110, 140);
             this.cmbUrunGrubu.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUrunGrubu.Name = "cmbUrunGrubu";
             this.cmbUrunGrubu.ShadowDecoration.BorderRadius = 20;
@@ -294,7 +298,7 @@ namespace BilgeSoft
             this.tAciklama.Font = new System.Drawing.Font("Segoe UI Historic", 12F);
             this.tAciklama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tAciklama.HoverState.BorderColor = System.Drawing.Color.Turquoise;
-            this.tAciklama.Location = new System.Drawing.Point(110, 113);
+            this.tAciklama.Location = new System.Drawing.Point(110, 104);
             this.tAciklama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tAciklama.Name = "tAciklama";
             this.tAciklama.PasswordChar = '\0';
@@ -324,7 +328,7 @@ namespace BilgeSoft
             this.tUrunAdi.Font = new System.Drawing.Font("Segoe UI Historic", 12F);
             this.tUrunAdi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tUrunAdi.HoverState.BorderColor = System.Drawing.Color.Turquoise;
-            this.tUrunAdi.Location = new System.Drawing.Point(110, 77);
+            this.tUrunAdi.Location = new System.Drawing.Point(110, 68);
             this.tUrunAdi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tUrunAdi.Name = "tUrunAdi";
             this.tUrunAdi.PasswordChar = '\0';
@@ -354,7 +358,7 @@ namespace BilgeSoft
             this.tBarkod.Font = new System.Drawing.Font("Segoe UI Historic", 12F);
             this.tBarkod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.tBarkod.HoverState.BorderColor = System.Drawing.Color.Turquoise;
-            this.tBarkod.Location = new System.Drawing.Point(110, 43);
+            this.tBarkod.Location = new System.Drawing.Point(110, 34);
             this.tBarkod.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tBarkod.Name = "tBarkod";
             this.tBarkod.PasswordChar = '\0';
@@ -374,10 +378,10 @@ namespace BilgeSoft
             this.guna2Panel2.Controls.Add(this.bUrunGrubuEkle);
             this.guna2Panel2.Controls.Add(this.bBarkodOlustur);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(354, 26);
+            this.guna2Panel2.Location = new System.Drawing.Point(363, 26);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(147, 216);
+            this.guna2Panel2.Size = new System.Drawing.Size(151, 216);
             this.guna2Panel2.TabIndex = 2;
             // 
             // bUrunGrubuEkle
@@ -457,10 +461,10 @@ namespace BilgeSoft
             this.guna2Panel3.Controls.Add(this.tGunaLabel6);
             this.guna2Panel3.Controls.Add(this.tGunaLabel5);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(555, 26);
+            this.guna2Panel3.Location = new System.Drawing.Point(569, 26);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(298, 216);
+            this.guna2Panel3.Size = new System.Drawing.Size(306, 216);
             this.guna2Panel3.TabIndex = 1;
             // 
             // tKdvOrani
@@ -681,10 +685,10 @@ namespace BilgeSoft
             this.guna2Panel4.Controls.Add(this.bIptal);
             this.guna2Panel4.Controls.Add(this.bKaydet);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel4.Location = new System.Drawing.Point(857, 26);
+            this.guna2Panel4.Location = new System.Drawing.Point(879, 26);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(149, 216);
+            this.guna2Panel4.Size = new System.Drawing.Size(154, 216);
             this.guna2Panel4.TabIndex = 3;
             // 
             // bIptal
@@ -770,7 +774,7 @@ namespace BilgeSoft
             this.guna2GradientPanel3.ShadowDecoration.Depth = 50;
             this.guna2GradientPanel3.ShadowDecoration.Enabled = true;
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(1008, 41);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(1035, 41);
             this.guna2GradientPanel3.TabIndex = 98;
             // 
             // label1
@@ -795,7 +799,7 @@ namespace BilgeSoft
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(909, 6);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(936, 6);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox3.TabIndex = 99;
@@ -810,7 +814,7 @@ namespace BilgeSoft
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(940, 6);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(967, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox2.TabIndex = 98;
@@ -824,7 +828,7 @@ namespace BilgeSoft
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(971, 6);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(998, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
             this.guna2ControlBox1.TabIndex = 97;
@@ -835,7 +839,7 @@ namespace BilgeSoft
             this.lKullanici.AutoSize = true;
             this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lKullanici.Location = new System.Drawing.Point(859, 9);
+            this.lKullanici.Location = new System.Drawing.Point(886, 9);
             this.lKullanici.Name = "lKullanici";
             this.lKullanici.Size = new System.Drawing.Size(103, 20);
             this.lKullanici.TabIndex = 21;
@@ -847,7 +851,7 @@ namespace BilgeSoft
             this.lStandart23114.AutoSize = true;
             this.lStandart23114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lStandart23114.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart23114.Location = new System.Drawing.Point(776, 9);
+            this.lStandart23114.Location = new System.Drawing.Point(803, 9);
             this.lStandart23114.Name = "lStandart23114";
             this.lStandart23114.Size = new System.Drawing.Size(85, 20);
             this.lStandart23114.TabIndex = 20;
@@ -938,10 +942,25 @@ namespace BilgeSoft
             this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridUrunler.RowTemplate.Height = 32;
             this.gridUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridUrunler.Size = new System.Drawing.Size(1008, 414);
+            this.gridUrunler.Size = new System.Drawing.Size(1035, 396);
             this.gridUrunler.TabIndex = 0;
             this.gridUrunler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentClick);
             this.gridUrunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentDoubleClick);
+            // 
+            // Sil
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.Sil.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Sil.HeaderText = "Sil";
+            this.Sil.Image = global::BilgeSoft.Properties.Resources.cross_mark;
+            this.Sil.MinimumWidth = 6;
+            this.Sil.Name = "Sil";
+            this.Sil.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 
@@ -965,27 +984,47 @@ namespace BilgeSoft
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
-            // Sil
+            // tGunaLabel10
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Orange;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Sil.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Sil.HeaderText = "Sil";
-            this.Sil.Image = global::BilgeSoft.Properties.Resources.cross_mark;
-            this.Sil.MinimumWidth = 6;
-            this.Sil.Name = "Sil";
-            this.Sil.ReadOnly = true;
+            this.tGunaLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.tGunaLabel10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tGunaLabel10.ForeColor = System.Drawing.Color.Teal;
+            this.tGunaLabel10.Location = new System.Drawing.Point(6, 181);
+            this.tGunaLabel10.Margin = new System.Windows.Forms.Padding(2);
+            this.tGunaLabel10.Name = "tGunaLabel10";
+            this.tGunaLabel10.Size = new System.Drawing.Size(100, 23);
+            this.tGunaLabel10.TabIndex = 177;
+            this.tGunaLabel10.Text = "Alınan Firma";
+            // 
+            // cmbToptanci
+            // 
+            this.cmbToptanci.AutoRoundedCorners = true;
+            this.cmbToptanci.BackColor = System.Drawing.Color.Transparent;
+            this.cmbToptanci.BorderRadius = 14;
+            this.cmbToptanci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbToptanci.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbToptanci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbToptanci.FillColor = System.Drawing.SystemColors.ButtonFace;
+            this.cmbToptanci.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbToptanci.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbToptanci.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbToptanci.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.cmbToptanci.ItemHeight = 25;
+            this.cmbToptanci.Location = new System.Drawing.Point(110, 178);
+            this.cmbToptanci.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbToptanci.Name = "cmbToptanci";
+            this.cmbToptanci.ShadowDecoration.BorderRadius = 20;
+            this.cmbToptanci.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.cmbToptanci.ShadowDecoration.Enabled = true;
+            this.cmbToptanci.Size = new System.Drawing.Size(160, 31);
+            this.cmbToptanci.TabIndex = 178;
             // 
             // fUrunGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1035, 711);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fUrunGiris";
@@ -1061,5 +1100,7 @@ namespace BilgeSoft
         private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
         private System.Windows.Forms.DataGridViewImageColumn Sil;
+        private tGunaLabel tGunaLabel10;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbToptanci;
     }
 }

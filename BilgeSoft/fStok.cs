@@ -27,6 +27,8 @@ namespace BilgeSoft
                 if (cmbIslemTuru.Text != "")
                 {
                     string urunGrubu = cmbUrunGrubu.Text;
+                    string toptanciAdi = cmbToptanci.Text;
+                    int toptanciId = db.Toptancilar.Where(a => a.FirmaAdi == toptanciAdi).Select(a => a.FirmaID).FirstOrDefault();
                     if (cmbIslemTuru.SelectedIndex == 0) // Stok Durumu İse
                     {
                         if (rdTumu.Checked) //hepsi listelenecek
@@ -47,6 +49,8 @@ namespace BilgeSoft
                     }
                     else if (cmbIslemTuru.SelectedIndex == 1)
                     {
+                        // STOK HAREKETTE TOPTANCI ADINI GETİR 
+
                         DateTime baslangic = DateTime.Parse(dateBaslangic.Value.ToShortDateString());
                         DateTime bitis = DateTime.Parse(dateBitis.Value.ToShortDateString());
                         bitis = bitis.AddDays(1);
@@ -54,6 +58,7 @@ namespace BilgeSoft
                         {
                             db.StokHareket.OrderByDescending(x => x.Tarih).Where(x => x.Tarih >= baslangic && x.Tarih <= bitis).Load();
                             gridListe.DataSource = db.StokHareket.Local.ToBindingList();
+
                         }
                         else if (rdUrunGrubu.Checked)
                         {
@@ -63,6 +68,15 @@ namespace BilgeSoft
                                 gridListe.DataSource = db.StokHareket.Local.ToBindingList();
                             }
                             else { MessageBox.Show("Lütfen Urun Grubu Seçiniz"); }
+                        }
+
+                        else if (rdToptanci.Checked)
+                        {
+                            if (cmbToptanci.Text != "")
+                            {
+                                db.StokHareket.OrderByDescending(x => x.Tarih).Where(x => x.Tarih >= baslangic && x.Tarih <= bitis && x.ToptancıID == toptanciId).Load();
+                                gridListe.DataSource = db.StokHareket.Local.ToBindingList();
+                            }
                         }
                         else { MessageBox.Show("Lütfen Filtreleme Türünü Seçiniz"); }
                     }
@@ -82,6 +96,10 @@ namespace BilgeSoft
             cmbUrunGrubu.ValueMember = "Id";
             cmbUrunGrubu.DataSource = dbx.UrunGrup.ToList();
             cmbUrunGrubu.Enabled = false;
+            cmbToptanci.DisplayMember = "FirmaAdi";
+            cmbToptanci.ValueMember = "FirmaID";
+            cmbToptanci.DataSource = dbx.Toptancilar.OrderBy(a => a.FirmaAdi).ToList(); ;
+            cmbToptanci.Enabled = false;
         }
 
         private void tUrunAra_TextChanged(object sender, EventArgs e)
@@ -130,6 +148,7 @@ namespace BilgeSoft
             if (rdTumu.Checked != false)
             {
                 cmbUrunGrubu.Enabled = false;
+                cmbToptanci.Enabled = false;
             }
         }
 
@@ -138,9 +157,18 @@ namespace BilgeSoft
             if (rdUrunGrubu.Checked!=false)
             {
                 cmbUrunGrubu.Enabled = true;
+                cmbToptanci.Enabled = false;
             }
         }
 
+        private void rdToptanci_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdToptanci.Checked != false)
+            {
+                cmbToptanci.Enabled = true;
+                cmbUrunGrubu.Enabled = false;
+            }
+        }
         private void cmbIslemTuru_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbIslemTuru.SelectedIndex==0)
@@ -154,5 +182,6 @@ namespace BilgeSoft
                 dateBitis.Enabled = true;
             }
         }
+
     }
 }

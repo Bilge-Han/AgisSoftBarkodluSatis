@@ -45,12 +45,15 @@ namespace BilgeSoft
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lStandart2 = new BilgeSoft.lStandart();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.lKullanici = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lMusteri = new System.Windows.Forms.Label();
             this.chYazdirma = new System.Windows.Forms.CheckBox();
             this.gridBekle = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +69,6 @@ namespace BilgeSoft
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.lNakit = new System.Windows.Forms.Label();
             this.lKart = new System.Windows.Forms.Label();
-            this.lKullanici = new System.Windows.Forms.Label();
             this.chSatisIadeIslemi = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -197,8 +199,10 @@ namespace BilgeSoft
             this.guna2GradientPanel3.BorderThickness = 1;
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox3);
             this.guna2GradientPanel3.Controls.Add(this.lStandart2);
+            this.guna2GradientPanel3.Controls.Add(this.label3);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox2);
             this.guna2GradientPanel3.Controls.Add(this.guna2ControlBox1);
+            this.guna2GradientPanel3.Controls.Add(this.lKullanici);
             this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -241,6 +245,18 @@ namespace BilgeSoft
             this.lStandart2.TabIndex = 10;
             this.lStandart2.Text = "Nakit-Kart Ödeme";
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(183, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 20);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Kullanıcı :";
+            // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -271,6 +287,18 @@ namespace BilgeSoft
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(33, 31);
             this.guna2ControlBox1.TabIndex = 97;
+            // 
+            // lKullanici
+            // 
+            this.lKullanici.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lKullanici.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.lKullanici.Location = new System.Drawing.Point(275, 13);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(45, 20);
+            this.lKullanici.TabIndex = 5;
+            this.lKullanici.Text = "kllnc";
             // 
             // splitContainer3
             // 
@@ -310,12 +338,12 @@ namespace BilgeSoft
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lMusteri);
             this.panel2.Controls.Add(this.chYazdirma);
             this.panel2.Controls.Add(this.gridBekle);
             this.panel2.Controls.Add(this.lNakit);
             this.panel2.Controls.Add(this.lKart);
-            this.panel2.Controls.Add(this.lKullanici);
             this.panel2.Controls.Add(this.chSatisIadeIslemi);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -327,29 +355,41 @@ namespace BilgeSoft
             this.panel2.Size = new System.Drawing.Size(454, 94);
             this.panel2.TabIndex = 0;
             // 
-            // label3
+            // label4
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.label3.Location = new System.Drawing.Point(349, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Kullanıcı :";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
+            this.label4.Location = new System.Drawing.Point(143, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Müşteri :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lMusteri
+            // 
+            this.lMusteri.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lMusteri.AutoSize = true;
+            this.lMusteri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lMusteri.ForeColor = System.Drawing.Color.DarkRed;
+            this.lMusteri.Location = new System.Drawing.Point(222, 4);
+            this.lMusteri.Name = "lMusteri";
+            this.lMusteri.Size = new System.Drawing.Size(155, 20);
+            this.lMusteri.TabIndex = 39;
+            this.lMusteri.Text = "Müşteri Seçilmedi.";
             // 
             // chYazdirma
             // 
-            this.chYazdirma.AutoSize = true;
             this.chYazdirma.BackColor = System.Drawing.Color.Transparent;
             this.chYazdirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.chYazdirma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(100)))));
-            this.chYazdirma.Location = new System.Drawing.Point(159, 7);
+            this.chYazdirma.Location = new System.Drawing.Point(352, 44);
             this.chYazdirma.Name = "chYazdirma";
-            this.chYazdirma.Size = new System.Drawing.Size(156, 24);
+            this.chYazdirma.Size = new System.Drawing.Size(99, 50);
             this.chYazdirma.TabIndex = 37;
-            this.chYazdirma.Text = "Yazdırma Durumu";
+            this.chYazdirma.Text = "Yazdırma \r\nDurumu";
             this.chYazdirma.UseVisualStyleBackColor = false;
             // 
             // gridBekle
@@ -382,7 +422,7 @@ namespace BilgeSoft
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewImageColumn2});
             this.gridBekle.EnableHeadersVisualStyles = false;
-            this.gridBekle.Location = new System.Drawing.Point(368, 76);
+            this.gridBekle.Location = new System.Drawing.Point(226, 44);
             this.gridBekle.Name = "gridBekle";
             this.gridBekle.RowHeadersVisible = false;
             this.gridBekle.RowHeadersWidth = 51;
@@ -501,18 +541,6 @@ namespace BilgeSoft
             this.lKart.Text = "Kart";
             this.lKart.Visible = false;
             // 
-            // lKullanici
-            // 
-            this.lKullanici.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lKullanici.AutoSize = true;
-            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lKullanici.Location = new System.Drawing.Point(409, 13);
-            this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(34, 13);
-            this.lKullanici.TabIndex = 5;
-            this.lKullanici.Text = "kllnc";
-            // 
             // chSatisIadeIslemi
             // 
             this.chSatisIadeIslemi.Appearance = System.Windows.Forms.Appearance.Button;
@@ -558,7 +586,7 @@ namespace BilgeSoft
             this.tBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tBarkod.Location = new System.Drawing.Point(106, 61);
             this.tBarkod.Name = "tBarkod";
-            this.tBarkod.Size = new System.Drawing.Size(232, 26);
+            this.tBarkod.Size = new System.Drawing.Size(218, 26);
             this.tBarkod.TabIndex = 1;
             this.tBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBarkod_KeyDown);
             this.tBarkod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tBarkod_KeyPress);
@@ -2473,6 +2501,8 @@ namespace BilgeSoft
         private Guna.UI2.WinForms.Guna2Button bKart;
         private Guna.UI2.WinForms.Guna2Button bNakit;
         public Guna.UI2.WinForms.Guna2TextBox tGenelToplam;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label lMusteri;
     }
 }
 

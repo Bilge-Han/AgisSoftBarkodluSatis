@@ -34,6 +34,8 @@
     <EntitySet Name="Zno" EntityType="BarkodDbModel.Zno" />
     <EntitySet Name="Kullanici" EntityType="BarkodDbModel.Kullanici" />
     <EntitySet Name="Guvenlik" EntityType="BarkodDbModel.Guvenlik" />
+    <EntitySet Name="Toptancilar" EntityType="BarkodDbModel.Toptancilar" />
+    <EntitySet Name="Musteriler" EntityType="BarkodDbModel.Musteriler" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -75,6 +77,7 @@
     <Property Name="Tarih" Type="DateTime" Precision="3" />
     <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ZNumara" Type="Int32" />
+    <Property Name="MusteriID" Type="Int32" />
   </EntityType>
   <EntityType Name="Satis">
     <Key>
@@ -96,6 +99,7 @@
     <Property Name="Tarih" Type="DateTime" Precision="3" />
     <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ZNumara" Type="Int32" />
+    <Property Name="MusteriID" Type="Int32" />
   </EntityType>
   <EntityType Name="UrunGrup">
     <Key>
@@ -131,6 +135,7 @@
     <Property Name="UrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="ToptancıID" Type="Int32" />
   </EntityType>
   <EntityType Name="Sabit">
     <Key>
@@ -177,5 +182,33 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="baslangic" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <Property Name="bitis" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Toptancilar">
+    <Key>
+      <PropertyRef Name="FirmaID" />
+    </Key>
+    <Property Name="FirmaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirmaAdi" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="YetkiliAdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Alinacak" Type="Double" />
+    <Property Name="Verilecek" Type="Double" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VergiNumarasi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OzetNotlar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Musteriler">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriAdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Alinacak" Type="Double" />
+    <Property Name="Odenen" Type="Double" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="OzetNotlar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

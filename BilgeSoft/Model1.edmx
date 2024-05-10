@@ -50,7 +50,6 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IslemNo" Type="int" />
-          <Property Name="ZNumara" Type="int" />
           <Property Name="Iade" Type="bit" />
           <Property Name="OdemeSekli" Type="nvarchar" MaxLength="50" />
           <Property Name="Nakit" Type="float" />
@@ -61,6 +60,8 @@
           <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
           <Property Name="Tarih" Type="datetime" />
           <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
+          <Property Name="ZNumara" Type="int" />
+          <Property Name="MusteriID" Type="int" />
         </EntityType>
         <EntityType Name="Kullanici">
           <Key>
@@ -79,6 +80,19 @@
           <Property Name="Ayarlar" Type="bit" />
           <Property Name="FiyatGuncelle" Type="bit" />
           <Property Name="Yedekleme" Type="bit" />
+        </EntityType>
+        <EntityType Name="Musteriler">
+          <Key>
+            <PropertyRef Name="MusteriID" />
+          </Key>
+          <Property Name="MusteriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MusteriAdSoyad" Type="varchar" MaxLength="100" />
+          <Property Name="Alinacak" Type="float" />
+          <Property Name="Odenen" Type="float" />
+          <Property Name="Telefon" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Adres" Type="varchar" MaxLength="255" />
+          <Property Name="OzetNotlar" Type="text" />
         </EntityType>
         <EntityType Name="Sabit">
           <Key>
@@ -99,7 +113,6 @@
           </Key>
           <Property Name="SatisId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IslemNo" Type="int" />
-          <Property Name="ZNumara" Type="int" />
           <Property Name="UrunAd" Type="nvarchar" MaxLength="50" />
           <Property Name="Barkod" Type="nvarchar" MaxLength="50" />
           <Property Name="UrunGrup" Type="nvarchar" MaxLength="50" />
@@ -113,6 +126,8 @@
           <Property Name="Iade" Type="bit" />
           <Property Name="Tarih" Type="datetime" />
           <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
+          <Property Name="ZNumara" Type="int" />
+          <Property Name="MusteriID" Type="int" />
         </EntityType>
         <EntityType Name="StokHareket">
           <Key>
@@ -126,6 +141,7 @@
           <Property Name="UrunGrup" Type="nvarchar" MaxLength="50" />
           <Property Name="Kullanici" Type="nvarchar" MaxLength="50" />
           <Property Name="Tarih" Type="datetime" />
+          <Property Name="ToptancıID" Type="int" />
         </EntityType>
         <EntityType Name="Terazi">
           <Key>
@@ -133,6 +149,21 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TeraziOnEk" Type="int" />
+        </EntityType>
+        <EntityType Name="Toptancilar">
+          <Key>
+            <PropertyRef Name="FirmaID" />
+          </Key>
+          <Property Name="FirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirmaAdi" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="YetkiliAdSoyad" Type="varchar" MaxLength="100" />
+          <Property Name="Alinacak" Type="float" />
+          <Property Name="Verilecek" Type="float" />
+          <Property Name="Telefon" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Adres" Type="varchar" MaxLength="255" />
+          <Property Name="VergiNumarasi" Type="varchar" MaxLength="50" />
+          <Property Name="OzetNotlar" Type="text" />
         </EntityType>
         <EntityType Name="Urun">
           <Key>
@@ -175,10 +206,12 @@
           <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Musteriler" EntityType="Self.Musteriler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sabit" EntityType="Self.Sabit" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Satis" EntityType="Self.Satis" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="StokHareket" EntityType="Self.StokHareket" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Toptancilar" EntityType="Self.Toptancilar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UrunGrup" EntityType="Self.UrunGrup" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Zno" EntityType="Self.Zno" Schema="dbo" store:Type="Tables" />
@@ -221,7 +254,9 @@
           <EntitySet Name="Zno" EntityType="BarkodDbModel.Zno" />
           <EntitySet Name="Kullanici" EntityType="BarkodDbModel.Kullanici" />
           <EntitySet Name="Guvenlik" EntityType="BarkodDbModel.Guvenlik" />
-        </EntityContainer>
+          <EntitySet Name="Toptancilar" EntityType="BarkodDbModel.Toptancilar" />
+          <EntitySet Name="Musteriler" EntityType="BarkodDbModel.Musteriler" />
+          </EntityContainer>
         <EntityType Name="Terazi">
           <Key>
             <PropertyRef Name="Id" />
@@ -262,6 +297,7 @@
           <Property Name="Tarih" Type="DateTime" Precision="3" />
           <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ZNumara" Type="Int32" />
+          <Property Name="MusteriID" Type="Int32" />
         </EntityType>
         <EntityType Name="Satis">
           <Key>
@@ -283,6 +319,7 @@
           <Property Name="Tarih" Type="DateTime" Precision="3" />
           <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ZNumara" Type="Int32" />
+          <Property Name="MusteriID" Type="Int32" />
         </EntityType>
         <EntityType Name="UrunGrup">
           <Key>
@@ -318,6 +355,7 @@
           <Property Name="UrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="ToptancıID" Type="Int32" />
         </EntityType>
         <EntityType Name="Sabit">
           <Key>
@@ -365,7 +403,35 @@
           <Property Name="baslangic" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="bitis" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
         </EntityType>
-      </Schema>
+        <EntityType Name="Toptancilar">
+          <Key>
+            <PropertyRef Name="FirmaID" />
+          </Key>
+          <Property Name="FirmaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirmaAdi" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="YetkiliAdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Alinacak" Type="Double" />
+          <Property Name="Verilecek" Type="Double" />
+          <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Adres" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VergiNumarasi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OzetNotlar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Musteriler">
+          <Key>
+            <PropertyRef Name="MusteriID" />
+          </Key>
+          <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MusteriAdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Alinacak" Type="Double" />
+          <Property Name="Odenen" Type="Double" />
+          <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Adres" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="OzetNotlar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -420,6 +486,7 @@
           <EntitySetMapping Name="IslemOzet">
             <EntityTypeMapping TypeName="BarkodDbModel.IslemOzet">
               <MappingFragment StoreEntitySet="IslemOzet">
+                <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
                 <ScalarProperty Name="ZNumara" ColumnName="ZNumara" />
                 <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
@@ -439,6 +506,7 @@
           <EntitySetMapping Name="Satis">
             <EntityTypeMapping TypeName="BarkodDbModel.Satis">
               <MappingFragment StoreEntitySet="Satis">
+                <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
                 <ScalarProperty Name="ZNumara" ColumnName="ZNumara" />
                 <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
@@ -486,6 +554,7 @@
           <EntitySetMapping Name="StokHareket">
             <EntityTypeMapping TypeName="BarkodDbModel.StokHareket">
               <MappingFragment StoreEntitySet="StokHareket">
+                <ScalarProperty Name="ToptancıID" ColumnName="ToptancıID" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
                 <ScalarProperty Name="UrunGrup" ColumnName="UrunGrup" />
@@ -547,7 +616,37 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-        </EntityContainerMapping>
+          <EntitySetMapping Name="Toptancilar">
+            <EntityTypeMapping TypeName="BarkodDbModel.Toptancilar">
+              <MappingFragment StoreEntitySet="Toptancilar">
+                <ScalarProperty Name="OzetNotlar" ColumnName="OzetNotlar" />
+                <ScalarProperty Name="VergiNumarasi" ColumnName="VergiNumarasi" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Verilecek" ColumnName="Verilecek" />
+                <ScalarProperty Name="Alinacak" ColumnName="Alinacak" />
+                <ScalarProperty Name="YetkiliAdSoyad" ColumnName="YetkiliAdSoyad" />
+                <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+                <ScalarProperty Name="FirmaID" ColumnName="FirmaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Musteriler">
+            <EntityTypeMapping TypeName="BarkodDbModel.Musteriler">
+              <MappingFragment StoreEntitySet="Musteriler">
+                <ScalarProperty Name="OzetNotlar" ColumnName="OzetNotlar" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Odenen" ColumnName="Odenen" />
+                <ScalarProperty Name="Alinacak" ColumnName="Alinacak" />
+                <ScalarProperty Name="MusteriAdSoyad" ColumnName="MusteriAdSoyad" />
+                <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
   </edmx:Runtime>
