@@ -28,5 +28,10 @@ namespace BilgeSoft
             }
             İslemler.GridDuzenle(gridListe);
         }
+
+        private void guna2GradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

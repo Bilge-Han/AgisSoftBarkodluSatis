@@ -90,5 +90,19 @@ namespace BilgeSoft
             //f.lKullanici.Text = lKullanici.Text;
             f.ShowDialog();
         }
+
+        private void bToptanciRapor_Click(object sender, EventArgs e)
+        {
+            fToptanciRapor f = new fToptanciRapor();
+            //f.lKullanici.Text = lKullanici.Text;
+            f.ShowDialog();
+        }
+
+        private void bMusteriRapor_Click(object sender, EventArgs e)
+        {
+            fMusteriRapor f = new fMusteriRapor();
+            //f.lKullanici.Text = lKullanici.Text;
+            f.ShowDialog();
+        }
     }
 }

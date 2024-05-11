@@ -17,7 +17,13 @@ namespace BilgeSoft
         {
             InitializeComponent();
         }
-
+        private void fMusteriSec_Load(object sender, EventArgs e)
+        {
+            gridMusteriler.DataSource = _db.Musteriler.OrderByDescending(a => a.MusteriAdSoyad).Take(20).ToList();
+            gridMusteriler.Columns["Alinacak"].Visible = false;
+            gridMusteriler.Columns["Odenen"].Visible = false;
+            İslemler.GridDuzenle(gridMusteriler);
+        }
         private void chTumu_CheckedChanged(object sender, EventArgs e)
         {
             if (chTumu.Checked)
@@ -53,5 +59,7 @@ namespace BilgeSoft
             fSatis f = (fSatis)Application.OpenForms["fSatis"];
             if (f != null) { f.lMusteri.Text = gridMusteriler.CurrentRow.Cells["MusteriAdSoyad"].Value.ToString(); }
         }
+
+
     }
 }

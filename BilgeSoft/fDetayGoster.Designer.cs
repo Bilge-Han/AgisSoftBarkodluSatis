@@ -68,6 +68,7 @@ namespace BilgeSoft
             this.guna2GradientPanel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.guna2GradientPanel3.Size = new System.Drawing.Size(800, 41);
             this.guna2GradientPanel3.TabIndex = 101;
+            this.guna2GradientPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel3_Paint);
             // 
             // guna2ControlBox3
             // 

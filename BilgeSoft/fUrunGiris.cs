@@ -154,7 +154,12 @@ namespace BilgeSoft
             urun.Birim = cmbBirim.Text;
             urun.Tarih = DateTime.Now;
             urun.Kullanici = lKullanici.Text;
-            
+            if (db.Toptancilar.Any(x => x.FirmaAdi == cmbToptanci.Text))
+            {
+                var toptanci = db.Toptancilar.Where(x => x.FirmaAdi == cmbToptanci.Text).SingleOrDefault();
+                toptanci.Verilecek += urun.Miktar * urun.AlisFiyat;
+            }
+            else { MessageBox.Show("Firma Bulunamadı.");}
             db.Urun.Add(urun);
             db.SaveChanges();
             if (tBarkod.Text.Length == 8 && tBarkod.Text == OlusturulanBarkod())

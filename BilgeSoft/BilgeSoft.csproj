@@ -85,7 +85,7 @@
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -159,6 +159,12 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fMusteriRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMusteriRapor.Designer.cs">
+      <DependentUpon>fMusteriRapor.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMusteriSec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,12 @@
     </Compile>
     <Compile Include="fStok.Designer.cs">
       <DependentUpon>fStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fToptanciRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fToptanciRapor.Designer.cs">
+      <DependentUpon>fToptanciRapor.cs</DependentUpon>
     </Compile>
     <Compile Include="fUrunGiris.cs">
       <SubType>Form</SubType>
@@ -302,6 +314,9 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fMusteriRapor.resx">
+      <DependentUpon>fMusteriRapor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fMusteriSec.resx">
       <DependentUpon>fMusteriSec.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fStok.resx">
       <DependentUpon>fStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fToptanciRapor.resx">
+      <DependentUpon>fToptanciRapor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fUrunGiris.resx">
       <DependentUpon>fUrunGiris.cs</DependentUpon>

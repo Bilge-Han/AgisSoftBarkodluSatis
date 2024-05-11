@@ -502,8 +502,8 @@ namespace BilgeSoft
                     {
                         var musteri = _db.Musteriler.Where(a => a.MusteriAdSoyad == lMusteri.Text).SingleOrDefault();
                         satis.MusteriID = musteri.MusteriID;
-                        musteri.Alinacak = İslemler.DoubleYap(gridSatisListesi.Rows[i].Cells["Toplam"].Value.ToString());
-                        musteri.Odenen = İslemler.DoubleYap(gridSatisListesi.Rows[i].Cells["Toplam"].Value.ToString());
+                        musteri.Alinacak += İslemler.DoubleYap(gridSatisListesi.Rows[i].Cells["Toplam"].Value.ToString());
+                        musteri.Odenen += İslemler.DoubleYap(gridSatisListesi.Rows[i].Cells["Toplam"].Value.ToString());
                     }
                     else { satis.MusteriID = 0; }
                     _db.Satis.Add(satis); // bu modeli tabloya ekle
